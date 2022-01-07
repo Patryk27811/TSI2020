@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Patryk Dobrowolski" />
+    <link rel="icon" href="ikona.jpg">
+    <title>Listy</title>
+    <script src="https://unpkg.com/typeit@8.0.7/dist/index.umd.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            font-family: 'Marcellus', serif;
+        }
+        html {
+  scroll-behavior: smooth;
+}
+        body {
+            background-color: #FBAB7E;
+            background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+            
+        }
+        
+        header {
+            text-align: center;
+        }
+        
+        .listy {
+            display: flex;
+            justify-content: center;
+            font-size: 13pt;
+            list-style-position: outside;
+        }
+        
+        /* img {
+            width: 300px;
+        }   */
+        
+        img:hover {
+            margin-left: +100px;
+            transition: all 2s ease;
+        }
+        
+        .mazespin:hover {
+            transform: rotate(180deg);
+            transition: all 1s ease;
+        }
+        
+        .pdpkt {
+            font-size: 14pt;
+            font-weight: bold;
+        }
+        
+        .dpkt {
+            font-size: 16pt;
+            font-weight: bold;
+        }
+        
+        #zrodla {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .pppkt {
+            font-size: 15pt;
+        }
+        
+        footer {
+            color: white;
+            background-color: #5b6467;
+            background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
+            height: 100px;
+        }
+        
+        #author {
+            text-align: center;
+        }
+        #dogory{
+             border-radius:10px;
+            background-color: #FBAB7E;
+            background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+            
+           position: absolute;
+           display: flex;
+           top:inherit;
+           right: 2px; 
+           
+        }
+         #dogory:hover{
+             
+             background-color: #FBAB7E;
+            background-image: linear-gradient(62deg, #ec702d 0%, #F7CE68 100%);
+            
+            border-radius:10px;
+            cursor: pointer;
+        
+        } 
+        
+        .spis{
+            font-size: 15pt;
+            text-align: center;
+        }
+        .spis li{
+            list-style: none;
+        }
+         .spis a{
+            text-decoration: underline;
+            color: black;
+        }
+    </style>
+    
+</head>
+
+
+<body>
+    <header>
+        <h1 id="title" ></h1>
+        <script type="text/javascript">
+            new TypeIt("#title", {
+                    speed: 50,
+                    loop: false,
+                    waitUntilVisible: true,
+                    cursor: false,
+                })
+                .type("Lista motorsportów", {
+                    delay: 300,
+                })
+                .go();
+        </script>
+        <div id="text">
+        </div>
+        <script type="text/javascript">
+            new TypeIt("#text", {
+                    speed: 25,
+                    loop: false,
+                    waitUntilVisible: true,
+                    cursor: false,
+                })
+                .type("Motorsport jest dziedziną sportu, w której zawodnicy ścigają się pojazdami wyposażonymi w silnik(najczęściej spalinowymi,odrzutowymi bądz rakietowymi). Motorsport można podzielić na cztery dyscypliny np. sport kartingowy oraz sport samochodowy. Moją ulubioną dyscypliną jest sport kartinowy, ale niestety nie miałem jak go umieścić tutaj, ponieważ na dobrą sprawę w sporcie kartingowym nie ma zespołów. Dlatego w swojej liście umieściłem sporty takie jak: Formuła 1, DTM oraz Formuła 2, ponieważ te serie wyściowego również śledzę, ale niestety raczej nigdy nie będę miał okazji przejechać się, którymś z tych cudownych pojazdów. Odpal głośniki i na stronie czeka Cię jeden easter egg związany z jednym z kierowców F1 jeśli oglądasz F1 będziesz wiedział o co chodzi<br><br><br><br><br> ", {
+                    delay: 300,
+                })
+                .go();
+        </script>
+
+    </header>
+    <div class="spis">
+        <h1 class='text1'>Spis treści</h1>
+        <ul>
+            <a href="#f1"><li>F1</li></a>
+            <a href="#f2"> <li>F2</li></a>
+            <a href="#dtm"><li>DTM</li></a>
+        </ul>
+    </div>
+    
+    <div class="listy" id="top">
+        <ol>
+            <li class="dpkt" id="f1" style="color:Brown">Formuła 1</li>
+            <ol type="A">
+                <li class="pdpkt" style="color:darkblue">Kierowcy</li>
+                <ul type="circle" class="pppkt">
+                    <li>Max Verstappen</li>
+                    <img src="f1/verstappen72.png" title="
+                    Zespół Red Bull: Racing
+                    Kraj: Holandia
+                    Podium: 60
+                    Punkty: 1557,5
+                    Grand Prix zgłoszone: 141
+                    Mistrzostwa Świata: 1
+                    Najwyższe ukończenie wyścigu: 1 (x20)
+                    Najwyższa pozycja stawki: 1
+                    Data urodzenia: 30.09.1997
+                    Miejsce urodzenia Hasselt, Belgia" alt="foto" />
+                    <li>Lewis Hamilton</li>
+                    <img src="f1/hamilton72.png" title="
+                    Zespół: Mercedes
+                    Kraj Wielka: Brytania
+                    Podium: 182
+                    Punkty: 4165,5
+                    Grand Prix zgłoszone: 287
+                    Mistrzostwa Świata: 7
+                    Najwyższe ukończenie wyścigu: 1 (x103)
+                    Najwyższa pozycja siatki: 1
+                    Data urodzenia: 01.07.1985
+                    Miejsce urodzenia Stevenage: Anglia" alt="foto" />
+                    <li>Valtteri Bottas</li>
+                    <img src="f1/bottas72.png" title="
+                    Zespół Mercedes
+                    Kraj Finlandia
+                    Podium 67
+                    Punkty 1730
+                    Grand Prix zgłoszone 177
+                    Mistrzostwa Świata N/A
+                    Najwyższe ukończenie wyścigu 1 (x10)
+                    Najwyższa pozycja siatki 1
+                    Data urodzenia 28.08.1989
+                    Miejsce urodzenia Nastola, Finlandia" alt="foto" />
+                    <li>Sergio Perez</li>
+                    <img src="f1/perez72.png" title="
+                    Zespół Red Bull Racing
+                    Kraj Meksyk
+                    Podium 15
+                    Punkty 896
+                    Grand Prix zgłoszone 213
+                    Mistrzostwa Świata N/A
+                    Najwyższe ukończenie wyścigu 1 (x2)
+                    Najwyższa pozycja siatki 2
+                    Data urodzenia 26.01.2090
+                    Miejsce urodzenia Guadalajara, Meksyk" alt="foto" />
+                    <li>Lando Norris</li>
+                    <img src="f1/norris72.png" title="Zespół McLarena
+                    Kraj Wielka Brytania
+                    Podium 5
+                    Punkty 300
+                    Grand Prix zgłoszone 59
+                    Mistrzostwa Świata N/A
+                    Najwyższe ukończenie wyścigu 2 (x1)
+                    Najwyższa pozycja siatki 1
+                    Data urodzenia 13.11.1999
+                    Miejsce urodzenia Bristol, Anglia" alt="foto" />
+                    <li>Charles Leclerc</li>
+                    <img src="f1/leclerc72.png" title="
+                    Zespół Ferrari
+                    Kraj Monako
+                    Podium 13
+                    Punkty 559
+                    Grand Prix wszedł 80
+                    Mistrzostwa Świata N/A
+                    Najwyższe ukończenie wyścigu 1 (x2)
+                    Najwyższa pozycja siatki 1
+                    Data urodzenia 16.10.1997
+                    Miejsce urodzenia Monte Carlo, Monako" alt="foto" />
+                    <li>Carlos Sainz</li>
+                    <img src="f1/sainz72.png" title="
+                    Zespół Ferrari
+                    Kraj Hiszpania
+                    Podium 5
+                    Punkty 521,5
+                    Grand Prix zgłoszone 140
+                    Mistrzostwa Świata N/A
+                    Najwyższe ukończenie wyścigu 2 (x2)
+                    Najwyższa pozycja siatki 2
+                    Data urodzenia 01.09.1994
+                    Miejsce urodzenia Madryt, Hiszpania" alt="foto" />
+                    <li>Daniel Ricciardo</li>
+                    <img src="f1/ricciardo72.png" title="
+                    Zespół McLarena
+                    Kraj Australia
+                    Podium 32
+                    Punkty 1274
+                    Grand Prix zgłoszone 209
+                    Mistrzostwa Świata N/A
+                    Najwyższe ukończenie wyścigu 1 (x8)
+                    Najwyższa pozycja siatki 1
+                    Data urodzenia 01.07.1989
+                    Miejsce urodzenia Perth, Australia" alt="foto" />
+                    <li>Pierre Gasly</li>
+                    <img src="f1/gasly72.png" title="
+                    Zespół AlphaTauri
+                    Kraj Francja
+                    Podium 3
+                    Punkty 299
+                    Grand Prix zgłoszone 85
+                    Mistrzostwa Świata N/A
+                    Najwyższe ukończenie wyścigu 1 (x1)
+                    Najwyższa pozycja siatki 2
+                    Data urodzenia 07.02.1996
+                    Miejsce urodzenia Rouen, Francja" alt="foto" />
+                    <li>Fernando Alonso</li>
+                    <img src="f1/alonso72.png" title="
+                    Zespół Alpine
+                    Kraj Hiszpania
+                    Podium 98
+                    Punkty 1976
+                    Grand Prix zgłoszone 335
+                    Mistrzostwa Świata 2
+                    Najwyższe ukończenie wyścigu 1 (x32)
+                    Najwyższa pozycja siatki 1
+                    Data urodzenia 29.07.1981
+                    Miejsce urodzenia Oviedo, Hiszpania" alt="foto" />
+                    <li>Esteban Ocon</li>
+                    <img src="f1/ocon72.png" title="
+                    Zespół Alpine
+                    Kraj Francja
+                    Podium 2
+                    Punkty 270
+                    Grand Prix zgłoszone 88
+                    Mistrzostwa Świata N/A
+                    Najwyższe ukończenie wyścigu 1 (x1)
+                    Najwyższa pozycja siatki 3
+                    Data urodzenia 17.09.1996
+                    Miejsce urodzenia Évreux, Normandia" alt="foto" />
+                    <li>Sebastian Vettel</li>
+                    <img src="f1/vettel72.png" title="
+                    Zespół Aston Martin
+                    Kraj Niemcy
+                    Podium 122
+                    Punkty 3061
+                    Grand Prix zgłoszone 279
+                    Mistrzostwa Świata 4
+                    Najwyższe ukończenie wyścigu 1 (x53)
+                    Najwyższa pozycja siatki 1
+                    Data urodzenia 03.07.1987
+                    Miejsce urodzenia Heppenheim, Niemcy" alt="foto" />
+                    <li>Lance Stroll</li>
+                    <img src="F1/stroll72.png" title="
+                    Zespół Aston Martin
+                    Kraj Kanada
+                    Podium 3
+                    Punkty 176
+                    Grand Prix zgłoszone 99
+                    Mistrzostwa Świata N/A
+                    Najwyższe ukończenie wyścigu 3 (x3)
+                    Najwyższa pozycja siatki 1
+                    Data urodzenia 29.10.1998
+                    Miejsce urodzenia Montreal, Kanada" alt="foto" />
+                    <li>Yuki Tsunoda</li>
+                    <img src="f1/tsunoda72.png" title="
+                    Zespół AlphaTauri
+                    Kraj Japonia
+                    Podia Nie dotyczy
+                    Punkty 20
+                    Grand Prix wszedł 21
+                    Mistrzostwa Świata N/A
+                    Najwyższe ukończenie wyścigu 6 (x1)
+                    Najwyższa pozycja siatki 7
+                    Data urodzenia 11.05.2000
+                    Miejsce urodzenia Sagamihara, Japonia" alt="foto" />
+                    <li>George Russell</li>
+                    <img src="f1/russell72.png" title="
+                    Zespół Williams
+                    Kraj Wielka Brytania
+                    Podium 1
+                    Punkty 19
+                    Grand Prix zgłoszone 59
+                    Mistrzostwa Świata N/A
+                    Najwyższe ukończenie wyścigu 2 (x1)
+                    Najwyższa pozycja siatki 2
+                    Data urodzenia 15.02.1998
+                    Miejsce urodzenia King's Lynn, Anglia" alt="foto" />
+                    <li>Kimi Räikkönen</li>
+                    <img src="f1/raikkonen72.png" title="
+                    Zespół Alfa Romeo Racing
+                    Kraj Finlandia
+                    Podium 103
+                    Punkty 1873
+                    Grand Prix zgłoszone 351
+                    Mistrzostwa Świata 1
+                    Najwyższe ukończenie wyścigu 1 (x21)
+                    Najwyższa pozycja siatki 1
+                    Data urodzenia 17.10.1979
+                    Miejsce urodzenia Espoo, Finlandia
+                    
+                    " alt="foto" />
+                    <li>Nicholas Latifi</li>
+                    <img src="f1/latifi72.png" title="
+                    Zespół Williams
+                    Kraj Kanada
+                    Podia Nie dotyczy
+                    Punkty 7
+                    Grand Prix wszedł 38
+                    Mistrzostwa Świata N/A
+                    Najwyższe ukończenie wyścigu 7 (x1)
+                    Najwyższa pozycja siatki 10
+                    Data urodzenia 29.06.1995
+                    Miejsce urodzenia Montreal, Kanada" alt="foto" />
+                    <li>Antonio Giovinazzi</li>
+                    <img src="f1/giovinazzi72.png" title="
+                    Zespół Alfa Romeo Racing
+                    Kraj Włochy
+                    Podia Nie dotyczy
+                    Punkty 21
+                    Grand Prix zgłoszone 61
+                    Mistrzostwa Świata N/A
+                    Najwyższe ukończenie wyścigu 5 (x1)
+                    Najwyższa pozycja siatki 7
+                    Data urodzenia 14.12.1993
+                    Miejsce urodzenia Martina Franca, Włochy" alt="foto" />
+                    <li>Mick Schumacher</li>
+                    <img src="f1/schumacher72.png" title="
+                    Zespół Haas F1 Team
+                    Kraj Niemcy
+                    Podia Nie dotyczy
+                    Punkty 0
+                    Grand Prix wszedł 21
+                    Mistrzostwa Świata N/A
+                    Najwyższe zakończenie wyścigu 12 (x1)
+                    Najwyższa pozycja siatki 14
+                    Data urodzenia 22.03.1999
+                    Miejsce urodzenia Vufflens-le-Château, Szwajcaria" alt="foto" />
+                    <li>Rober Kubica</li>
+                    <img src="f1/kubica72.png" title="polski kierowca wyścigowy i rajdowy. Mistrz Formuły Renault 3.5 z 2005. W latach 2006–2009 był kierowcą zespołu BMW Sauber, rozpoczynając swoją karierę w Formule 1 od roli kierowcy testowego. " alt="foto" />
+                    <li>Nikita Mazepin</li>
+                    <img class="mazespin" src="f1/mazepin72.png" title="
+                    Zespół Haas F1 Team
+                    Kraj Rosyjska Federacja Samochodowa
+                    Podia Nie dotyczy
+                    Punkty 0
+                    Grand Prix wszedł 21
+                    Mistrzostwa Świata N/A
+                    Najwyższe zakończenie wyścigu 14 (x1)
+                    Najwyższa pozycja siatki 15
+                    Data urodzenia 02.03.1999
+                    Miejsce urodzenia Moskwa, Rosja" alt="foto" />
+                </ul>
+                <li class="pdpkt" style="color:purple">Zespoły</li>
+                <ul type="circle" class="pppkt">
+                    <li>Mercedes</li>
+                    <img src="F1/mercedeslogo72.png" title="
+                    Pełna nazwa zespołu Mercedes-AMG Petronas F1 Team
+                    Base Brackley, Wielka Brytania
+                    Szef zespołu Toto Wolff
+                    Szef techniczny Mike Elliott
+                    Podwozie W12
+                    Jednostka napędowa Mercedes
+                    Pierwsze wejście zespołu 1970
+                    Mistrzostwa Świata 7
+                    Najwyższe zakończenie wyścigu 1 (x115)
+                    Pozycje bieguna 127
+                    Najszybsze okrążenia 85" alt="foto" />
+                    <li>Redbull</li>
+                    <img src="F1/rebulllogo72.png" title="
+                    Pełna nazwa zespołu Red Bull Racing Honda
+                    Baza Milton Keynes, Wielka Brytania
+                    Szef zespołu Christian Horner
+                    Szef techniczny Pierre Waché
+                    Podwozie RB16B
+                    Jednostka napędowa Honda
+                    Pierwsze zgłoszenie zespołu 1997
+                    Mistrzostwa Świata 4
+                    Najwyższe zakończenie wyścigu 1 (x74)
+                    Pozycje biegunowe 72
+                    Najszybsze okrążenia 75
+                    " alt="foto" />
+                    <li>Ferrari</li>
+                    <img src="F1/ferrarilogo72.png" title="
+                    Pełna nazwa zespołu Scuderia Ferrari Mission Winnow
+                    Baza Maranello, Włochy
+                    Szef zespołu Mattia Binotto
+                    Dyrektor techniczny Enrico Cardile / Enrico Gualtieri
+                    Podwozie SF21
+                    Jednostka napędowa Ferrari
+                    Pierwsze wejście zespołu 1950
+                    Mistrzostwa Świata 16
+                    Najwyższe ukończenie wyścigu 1 (x239)
+                    Pozycje na biegunach 223
+                    Najszybsze okrążenia 253" alt="foto" />
+                    <li>McLaren</li>
+                    <img src="F1/mclarenlogo72.png" title="
+                    Pełna nazwa zespołu McLaren F1 Team
+                    Base Woking, Wielka Brytania
+                    Szef zespołu Andreas Seidl
+                    Dyrektor techniczny James Key
+                    Podwozie MCL35M
+                    Jednostka napędowa Mercedes
+                    Pierwsze wejście zespołu 1966
+                    Mistrzostwa Świata 8
+                    Najwyższe ukończenie wyścigu 1 (x183)
+                    Pozycje biegunowe 156
+                    Najszybsze okrążenia 160" alt="foto" />
+                    <li>Alpine</li>
+                    <img src="F1/alpinelogo72.png" title="
+                    Pełna nazwa zespołu Alpine F1 Team
+                    Baza Enstone, Wielka Brytania
+                    Szef zespołu Davide Brivio
+                    Szef techniczny Pat Fry / Remi Taffin
+                    Podwozie A521
+                    Jednostka napędowa Renault
+                    Pierwsze wejście zespołu 1986
+                    Mistrzostwa Świata 2
+                    Najwyższe ukończenie wyścigu 1 (x21)
+                    Pozycje bieguna 20
+                    Najszybsze okrążenia 15" alt="foto" />
+                    <li>AlphaTauri</li>
+                    <img src="F1/alphataurilogo72.png" title="
+                    Pełna nazwa zespołu Scuderia AlphaTauri Honda
+                    Baza Faenza, Włochy
+                    Szef zespołu Franz Tost
+                    Dyrektor techniczny Jody Egginton
+                    Podwozie AT02
+                    Jednostka napędowa Honda
+                    Pierwsze wejście zespołu 1985
+                    Mistrzostwa Świata N/A
+                    Najwyższe zakończenie wyścigu 1 (x2)
+                    Pozycje bieguna 1
+                    Najszybsze okrążenia 2" alt="foto" />
+                    <li>Astron Martin</li>
+                    <img src="F1/astonlogo72.png" title="
+                    Pełna nazwa zespołu Aston Martin Cognizant F1 Team
+                    Baza Silverstone, Wielka Brytania
+                    Szef Zespołu Otmar Szafnauer
+                    Dyrektor techniczny Andrew Green
+                    Podwozie AMR21
+                    Jednostka napędowa Mercedes
+                    Pierwsze zgłoszenie zespołu 2018
+                    Mistrzostwa Świata N/A
+                    Najwyższe zakończenie wyścigu 1 (x1)
+                    Pozycje bieguna 1
+                    Najszybsze okrążenia Nie dotyczy
+                    
+                    " alt="foto" />
+                    <li>Williams</li>
+                    <img src="F1/williamslogo72.png" title="
+                    Pełna nazwa zespołu Williams Racing
+                    Base Grove, Wielka Brytania
+                    Szef zespołu Jost Capito
+                    Szef techniczny François-Xavier Demaison
+                    Podwozie FW43B
+                    Jednostka napędowa Mercedes
+                    Pierwsze zgłoszenie zespołu 1978
+                    Mistrzostwa Świata 9
+                    Najwyższe ukończenie wyścigu 1 (x114)
+                    Pozycje bieguna 129
+                    Najszybsze okrążenia 133
+                    
+                    " alt="foto" />
+                    <li>Alfa Romeo Racing</li>
+                    <img src="F1/alfalogo72.png" title="
+                    Pełna nazwa zespołu Alfa Romeo Racing ORLEN
+                    Baza Hinwil, Szwajcaria
+                    Szef zespołu Frédéric Vasseur
+                    Dyrektor techniczny Jan Monchaux
+                    Podwozie C41
+                    Jednostka napędowa Ferrari
+                    Pierwsze zgłoszenie zespołu 1993
+                    Mistrzostwa Świata N/A
+                    Najwyższe zakończenie wyścigu 1 (x1)
+                    Pozycje bieguna 1
+                    Najszybsze okrążenia 5
+                    
+                    " alt="foto" />
+                    <li>Haas F1 Team</li>
+                    <img src="F1/hasslogo72.png" title="
+                    Pełna nazwa zespołu Uralkali Haas F1 Team
+                    Baza Kannapolis, Stany Zjednoczone
+                    Szef zespołu Guenther Steiner
+                    Simone Resta ., kierownik techniczny
+                    Podwozie VF-21
+                    Jednostka napędowa Ferrari
+                    Pierwsze zgłoszenie zespołu 2016
+                    Mistrzostwa Świata N/A
+                    Najwyższe zakończenie wyścigu 4 (x1)
+                    Pozycje na biegunach Nie dotyczy
+                    Najszybsze okrążenia 2" alt="foto" />
+                </ul>
+                <li class="pdpkt" style="color:teal">Tory</li>
+                <ul type="circle" class="pppkt">
+                    <li>Bahrain - Bahrain International Circuit</li>
+                    <img src="F1/bahrain72.png" title="Tor na, którym Grand Prix odbyło się pierwszy raz w sezonie 2004" alt="foto" />
+                    <li>Włochy - Autodrom Enzo E Dino Ferrari</li>
+                    <img src="F1/wlochyferrari72.png" title="tor wyścigowy znajdujący się w pobliżu włoskiego miasta Imola, w odległości 40 km na wschód od Bolonii i 80 km na wschód od fabryki Ferrari w Maranello. Odbyły się tu wyścigi Formuły 1 o Grand Prix Włoch, Grand Prix San Marino oraz Grand Prix Emilii-Romanii. Autodrom Enzo E Dino Ferrari" alt="foto" />
+                    <li>Portugalia - Autódromo International Do Algarve</li>
+                    <img src="F1/portugalia72.png" title=" tor wyścigowy położony w mieście Portimão w Portugalii o długości 4,692 km. W skład kompleksu sportowego wchodzi również: tor kartingowy, park technologiczny, pięciogwiazdkowy hotel, centrum sportowe i apartamenty." alt="foto" />
+                    <li>Hiszpania - Circuit De Barcelona-Catalunya</li>
+                    <img src="F1/hiszpania72.png" title="tor wyścigowy położony w niewielkiej miejscowości Montmeló na północ od Barcelony w Katalonii. Tor zaczęto budować w roku 1989. Inwestycja została sfinansowana przez Royal Automovil Club de Catalunya, lokalny rząd i radę miasta Montmelo. Tor jest mało atrakcyjny podczas weekendów GP." alt="foto" />
+                    <li>Monako - Circuit De Monaco</li>
+                    <img src="F1/monaco72.png" title="Jest to tor uliczny (o długości 3337m) założony w 1929 roku. Zawody w Monte Carlo rozgrywane są od 1950. Kierowcy ścigają się na dystansie 260,286 km, co daje razem 78 okrążeń (najwięcej w obecnym kalendarzu). Tor jest jednym z najniebezpieczniejszych i najtrudniejszych na świecie. Oprócz bardzo ciasnych szykan i szybkiego łuku w tunelu pod hotelem Fairmont, znajduje się tam najciaśniejszy nawrót spośród torów Formuły 1, w którym bolidy muszą zwolnić poniżej 50 km/h" alt="foto" />
+                    <li>Azerbejdżan - Baku City Circuit</li>
+                    <img src="F1/azerbejdzan72.png" title="tor wyścigowy w Azerbejdżanie. Obiekt znajduje się w Baku. Został zaprojektowany przez Hermanna Tilke. W 2012 roku odbyła się impreza City Challenge. W ramach serii Blancpain Sprint Series od 2013 odbywa się wyścig Baku City Challenge." alt="foto" />
+                    <li>Francja - Circuit Paul Ricard</li>
+                    <img src="F1/francja72.png" title=" tor wyścigowy zbudowany w Le Castellet w departamencie Var. Inauguracja toru nastąpiła po 10 miesiącach budowy 19 kwietnia 1970. Długość w różnych konfiguracjach wynosi pomiędzy 6,105 km, a 826 m, szerokość od 10 do 12 metrów. Ma 15 zakrętów w prawo i 10 w lewo." alt="foto" />
+                    <li>Austria - Red Bull Ring</li>
+                    <img src="F1/austria72.png" title="austriacki tor wyścigowy, położony w mieście Spielberg. Obiekt, początkowo nazwany Österreichring, był gospodarzem wyścigów o Grand Prix Austrii w latach 1970-1987." alt="foto" />
+                    <li>Wielka Brytania - Silverstone Circuit</li>
+                    <img src="F1/brytania72.png" title="tor Formuły 1 położony na granicy hrabstw Northamptonshire i Buckinghamshire. Odbywa się na nim Grand Prix Wielkiej Brytanii. Rekord okrążenia ostatniej wersji toru został ustanowiony w 2013 roku przez Marka Webbera i wynosi 1:33.401." alt="foto" />
+                    <li>Węgry - Hungaroring</li>
+                    <img src="F1/wegry72.png" title=" tor Formuły 1 położony niedaleko Budapesztu. Odbywa się na nim Grand Prix Węgier. Liczba okrążeń w wyścigu 70. Długość okrążenia wynosi 4,381 km, a dystans do przejechania podczas wyścigu to 306,663 km. Rekord okrążenia ustanowił Lewis Hamilton. Wynosi on 1:13.447." alt="foto" />
+                    <li>Belgia - Circuit De Spa-Francorchamps</li>
+                    <img src="F1/beligia72.png" title="
+                    Państwo	 Belgia
+                    Lokalizacja	Stavelot
+                    Otwarcie	1922
+                    Używany	od 1922
+                    Długość	7,004 km
+                    Kierunek	zgodnie ze wskazówkami zegara
+                    Rekord okrążenia	1:46,286 (Valtteri Bottas, Mercedes, 2018)
+                    Ostatnie modyfikacje	1958, 1983, 1985, 1992, 1994, 1996, 2004, 2005, 2007
+                    Główne imprezy	Formuła 1
+                    Blancpain Endurance Series
+                    Auto GP
+                    Seria GP2
+                    Seria GP3
+                    Porsche Supercup
+                    World Touring Car Championship
+                    Europejska Formuła 3
+                    World Series by Renault" alt="foto" />
+                    <li>Holandia - Circuit Zandvoort</li>
+                    <img src="F1/holandia72.png" title="tor wyścigowy zaprojektowany przez Johna Hugenholza, położony w miejscowości Zandvoort w Holandii. Tor wybudowano w latach 40. Pierwszy wyścig na tym torze odbył się w 1949 roku. Pierwotna wersja miała długość około 3 km. W roku 1952 tor dołączono do kalendarza Formuły 1 jako Grand Prix Holandii." alt="foto" />
+                    <li>Włochy - Autodrom Nazionale Monza</li>
+                    <img src="F1/wlochymonza72.png" title="tor wyścigowy we Włoszech niedaleko miejscowości Monza (na północ od Mediolanu).Na torze odbywa się Grand Prix Włoch Formuły 1.
+                    Tor charakteryzuje się długimi prostymi, przez co umożliwia osiąganie wysokich prędkości (do około 360 km/h w Formule 1). Kierowcy Formuły 1 prowadzą bolid z maksymalnie otwartą przepustnicą przez około 76% czasu okrążenia, dłużej niż na innych torach" alt="foto" />
+                    <li>Rosja - Sochi Autodrom</li>
+                    <img src="F1/rosja72.png" title=" wyścig Formuły 1 organizowany na torze Sochi Autodrom w Soczi, od sezonu 2014 zaliczany jest do eliminacji Mistrzostw Świata Formuły 1. " alt="foto" />
+                    <li>Turcja - Intercity Istanbul Park</li>
+                    <img src="F1/turcja72.png" title="Intercity İstanbul Park, wcześniej Istanbul Park, także Istanbul Racing Circuit i początkowo Istanbul Otodrom – tor wyścigowy leżący w azjatyckiej części Stambułu – największego miasta Turcji. Został zaprojektowany przez niemieckiego projektanta Hermanna Tilke." alt="foto" />
+                    <li>USA - Circuit Of The Americas</li>
+                    <img src="F1/usa72.png" title="tor wyścigowy położony w pobliżu miasta Austin w Stanach Zjednoczonych w stanie Teksas. Tor został oddany do użytku w 2012. W listopadzie 2012 roku zostało zorganizowane na nim po raz pierwszy od 2007 roku Grand Prix Stanów Zjednoczonych." alt="foto" />
+                    <li>Meksyk - Autódromo Hermanos Rodriguez</li>
+                    <img src="F1/meksyk72.png" title=" tor wyścigowy położony w mieście Meksyk w Meksyku. Długość jednego okrążenia wynosi 4,305 kilometra. Pętla toru posiada szesnaście zakrętów. Pełny dystans wyścigu to 71 okrążeń, czyli 305,655 kilometra." alt="foto" />
+                    <li>Brazylia - AUTÓDROMO JOSÉ CARLOS PACE</li>
+                    <img src="F1/brazylia72.png" title=" zbudowany w latach trzydziestych XX wieku tor wyścigowy położony między dwoma podziemnymi jeziorami, którym zawdzięcza swoją drugą nazwę. Tor ma długość 4309 m. Pierwsze Grand Prix Brazylii zostało rozegrane 11 lutego 1973 i od tego czasu tor regularnie gości w kalendarzu. Przy projektowaniu toru Interlagos brał udział Ayrton Senna. Zlikwidowano zakręt Turn One natomiast zastąpiono je dwoma szybkimi zakrętami Senna Esses oraz kilka ciasnych zakrętów o różnym stopniu trudności. Największą wadą toru jest bardzo nierówna nawierzchnia. W 2014 roku nitka toru zyskała całkiem nową nawierzchnię" alt="foto" />
+                    <li>Katar - LOSAIL INTERNATIONAL CIRCUIT</li>
+                    <img src="F1/katar72.png" title=" tor wyścigowy położony w Lusajl niedaleko miasta Doha, stolicy Kataru. Tor został zbudowany w niecały rok przez około 1000 robotników. Koszt budowy toru wynosił 58 milionów dolarów. Jedno okrążenie toru ma długość 5,380 kmLOSAIL INTERNATIONAL CIRCUIT" alt="foto" />
+                    <li>Arabia Saudyjska - JEDDAH CORNICHE CIRCUIT</li>
+                    <img src="F1/arabiasaudyjska72.png" title="tor wyścigowy w Dżuddzie w Arabii Saudyjskiej. Na torze odbyło się inauguracyjne Grand Prix Arabii Saudyjskiej Formuły 1 jako przedostatni wyścig w kalendarzu sezonu 2021[2].Jest to drugi najdłuższy tor w kalendarzu Formuły 1 (dłuższy jest tylko tor Spa-Francorchamps). Tor został zaprojektowany przez Hermanna Tilkego.Tor liczy 6,174 kilometrów, a średnia prędkość okrążenia dla bolidów F1 ma wynosi około 250 km/h." alt="foto" />
+                    <li>Abu Dhabi - YAS MARINA CIRCUIT</li>
+                    <img src="F1/abudabi72.png" title=" wyścig Formuły 1 organizowany od 2009 roku. Prace nad torem, który miał mieć podobny styl do tego w Monako ruszyły w 2007 roku. Zrezygnowano jednak z początkowego planu wykorzystania ulic miasta przy nabrzeżu. Tor stał się tym samym w pełni permanentnym obiektem." alt="foto" />
+                </ul>
+                <li class="pdpkt" style="color: green">Samochody</li>
+                <ul type="circle" class="pppkt" class="cars">
+                    <li>Mercedes</li>
+                    <img src="F1/merc72.png" title="Samochód Formuły 1, skonstruowany przez Mercedesa na sezon 2019. Kierowcami samochodu zostali: Lewis Hamilton, oraz Valtteri Bottas.
+                    13 lutego 2019 roku zespół opublikował grafiki samochodu, a następnie został on pokazany na torze Silverstone" alt="foto" />
+                    <li>Redbull</li>
+                    <img src="F1/red72.png" title="Model jest rozwinięciem poprzednika z powodu przepisów, które w porównaniu do sezonu 2019 nie zmieniły się znacząco" alt="foto" />
+                    <li>Ferrari</li>
+                    <img src="F1/ferrari72.png" title="Samochód jest ewolucją modelu SF1000. Zmian dokonano szczególnie w obszarze skrzyni biegów i tylnego zawieszenia. Z tyłu samochód jest węższy od poprzednika. Zmodyfikowano także układ chłodzenia, nos, spojlery i pokrywę silnika" alt="foto" />
+                    <li>McLaren</li>
+                    <img src="F1/mclaren72.png" title="samochód Formuły 1, skonstruowany przez McLarena na sezon 2020. Jego kierowcami zostali Lando Norris i Carlos Sainz jr. W 2021 roku rywalizuje jako McLaren MCL35M, a ścigają się nim Lando Norris i Daniel Ricciardo." alt="foto" />
+                    <li>Alpine</li>
+                    <img src="F1/alpine72.png" title="A521 jest pierwszym samochodem marki Alpine startującym w mistrzostwach świata Formuły 1. Oznaczenie modelu ma korzenie w samochodzie Alpine A500, testowanym w 1976 roku. W przeciwieństwie do bezpośredniego poprzednika (Renault R.S.20) A521 został pomalowany w barwy francuskiej flagi" alt="foto" />
+                    <li>AlphaTauri</li>
+                    <img src="F1/alphatauri72.png" title="AT02 jest udoskonaleniem modelu AT01, którym Pierre Gasly wygrał Grand Prix Włoch 2020. Głównych zmian dokonano w obszarze nosa i przedniego zawieszenia. W porównaniu do poprzednika zmieniono także wloty do chłodnic. Część elementów, takich jak skrzynia biegów i tylne zawieszenie, wyprodukował Red Bull w 2019 roku" alt="foto" />
+                    <li>Astron Martin</li>
+                    <img src="F1/aston72.png" title="Jest to pierwszy samochód Aston Martin w Formule 1 od 1960 roku, jako że konstruktor ten powrócił w 2021 roku do Formuły 1 za sprawą Lawrence'a Strolla. Model AMR21 jest oparty na jego bezpośrednim poprzedniku, Racing Point RP20, który był wzorowany na Mercedesie F1 W10. W porównaniu do poprzednika pojazd ma zmodyfikowany monokok, w tym boczne wloty. Samochód został pomalowany w barwy british racing green" alt="foto" />
+                    <li>Williams</li>
+                    <img src="F1/williams72.png" title="samochód Formuły 1, skonstruowany przez Williamsa na sezon 2020. Jego kierowcami zostali Nicholas Latifi i George Russell. W sezonie 2021 uczestniczy pod nazwą Williams FW43B" alt="foto" />
+                    <li>Alfa Romeo Racing</li>
+                    <img src="F1/alfa72.png" title="samochód Formuły 1, skonstruowany przez Alfa Romeo na sezon 2021. Jego kierowcami wyścigowymi zostali Kimi Räikkönen i Antonio Giovinazzi, a kierowcą testowym i rezerwowym Robert Kubica.Model jest rozwinięciem poprzednika, C39. Zmieniony w stosunku do C39 został przód pojazdu, w tym nos i spojler" alt="foto" />
+                    <li>Haas F1 Team</li>
+                    <img src="F1/hass72.png" title="samochód Formuły 1, skonstruowany przez Haasa na sezon 2020. Wykorzystany także w sezonie 2021 jako Haas VF-21.Pojazd na sezon 2021 otrzymał oznaczenie VF-21. Jest to model VF-20 z dokonanymi jedynie tymi modyfikacjami, które zostały wymuszone przez regulamin. Ponadto Haas zapowiedział, że samochód nie będzie udoskonalany w trakcie sezonu" alt="foto" />
+                </ul>
+            </ol>
+
+            <li class="dpkt" style="color:Brown" id="f2">Formuła 2</li>
+            <ol type="A">
+                <li class="pdpkt" style="color:darkblue">Kierowcy</li>
+                <ul type="circle" class="pppkt">
+                    <li>Robert Shwartzman</li>
+                    <img src="f2/shwartzman72.jpg" title="
+                    DOB
+                    16-09-1999
+                    Wzrost
+                    183 CM
+                    Waga
+                    70 KG
+                    Narodowość
+                    Rosja" alt="foto" />
+                    <li>Oscar Piastri</li>
+                    <img src="f2/piastri72.jpg" title="
+                    DOB
+                    06-04-2001
+                    Wzrost
+                    178 CM
+                    Waga
+                    68 kg
+                    Narodowość
+                    Australia" alt="foto" />
+                    <li>Guanyu Zhou</li>
+                    <img src="f2/zhou72.jpg" title="
+                    DOB
+                    30-05-1999
+                    Wzrost
+                    175 CM
+                    Waga
+                    63 kg
+                    Narodowość
+                    Chiny
+                
+                " alt="foto" />
+                    <li>Felipe Drugovich</li>
+                    <img src="f2/drugovich72.jpg" title="
+                    DOB
+                    23-05-2000
+                    Wzrost
+                    175 CM
+                    Waga
+                    70 KG
+                    Narodowość
+                    Brazylia" alt="foto" />
+                    <li>Dan Ticktum</li>
+                    <img src="f2/ticktum72.jpg" title="
+                    DOB
+                    08-06-1999
+                    Wzrost
+                    180 CM
+                    Waga
+                    66 kg
+                    Narodowość
+                    Brytania
+                " alt="foto" />
+                    <li>Jehan Daruvala</li>
+                    <img src="f2/daruvala72.jpg" title="
+                    DOB
+                    01-10-1998
+                    Wzrost
+                    176 CM
+                    Waga
+                    70 KG
+                    Narodowość
+                    Indie
+                
+                " alt="foto" />
+                    <li>Liam Lawson</li>
+                    <img src="f2/lawson72.jpg" title="
+                    DOB
+                    11-02-2002
+                    Wzrost
+                    173 CM
+                    Waga
+                    65 KG
+                    Narodowość
+                    Nowa Zelandia" alt="foto" />
+                    <li>Jüri Vips</li>
+                    <img src="f2/vips72.jpg" title="
+                    DOB
+                    10-08-2000
+                    Wzrost
+                    180 CM
+                    Waga
+                    64 KG
+                    Narodowość
+                    Estonia" alt="foto" />
+                    <li>Christian Lundgaard</li>
+                    <img src="f2/lundgaard72.jpg" title="
+                    DOB
+                    23-07-2001
+                    Wzrost
+                    185 CM
+                    Waga
+                    68 kg
+                    Narodowość
+                    Dania" alt="foto" />
+                    <li>Théo Pourchaire</li>
+                    <img src="f2/pourchaire72.jpg" title="
+                    DOB
+                    20-08-2003
+                    Wzrost
+                    188 CM
+                    Waga
+                    66 kg
+                    Narodowość
+                    Francja" alt="foto" />
+                    <li>Jack Doohan</li>
+                    <img src="f2/doohan72.png" title="
+                    DOB
+                    20-01-2003
+                    Wzrost
+                    182 CM
+                    Waga
+                    68 kg
+                    Narodowość
+                    Australia
+                
+                " alt="foto" />
+                    <li>Clément Novalak</li>
+                    <img src="f2/novalok72.jpg" title="
+                    DOB
+                    23-12-2000
+                    Wzrost
+                    175 CM
+                    Waga
+                    68 kg
+                    Narodowość
+                    Francja" alt="foto" />
+                    <li>Enzo Fittipaldi</li>
+                    <img src="f2/fittipaldi72.jpg" title="DOB
+                    18-07-2001
+                    Wzrost
+                    168 CM
+                    Waga
+                    68 kg
+                    Narodowość
+                    Brazylia" alt="foto" />
+                    <li>Guilherme Samaia</li>
+                    <img src="f2/samaia72.jpg" title="
+                    DOB
+                    02-10-1996
+                    Wzrost
+                    177 CM
+                    Waga
+                    70 KG
+                    Narodowość
+                    Brazylia" alt="foto" />
+                    <li>Roy Nissany</li>
+                    <img src="f2/nissany72.jpg" title="
+                    DOB
+                    30-11-1994
+                    Wzrost
+                    176 CM
+                    Waga
+                    72 kg
+                    Narodowość
+                    Izrael" alt="foto" />
+                    <li>Marcus Armstrong</li>
+                    <img src="f2/armstrong72.jpg" title="DOB
+                    29-07-2000
+                    Wzrost
+                    175 CM
+                    Waga
+                    63 kg
+                    Narodowość
+                    Nowa Zelandia
+                " alt="foto" />
+                    <li>Olli Caldwell</li>
+                    <img src="f2/caldwell72.jpg" title="
+                    DOB
+                    11-06-2002
+                    Wzrost
+                    180 CM
+                    Waga
+                    63 kg
+                    Narodowość
+                    Brytania" alt="foto" />
+                    <li>Ralph Boschung</li>
+                    <img src="f2/boschung72.jpg" title="DOB
+                    23.09.1997
+                    Wzrost
+                    187 CM
+                    Waga
+                    74 KG
+                    Narodowość
+                    Szwajcaria" alt="foto" />
+                    <li>Jake Hughes</li>
+                    <img src="f2/hughes72.jpg" title="
+                    DOB
+                    30-05-1994
+                    Wzrost
+                    175 CM
+                    Waga
+                    70 KG
+                    Narodowość
+                    Brytania" alt="foto" />
+                    <li>Alessio Deledda</li>
+                    <img src="f2/deledda72.jpg" title="
+                    DOB
+                    10-12-1994
+                    Wzrost
+                    183 CM
+                    Waga
+                    73 kg
+                    Narodowość
+                    Włochy" alt="foto" />
+                    <li>Bent Viscaal</li>
+                    <img src="f2/viscaal72.jpg" title="
+                    DOB
+                    18-09-1999
+                    Wzrost
+                    169 CM
+                    Waga
+                    60 KG
+                    Narodowość
+                    Holandia
+                
+                " alt="foto" />
+                    <li>Marino Sato</li>
+                    <img src="f2/sato72.jpg" title="
+                    DOB
+                    12-05-1999
+                    Wzrost
+                    172 CM
+                    Waga
+                    72 kg
+                    Narodowość
+                    Japonia" alt="foto" />
+                </ul>
+                <li class="pdpkt" style="color:purple">Zespoły</li>
+                <ul type="circle" class="pppkt">
+                    <li>Prema</li>
+                    <img src="F2/Premalogo72.png" title=" włoski zespół wyścigowy, założony w 1984 przez Angelo Rosina i Giorgio Piccolo. Obecnie ekipa startuje w Europejskim Pucharze Formuły Renault 2.0, Alpejskiej Formule Renault 2.0, Formule Abarth oraz w Europejskiej Formule 3. W przeszłości zespół pojawiał się także na starcie w Formule Renault 3.5, Włoskiej Formule Renault, Włoskiej Formule 3 oraz w Formule 3 Euro Series. " alt="foto" />
+                    <li>Uni-Virtuosi</li>
+                    <img src="F2/univirtuosilogo72.png" title="to brytyjska drużyna wyścigowa, która obecnie rywalizuje w mistrzostwach FIA Formuły 2. Zespół wcześniej brał udział w serii Auto GP, oprócz prowadzenia rosyjskiego stroju czasowego w Formule 2 i jego poprzedniczki GP2 do 2018 roku. Po wycofaniu rosyjskiego czasu zespół przyjął nową nazwę UNI Virtuosi Racing na potrzeby Formuły 2019 2 sezon.
+
+                    " alt="foto" />
+                    <li>Carlin</li>
+                    <img src="F2/carlinlogo72.png" title="brytyjski zespół startujący w wyścigach samochodowych. Startuje w serii GP2 od 2011 oraz serii GP3 od 2010 roku, a od roku 2003 w World Series by Renault. Największe sukcesy zespół święci jednak w brytyjskiej Formule 3, gdzie startuje od roku 1997. Ekipa założona została w 1996 roku, przez Trevora Carlina i Martina Stone’a. " alt="foto" />
+                    <li>Hitech Grand Prix</li>
+                    <img src="F2/hitechlogo72.png" title=" brytyjski zespół wyścigowy, założony w 2002 roku przez Davida Hayle'a i Dennisa Rushena. Obecnie ekipa startuje jedynie w Południowoamerykańskiej Formule 3, jednak w przeszłości zespół pojawiał się także na starcie w serii GP2 (2005 rok – jako partner ekipy Piquet Sports) oraz w Brytyjskiej Formule 3. Na bazie tej ekipy powstał zespół Atech Grand Prix. " alt="foto" />
+                    <li>Art Grand Prix</li>
+                    <img src="F2/artlogo72.png" title="francuski zespół wyścigowy startujący w wyścigach samochodów jednomiejscowych w Europie. Został utworzony w roku 2005. Obecnie zespół startuje w serii GP2, serii GP3, Europejskim Pucharze Formuły Renault 2.0, FFSA GT Championship, i Blancpain Endurance Series. W przeszłości zespół pojawiał się na starcie Formuły 3 Euroseries i azjatyckiej serii GP2. " alt="foto" />
+                    <li>Mp Motorsport</li>
+                    <img src="F2/MP_Motorsport_logo72.png" title="to holenderska drużyna wyścigowa, która obecnie rywalizuje w mistrzostwach FIA Formuły 2. Zespół brał również udział w Auto GP, Eurocup Formula Renault 2.0 i Formula Renault 2.0 Northern European Cup w połączeniu z Manor Competition, używając nazwy Manor MP Motorsport." alt="foto" />
+                    <li>Charouz Racing System</li>
+                    <img src="F2/charouzlogo72.png" title="czeski zespół wyścigowy, założony w 1985 przez Antonína Charouza. Obecnie ekipa startuje w Formule Renault 3.5, FIA GT3 European Championship, Czech Touring Car Championship, Czech Rally Championship i Czech Sprintrally Championship. W przeszłości zespół pojawiał się także na starcie F3000 International Masters, A1 Grand Prix oraz Auto GP. " alt="foto" />
+                    <li>Dams</li>
+                    <img src="F2/damslogo72.png" title="zespół wyścigowy, utworzony w 1988 roku przez Jeana-Paula Driota i René Arnoux. Obecnie uczestniczy w serii GP2, Formule Renault 3.5 oraz Formule E. W przeszłości brał udział również w azjatyckiej serii GP2, Auto GP, A1 Grand Prix, Formule 3000, Europejskim Pucharze Formuły Renault V6, ALMS, FIA GT, 24h Le Mans, Porsche Supercup i FIA Sportscar Championship. W 2010 roku DAMS oficjalnie pełnił rolę zespołu juniorskiego startującego w Formule 1 teamu Renault. " alt="foto" />
+                    <li>Campos Racing</li>
+                    <img src="F2/camposlogo72.png" title="hiszpański zespół startujący w wyścigach samochodowych założony w 1997 roku przez Adriána Camposa. Zespół startuje w World Touring Car Championship oraz Euroformula Open Championship. W przeszłości startował także w serii GP2, Auto GP World Series, World Series by Nissan, International Superstars Series oraz Azjatyckiej serii GP2. W sezonie 2014 ekipa powraca do serii GP2 zastępując zespół Barwa Addax Team, który zastąpił Campos Racing w 2009 roku, kiedy to zespół rozpoczął przygotowania do angażu w Formule 1 jako Campos Meta Team, który został przekształcony w HRT F1 Team. " alt="foto" />
+                    <li>Hwa Racelab</li>
+                    <img src="F2/hwalogo72.png" title="to zespół wyścigowy HWA AG, niemieckiej firmy z siedzibą w Affalterbach, która również opracowuje i buduje pojazdy oraz komponenty do samochodów wyścigowych Mercedes-AMG." alt="foto" />
+                    <li>Trident</li>
+                    
+                    <img id="trident" src="F2/tridentlogo72.png" title="włoski zespół startujący w wyścigach samochodowych, założony przez Allessandro Alunni Bravi. Obecnie startuje w serii GP2 od 2006 roku i serii GP3 od 2012 roku. W przeszłości startował także w Międzynarodowej Formule Master, Auto GP oraz azjatyckiej serii GP2. Baza zespołu znajduje się we włoskiej miejscowości San Pietro Mosezzo. " alt="foto" />
+                    
+                </ul>
+                <li class="pdpkt" style="color:teal">Tory</li>
+                <ul type="circle" class="pppkt" class="cars">
+                    <li>Bahrain - Bahrain International Circuit</li>
+                    <img src="F1/bahrain72.png" title="Tor na, którym Grand Prix odbyło się pierwszy raz w sezonie 2004" alt="foto" />
+                    <li>Monako - Circuit De Monaco</li>
+                    <img src="F1/monaco72.png" title="Jest to tor uliczny (o długości 3337m) założony w 1929 roku. Zawody w Monte Carlo rozgrywane są od 1950. Kierowcy ścigają się na dystansie 260,286 km, co daje razem 78 okrążeń (najwięcej w obecnym kalendarzu). Tor jest jednym z najniebezpieczniejszych i najtrudniejszych na świecie. Oprócz bardzo ciasnych szykan i szybkiego łuku w tunelu pod hotelem Fairmont, znajduje się tam najciaśniejszy nawrót spośród torów Formuły 1, w którym bolidy muszą zwolnić poniżej 50 km/h" alt="foto" />
+                    <li>Azerbejdżan - Baku City Circuit</li>
+                    <img src="F1/azerbejdzan72.png" title="tor wyścigowy w Azerbejdżanie. Obiekt znajduje się w Baku. Został zaprojektowany przez Hermanna Tilke. W 2012 roku odbyła się impreza City Challenge. W ramach serii Blancpain Sprint Series od 2013 odbywa się wyścig Baku City Challenge." alt="foto" />
+                    <li>Wielka Brytania - Silverstone Circuit</li>
+                    <img src="F1/brytania72.png" title="tor Formuły 1 położony na granicy hrabstw Northamptonshire i Buckinghamshire. Odbywa się na nim Grand Prix Wielkiej Brytanii. Rekord okrążenia ostatniej wersji toru został ustanowiony w 2013 roku przez Marka Webbera i wynosi 1:33.401." alt="foto" />
+                    <li>Włochy - Autodrom Nazionale Monza</li>
+                    <img src="F1/wlochymonza72.png" title="tor wyścigowy we Włoszech niedaleko miejscowości Monza (na północ od Mediolanu).Na torze odbywa się Grand Prix Włoch Formuły 1.
+                    Tor charakteryzuje się długimi prostymi, przez co umożliwia osiąganie wysokich prędkości (do około 360 km/h w Formule 1). Kierowcy Formuły 1 prowadzą bolid z maksymalnie otwartą przepustnicą przez około 76% czasu okrążenia, dłużej niż na innych torach" alt="foto" />
+                    <li>Rosja - Sochi Autodrom</li>
+                    <img src="F1/rosja72.png" title=" wyścig Formuły 1 organizowany na torze Sochi Autodrom w Soczi, od sezonu 2014 zaliczany jest do eliminacji Mistrzostw Świata Formuły 1." alt="foto" />
+                    <li>Arabia Saudyjska - JEDDAH CORNICHE CIRCUIT</li>
+                    <img src="F1/arabiasaudyjska72.png" title="tor wyścigowy w Dżuddzie w Arabii Saudyjskiej. Na torze odbyło się inauguracyjne Grand Prix Arabii Saudyjskiej Formuły 1 jako przedostatni wyścig w kalendarzu sezonu 2021[2].Jest to drugi najdłuższy tor w kalendarzu Formuły 1 (dłuższy jest tylko tor Spa-Francorchamps). Tor został zaprojektowany przez Hermanna Tilkego.Tor liczy 6,174 kilometrów, a średnia prędkość okrążenia dla bolidów F1 ma wynosi około 250 km/h." alt="foto" />
+                    <li>Abu Dhabi - YAS MARINA CIRCUIT</li>
+                    <img src="F1/abudabi72.png" title="wyścig Formuły 1 organizowany od 2009 roku. Prace nad torem, który miał mieć podobny styl do tego w Monako ruszyły w 2007 roku. Zrezygnowano jednak z początkowego planu wykorzystania ulic miasta przy nabrzeżu. Tor stał się tym samym w pełni permanentnym obiektem." alt="foto" />
+                </ul>
+                <li class="pdpkt" style="color: green">Samochody</li>
+                <ul type="circle" class="pppkt" class="cars">
+                    <li>Prema</li>
+                    <img src="F2/Prema72.png" title="włoski zespół wyścigowy, założony w 1984 przez Angelo Rosina i Giorgio Piccolo. Obecnie ekipa startuje w Europejskim Pucharze Formuły Renault 2.0, Alpejskiej Formule Renault 2.0, Formule Abarth oraz w Europejskiej Formule 3. W przeszłości zespół pojawiał się także na starcie w Formule Renault 3.5, Włoskiej Formule Renault, Włoskiej Formule 3 oraz w Formule 3 Euro Series." alt="foto" />
+                    <li>Uni-Virtuosi</li>
+                    <img src="F2/univirtuosi72.png" title="to brytyjska drużyna wyścigowa, która obecnie rywalizuje w mistrzostwach FIA Formuły 2. Zespół wcześniej brał udział w serii Auto GP, oprócz prowadzenia rosyjskiego stroju czasowego w Formule 2 i jego poprzedniczki GP2 do 2018 roku. Po wycofaniu rosyjskiego czasu zespół przyjął nową nazwę UNI Virtuosi Racing na potrzeby Formuły 2019 2 sezon." alt="foto" />
+                    <li>Carlin</li>
+                    <img src="F2/carlin72.png" title="brytyjski zespół startujący w wyścigach samochodowych. Startuje w serii GP2 od 2011 oraz serii GP3 od 2010 roku, a od roku 2003 w World Series by Renault. Największe sukcesy zespół święci jednak w brytyjskiej Formule 3, gdzie startuje od roku 1997. Ekipa założona została w 1996 roku, przez Trevora Carlina i Martina Stone’a." alt="foto" />
+                    <li>Hitech Grand Prix</li>
+                    <img src="F2/hitech72.png" title=" brytyjski zespół wyścigowy, założony w 2002 roku przez Davida Hayle'a i Dennisa Rushena. Obecnie ekipa startuje jedynie w Południowoamerykańskiej Formule 3, jednak w przeszłości zespół pojawiał się także na starcie w serii GP2 (2005 rok – jako partner ekipy Piquet Sports) oraz w Brytyjskiej Formule 3. Na bazie tej ekipy powstał zespół Atech Grand Prix." alt="foto" />
+                    <li>Art Grand Prix</li>
+                    <img src="F2/art72.png" title="francuski zespół wyścigowy startujący w wyścigach samochodów jednomiejscowych w Europie. Został utworzony w roku 2005. Obecnie zespół startuje w serii GP2, serii GP3, Europejskim Pucharze Formuły Renault 2.0, FFSA GT Championship, i Blancpain Endurance Series. W przeszłości zespół pojawiał się na starcie Formuły 3 Euroseries i azjatyckiej serii GP2." alt="foto" />
+                    <li>Mp Motorsport</li>
+                    <img src="F2/mp72.png" title="to holenderska drużyna wyścigowa, która obecnie rywalizuje w mistrzostwach FIA Formuły 2. Zespół brał również udział w Auto GP, Eurocup Formula Renault 2.0 i Formula Renault 2.0 Northern European Cup w połączeniu z Manor Competition, używając nazwy Manor MP Motorsport."" alt="foto" />
+                    <li>Charouz Racing System</li>
+                    <img src="F2/charouz72.png" title="czeski zespół wyścigowy, założony w 1985 przez Antonína Charouza. Obecnie ekipa startuje w Formule Renault 3.5, FIA GT3 European Championship, Czech Touring Car Championship, Czech Rally Championship i Czech Sprintrally Championship. W przeszłości zespół pojawiał się także na starcie F3000 International Masters, A1 Grand Prix oraz Auto GP. " alt="foto" />
+                    <li>Dams</li>
+                    <img src="F2/dams72.png" title="zespół wyścigowy, utworzony w 1988 roku przez Jeana-Paula Driota i René Arnoux. Obecnie uczestniczy w serii GP2, Formule Renault 3.5 oraz Formule E. W przeszłości brał udział również w azjatyckiej serii GP2, Auto GP, A1 Grand Prix, Formule 3000, Europejskim Pucharze Formuły Renault V6, ALMS, FIA GT, 24h Le Mans, Porsche Supercup i FIA Sportscar Championship. W 2010 roku DAMS oficjalnie pełnił rolę zespołu juniorskiego startującego w Formule 1 teamu Renault. " alt="foto" />
+                    <li>Campos Racing</li>
+                    <img src="F2/campos72.png" title="hiszpański zespół startujący w wyścigach samochodowych założony w 1997 roku przez Adriána Camposa. Zespół startuje w World Touring Car Championship oraz Euroformula Open Championship. W przeszłości startował także w serii GP2, Auto GP World Series, World Series by Nissan, International Superstars Series oraz Azjatyckiej serii GP2. W sezonie 2014 ekipa powraca do serii GP2 zastępując zespół Barwa Addax Team, który zastąpił Campos Racing w 2009 roku, kiedy to zespół rozpoczął przygotowania do angażu w Formule 1 jako Campos Meta Team, który został przekształcony w HRT F1 Team." alt="foto" />
+                    <li>Hwa Racelab</li>
+                    <img src="F2/hwa72.png" title="to zespół wyścigowy HWA AG, niemieckiej firmy z siedzibą w Affalterbach, która również opracowuje i buduje pojazdy oraz komponenty do samochodów wyścigowych Mercedes-AMG." alt="foto" />
+                    <li>Trident</li>
+                    <img src="F2/trident72.png" title="włoski zespół startujący w wyścigach samochodowych, założony przez Allessandro Alunni Bravi. Obecnie startuje w serii GP2 od 2006 roku i serii GP3 od 2012 roku. W przeszłości startował także w Międzynarodowej Formule Master, Auto GP oraz azjatyckiej serii GP2. Baza zespołu znajduje się we włoskiej miejscowości San Pietro Mosezzo." alt="foto" />
+                </ul>
+               
+            </ol>
+
+            <li class="dpkt" style="color:Brown" id="dtm">DTM</li>
+            <ol type="A">
+                <li class="pdpkt" style="color:darkblue">Kierowcy</li>
+                <ul type="circle" class="pppkt">
+                    <li>Chistopher Haase</li>
+                    <img src="dtm/haase72.png" title="Haase rozpoczął karierę w międzynarodowych wyścigach samochodowych w 2007 roku od startów w ADAC GT Masters, gdzie ośmiokrotnie stawał stawał na podium, w tym trzykrotnie na jego najwyższym stopniu. Uzbierane 79 punktów pozwoliło mu zdobyć tytuł mistrza serii" alt="foto">
+                    <li>Daniel Juncadella</li>
+                    <img src="dtm/juncadellapng72.png" title="
+                    Imię i nazwisko	Daniel Juncadella Pérez-Sala
+                    Państwo	 Hiszpania
+                    Data i miejsce urodzenia	7 maja 1991
+                    Barcelona
+                    Sukcesy
+                    2012: Europejska Formuła 3 (mistrz)
+                    2012 Formuła 3 Euro Series (mistrz)
+                    2012 Masters of Formula 3 (zwycięzca)
+                    2011 Grand Prix Makau (zwycięzca)
+                    2009: Europejska Formuła BMW (wicemistrz)
+                    2007: Formuła Maser Junior (wicemistrz)" alt="foto">
+                    <li>Timo Glock</li>
+                    <img src="dtm/glock72.png" title="jest niemieckim zawodowym kierowcą wyścigowym i kierowcą fabrycznym BMW Motorsport. Ścigał się w Formule 1 dla zespołów Jordan, Toyota, Virgin Racing i Marussia F1. Zajął 10. miejsce w Mistrzostwach Kierowców w 2008 i 2009 roku, zdobywając trzy miejsca na podium." alt="foto">
+                    <li>Hubert Haupt</li>
+                    <img src="dtm/haupt72.png" title="jest niemieckim kierowcą wyścigowym, przedsiębiorcą nieruchomości i inwestorem.
+
+                    Wystartował w DTM dla Audi w 1991 i 1992 roku, dla Opla w 2001 roku i dla Mercedesa-AMG w 2021 roku. W 1999 roku odniósł zwycięstwo w klasie GT2 w 24-godzinnym wyścigu Daytona. W 2015, 2018 i 2020 roku wygrał 24-godzinny wyścig w Dubaju." alt="foto">
+                    <li>Alex Albon</li>
+                    <img src="dtm/albon72.png" title="Albon rozpoczął karierę w jednomiejscowych samochodach wyścigowych w wieku 16 lat w 2012 roku w Formule Renault. W tym roku rozpoczął starty w Europejskim Pucharze Formuły Renault 2.0 oraz w Alpejskiej Formule Renault. W obu tych seriach Tajlandczyk podpisał kontrakt z hiszpańską ekipą EPIC Racing. W serii alpejskiej uzbierał 26 punktów, co mu dało 17 pozycję w klasyfikacji generalnej, zaś w europejskim pucharze nigdy nie zdołał zapunktować." alt="foto">
+                    <li>Sheldon Van Der Linde</li>
+                    <img src="dtm/svdl72.png" title="van der Linde rozpoczął karierę w sportach motorowych w wieku sześciu lat, ścigając się na gokartach w rodzimej RPA. Zdobył wiele krajowych tytułów, zanim w 2014 roku przeszedł do samochodów wyścigowych. W swoim pierwszym sezonie wyścigów samochodowych van der Linde wygrał mistrzostwa RPA Polo Cup w dominujący sposób. W następnym roku wygrał Volkswagen Cup South Africa." alt="foto">
+                    <li>Lucas Di Grassi</li>
+                    <img src="dtm/digrassi72.png" title="Lucas di Grassi swoją karierę rozpoczął w 2002 roku w brazylijskiej edycji Formuły Renault, zajmując tam 2. miejsce. Rok później startował już w południowoamerykańskiej Formule 3 w zespole Avallone Motorsport. Także tam zajął drugie miejsce, wygrywając 3 z 12 wyścigów. W tym samym sezonie wystartował także w czterech wyścigach Formuły 3 Euro Series, nie odnosząc jednak tam sukcesów, zajmując w klasyfikacji końcowej 21. miejsce. Kolejny sezon to starty w kolejnej edycji F3, tym razem Brytyjskiej. W klasyfikacji generalnej zajął 8. miejsce, wygrywając 2 z 24 wyścigów. Sezon 2005 to kolejna próba sił w europejskim cyklu. Tym razem Brazylijczyk zajął 3. miejsce na koniec sezonu, jednakże z dużą stratą do dominującego duetu ASM Formule 3." alt="foto">
+                    <li>Sofia Flörsch</li>
+                    <img src="dtm/floersch72.png" title="jest niemieckim kierowcą wyścigowym, obecnie startującym w DTM z Abt Sportsline oraz w Długodystansowych Mistrzostwach Świata FIA z zespołem Richard Mille Racing Team. Wcześniej ścigała się w Formule 3 FIA, Regionalnych Mistrzostwach Europy Formuły, F3 i Formule 4 w Niemczech i we Włoszech, a także w Mistrzostwach Juniorów Ginetta." alt="foto">
+                    <li>Marco Wittmann</li>
+                    <img src="dtm/wittmann72.png" title="Marco karierę rozpoczął w 1996 roku, od startów w kartingu. Po jej zakończeniu postanowił rozpocząć poważną karierę wyścigową, debiutując w 2007 roku w Niemieckiej Formule BMW. Wygrawszy dwa wyścigi, zmagania zakończył 5. miejscu w ogólnej punktacji. W tym samym roku zajął 2. pozycję w Światowym Finale tejże serii. W kolejnym sezonie, po połączeniu brytyjskich i niemieckich mistrzostw, Niemiec startował w Europejskiej Formule BMW. Dzięki konsekwentnej i równej jeździe (zwyciężył w jednym wyścigu na torze Spa-Francorchamps), sięgnął po tytuł wicemistrzowski, ulegając jedynie bezkonkurencyjnemu Meksykaninowi, Estebanowi Gutiérrezowi." alt="foto">
+                    <li>Liam Lawson</li>
+                    <img src="dtm/lawson72.png" title="nowozelandzki kierowca wyścigowy. Mistrz Toyota Racing Series w 2019 roku, wicemistrz Niemieckiej Formuły 4 w 2018, Euroformula Open Championship w 2019, Toyota Racing Series w 2020 roku oraz DTM w 2021 roku" alt="foto">
+                    <li>Dev Gore</li>
+                    <img src="dtm/gore72.png" title="Gore rozpoczął karierę wyścigową w wieku 18 lat. Po początkowym zasmakowaniu kartingu w 2015 roku wystartował w Florida Winter Tour i Rotax Grand Nationals w kategorii DD2. W 2016 roku przeniósł się do US DD2 National i US Open DD2 i został koronowany na mistrza. Gore ścigał się w drużynie USA na Wielkich Finałach Rotax." alt="foto">
+                    <li>Luca Stolz</li>
+                    <img src="dtm/stolz72.png" title="Luca Stolz to niemiecki kierowca wyścigowy, który obecnie startuje w ADAC GT Masters i GT World Challenge Europe." alt="foto">
+                    <li>Lucas Auer</li>
+                    <img src="dtm/auer72.png" title="Lucas karierę rozpoczął w roku 2001, od startów w kartingu. 10 lat później zadebiutował w serii wyścigów samochodów jednomiejscowych – Formule BMW Pacyfiku. Już w pierwszym podejściu sięgnął w niej po tytuł mistrzowski, siedmiokrotnie stając na najwyższym stopniu podium oraz sześciokrotnie sięgając po pole position (dziewięciokrotnie uzyskał najszybszy czas okrążenia). Austriak wziął udział także w jednej rundzie Chińskiej Formuły Pilota. Będąc w jednym z wyścigów na podium, zmagania zakończył na 15. miejscu w końcowej klasyfikacji. W obu seriach reprezentował amerykańską ekipę Eurointernational." alt="foto">
+                    <li>Maximilian Götz</li>
+                    <img src="dtm/goetz72.png" title="Götz rozpoczął karierę w wyścigach samochodowych w roku 2002, od startów w Formule BMW ADAC. Trzy zwycięstwa i 11 podium dało mu 183 punkty. Pozwoliło to mu zdobyć tytuł wicemistrzowski serii. Rok później by już mistrzem tej serii. W późniejszych latach startował także w Formule 3 Euro Series, Międzynarodowej Formule Master, Lamborghini Blancpain Super Trofeo, ADAC GT Masters oraz w Blancpain Endurance Series. W Formule 3 Euro Series startował w latach 2004-2005 i 2007-2008. W pierwszym sezonie startów trzy punkty dały mu 19 miejsce. Rok później miał już o 10 więcej punktów. Dało to mu 14 pozycję. W latach 2007-2008 nie stawał na podium. Podczas gdy w 2007 nie zdobywał punktów, w 2008 roku dorobek trzech punków sklasyfikował go na 22 miejscu." alt="foto">
+                    <li>Kevin Van Der Linde</li>
+                    <img src="dtm/kvdl72.png" title="Van der Linde rozpoczął karierę w międzynarodowych wyścigach samochodowych w 2011 roku od startów w Volkswagen Challenge South Africa, gdzie odniósł dwanaście zwycięstw. Uzbierane 152 punkty pozwoliły mu zdobyć tytuł mistrza serii. W późniejszym okresie Południowoafrykańczyk pojawiał się także w stawce Engen Volkswagen Cup, Volkswagen Cup South Africa, Volkswagen Scirocco R-Cup, Blancpain Sprint Series, ADAC GT Masters, TCR International Series oraz Blancpain Endurance Series." alt="foto">
+                    <li>Christian Klein</li>
+                    <img src="dtm/klien72.png" title="Impulsem, który skłonił go do rozpoczęcia startów w kartingu, było spotkanie z Ayrtonem Senną podczas wyścigu. Od 1996 do 1998 wygrał kilka wyścigów w Szwajcarii (gdzie wywalczył tytuł w pierwszym roku startów) i Austrii." alt="foto">
+                    <li>Maximilian Buhk</li>
+                    <img src="dtm/buhk72.png" title="
+                    W 2018 roku HTP Motorsport opuścił Blancpain GT Series na rzecz 2018 ADAC GT Masters, gdzie Buhk jest kolegą z drużyny Indy Dontje. Podczas gdy w 2018 Blancpain GT Series Endurance Cup dołączył do Götza i Álvaro Parente w Strakka Racing" alt="foto">
+                    <li>Maximilian Paul</li>
+                    <img src="dtm/paul72.png" title="Podczas swojego debiutu w DTM Maximilian Paul, który ściga się w ADAC GT Masters z T3, wnosi nawet aktualne doświadczenia z toru Formuły 1 w Styrii. „Jestem pewien, że zapewni sobie dobry wynik. W ADAC GT Masters zebrał dobre doświadczenia, które z pewnością zaimplementuje w DTM. Ścigał się już na Red Bull Ring w tym roku i biegł tam w pierwszej dziesiątce – jest pewny siebie szef zespołu Feucht." alt="foto">
+                    <li>Arjun Maini</li>
+                    <img src="dtm/maini72.png" title="AMaini rozpoczął karierę w jednomiejscowych samochodach wyścigowych w 2013 roku od startów w AsiaCup Series, gdzie czterokrotnie stawał na podium. Z dorobkiem 108 punktów został sklasyfikowany na czwartym miejscu w klasyfikacji generalnej." alt="foto">
+                    <li>Mirko Bortolotti</li>
+                    <img src="dtm/bortolotti72.png" title="Po kilku latach uczestnictwa w zawodach kartingowych, w 2005 roku Bortolotti rozpoczął swoją karierę w formułach wyścigowych. Wówczas wziął udział we Włoskiej Formule Renault Winter Series oraz w serii Formuła Gloria. W Winter Series jeździł dwa lata z rzędu, co zaowocowało czwartą pozycją w klasyfikacji za rok 2006. Tego roku, Bortolotti jeździł także we włoskiej Formule Junior 1600 oraz w Formuła Azzura. W tej drugiej udało mu się nawet zająć drugie miejsce w klasyfikacji generalnej, tuż za zwycięzcą Giuseppe Termine." alt="foto">
+                    <li>Vincent Abril</li>
+                    <img src="dtm/abril72.png" title="W 2013 roku Abril przeniósł się do francuskiej serii GT Championship, prowadząc Audi R8 LMS Ultra dla Team Speed ​​Car. Sezon nie zaczął się zbyt dobrze, ponieważ Abril w pierwszych 4 wyścigach sezonu znalazł się poza pierwszą dziesiątką. Jednak w następnym miesiącu Abril zdobył swój pierwszy pole position i zwycięstwo w sezonie na Spa-Francorchamps, po którym zajął trzecie miejsce, kończąc wyścig na tym samym torze. W tym samym miesiącu Abril miał jednorazowy wyścig na Circuit Paul Ricard z Team Speed ​​Car w Blancpain Endurance Series, gdzie ukończył wyścig na 17. miejscu. W sierpniu Abril wrócił do wyścigów French GT Championship w Val de Vienne, gdzie zajął 7. i 14. miejsce. W następnym miesiącu Abril wrócił do kolejnych zwycięstw na Circuit de Nevers Magny-Cours. Te zwycięstwa ostatecznie pomogłyby Abrilowi ​​zająć czwarte miejsce w klasyfikacji punktowej." alt="foto">
+                    <li>Michael Ammermüller</li>
+                    <img src="dtm/ammermueller72.png" title="chael swoją przygodę ze sportem motorowym rozpoczął w Niemieckiej Formule 3 w roku 2004. W zespole Jenzer Motorsport poradził sobie bardzo dobrze, będąc ostatecznie sklasyfikowanym na 3. pozycji w ogólnej klasyfikacji." alt="foto">
+                    <li>Esteban Muth</li>
+                    <img src="dtm/muth72.png" title="Esteban Muth to belgijsko-niemiecki kierowca wyścigowy, który obecnie jeździ dla T3 Motorsport w Deutsche Tourenwagen Masters." alt="foto">
+                    <li>Nico Müller</li>
+                    <img src="dtm/mueller72.png" title="W 2014 roku Müller dołączył do stawki Deutsche Tourenwagen Masters w zespole Audi Sport Team Rosberg. W ciągu dziesięciu wyścigów uzbierał łącznie dziesięć punktów, co dało mu dziewiętnaste miejsce w klasyfikacji generalnej.
+
+                    " alt="foto">
+                    <li>Marvin Dienst</li>
+                    <img src="dtm/dienst72.png" title="Po startach w kartingu, Dienst rozpoczął międzynarodową karierę w jednomiejscowych samochodach wyścigowych w 2012 roku od startów w Formule BMW Talent Cup, gdzie zdobył tytuł mistrzowski. W kolejnych dwóch sezonach startował w ADAC Formel Masters, gdzie zajął odpowiednio piąte i czwarte miejsce. W 2015 roku Niemiec zdobył kolejny tytuł mistrzowski Po zwycięstwie w ośmiu wyścigach i czternastu miejscach na podium Dienst uplasował się na pierwszym miejscu w klasyfikacji generalnej Niemieckiej Formuły 4.
+
+                    " alt="foto">
+                    <li>Nick Cassidy</li>
+                    <img src="dtm/cassidy72.png" title="Cassidy karierę rozpoczął w roku 2000, od startów w kartingu. W 2008 roku zadebiutował w serii wyścigów samochodów jednomiejscowych – zimowej edycji Formuły Pierwsze Manfeild. Już w pierwszym podejściu sięgnął w niej po tytuł mistrzowski. Rok później został wicemistrzem nowozelandzkiego odpowiednika tego serialu, natomiast w sezonie 2010 ten sam sukces powtórzył w Nowozelandzkiej Formule Ford." alt="foto">
+                    <li>Philip Ellis</li>
+                    <img src="dtm/ellis72.png" title="W wyścigach samochodów jednomiejscowych Philip zadebiutował w 2011 roku, podpisując kontrakt z niemiecką ekipą GU-Racing International, na starty w Formule Lista Junior. Brytyjczyk już w pierwszym podejściu sięgnął w niej po tytuł mistrzowski, pomimo nieobecności w rundzie na torze Red Bull Ring. Ellis ośmiokrotnie stawał na podium, z czego pięciokrotnie na najwyższym jego stopniu. Poza tym sześciokrotnie sięgnął po pole position oraz pięciokrotnie uzyskał najszybszy czas okrążenia." alt="foto">
+                    <li>Mike Rockenfeller</li>
+                    <img src="dtm/rockenfeller72.png" title="Rockenfeller rozpoczął karierę w międzynarodowych wyścigach samochodowych w 2001 roku od startów w Formule König, gdzie trzykrotnie stawał na podium, w tym raz na jego najwyższym stopniu. Z dorobkiem 109 punktów został sklasyfikowany na czwartej pozycji w klasyfikacji generalnej. W późniejszych latach Niemiec pojawiał się także w stawce Porsche Supercup, Niemieckiego Pucharu Porsche Carrera, Brytyjskiego Pucharu Porsche Carrera, American Le Mans Series, Grand American Rolex Series, Le Mans Endurance Series, SCCA World Challenge, FIA GT Championship, 24-godzinnego wyścigu Le Mans, 24h Nürburgring, Deutsche Tourenwagen Masters, Le Mans Series, VLN Endurance, FIA GT3 European Cup, Grand-Am Rolex Sports Car Series, Blancpain Endurance Series, Intercontinental Le Mans Cup, FIA World Endurance Championship oraz United Sports Car Championship ." alt="foto">
+                    <li>Markus Winkelhock</li>
+                    <img src="dtm/winkelhock72.png" title="Po zwolnieniu przez Spykera Christijana Albersa Winkelhock został wybrany na jego tymczasowego zastępcę podczas wyścigu o Grand Prix Europy 2007. W swoim debiucie udało mu się być liderem wyścigu przez 6 okrążeń (od 2. do 7.), aż do momentu, gdy wyprzedził go Felipe Massa." alt="foto">
+                    <li>Esmee Hawkey</li>
+                    <img src="dtm/hawkey72.png" title="Esmee Hawkey to brytyjski kierowca wyścigowy, który obecnie startuje w Deutsche Tourenwagen Masters, prowadząc Lamborghini Huracán GT3 Evo dla T3 Motorsport." alt="foto">
+                </ul>
+                <li class="pdpkt" style="color:purple">Zespoły</li>
+                <ul type="circle" class="pppkt">
+                    <li>Audi</li>
+                    <img src="dtm/audilogo72.png" title="Założona w październiku 1983 roku jako quattro GmbH, specjalizuje się przede wszystkim w produkcji samochodów Audi o wysokich osiągach i ich częściach, a także w dostosowaniu określonym przez nabywcę. Dawna nazwa firmy była hołdem dla oryginalnego samochodu Audi z napędem na cztery koła, inspirowanego rajdami – Audi Quattro. W 2016 roku firma została przemianowana na Audi Sport GmbH" alt="foto">
+                    <li>BMW</li>
+                    <img src="dtm/bmwlogo72.png" title="W całej swojej historii samochody i motocykle BMW odnosiły sukcesy w wielu sportach motorowych. Oprócz wysiłków fabrycznych, wiele prywatnych zespołów bierze udział w wyścigach samochodów drogowych BMW w wyścigach samochodów turystycznych. BMW wprowadziło również samochody lub dostarczyło silniki do Formuły 1, Formuły 2 i wyścigów samochodów sportowych. BMW jest obecnie aktywne w ALMS, Światowych Mistrzostwach Samochodów Turystycznych (WTCC), Isle of Man TT, North West 200, Mistrzostwach Świata Superbike oraz Deutsche Tourenwagen Masters (Niemieckich Mistrzostwach Samochodów Turystycznych)." alt="foto">
+                    <li>Ferrari</li>
+                    <img src="dtm/ferrarilogo72.png" title="to włoski producent luksusowych samochodów sportowych z siedzibą w Maranello we Włoszech. Założona przez Enzo Ferrari w 1939 roku z dywizji wyścigowej Alfa Romeo jako Auto Avio Costruzioni, firma zbudowała swój pierwszy samochód w 1940 roku i wyprodukowała swój pierwszy samochód z logo Ferrari w 1947 roku." alt="foto">
+                    <li>Lamborghini</li>
+                    <img src="dtm/lamborghinilogo72.png" title="Ferruccio Lamborghini, włoski magnat produkcyjny, założył Automobili Ferruccio Lamborghini S.p.A. w 1963 roku, aby konkurować z Ferrari. Firma była znana z używania tylnego silnika umieszczonego centralnie, z napędem na tylne koła. Lamborghini szybko rosło w ciągu pierwszej dekady, ale sprzedaż spadła w następstwie światowego kryzysu finansowego w 1973 roku i kryzysu naftowego. Własność firmy zmieniała się trzykrotnie po 1973 r., w tym bankructwo w 1978 r. American Chrysler Corporation przejęła kontrolę nad Lamborghini w 1987 r. i sprzedała je malezyjskiej grupie inwestycyjnej Mycom Setdco i indonezyjskiej grupie V'Power Corporation w 1994 r. W 1998 r. Mycom Setdco i V „Power sprzedał Lamborghini Grupie Volkswagen, gdzie znalazło się pod kontrolą działu Audi grupy." alt="foto">
+                    <li>McLaren</li>
+                    <img src="dtm/mclarenlogo72.png" title="to brytyjski zespół wyścigów samochodowych z siedzibą w McLaren Technology Center w Woking, Surrey, Anglia. McLaren jest najbardziej znany jako konstruktor Formuły 1, drugi najstarszy aktywny zespół i drugi najbardziej utytułowany zespół Formuły 1 po Ferrari, wygrywając 183 wyścigi, 12 mistrzostw kierowców i 8 mistrzostw konstruktorów. McLaren ma również historię rywalizacji w amerykańskich wyścigach otwartych kół, zarówno jako uczestnik, jak i konstruktor podwozia, a także wygrał mistrzostwa Kanadyjsko-Amerykańskiego Challenge Cup (Can-Am) w wyścigach samochodów sportowych. Zespół jest spółką zależną McLaren Group, do której należy większość zespołu." alt="foto">
+                    <li>Mercedes-AMG</li>
+                    <img src="dtm/mercedeslogo72.png" title="Dwie firmy, które połączyły się, tworząc markę Mercedes-Benz w 1926 roku, odniosły sukces w nowym sporcie wyścigów samochodowych w ciągu swoich odrębnych historii. Pojedynczy Benz brał udział w pierwszym na świecie wyścigu samochodowym, Paris-Rouen 1894, gdzie Émile Roger zajął 14. miejsce w ciągu 10 godzin i 1 minuty. Mercedes Simplex z 1902 roku, zbudowany przez DMG, był pierwszym specjalnie skonstruowanym samochodem wyścigowym Mercedesa – znacznie niższym niż ich zwykłe projekty – które były podobne do bryczek konnych; ten model przez lata dominował w wyścigach. W 1914 roku, tuż przed rozpoczęciem I wojny światowej, DMG Mercedes 35 KM wygrał Grand Prix Francji, kończąc 1-2-3." alt="foto">
+                    <li>Porshe</li>
+                    <img src="dtm/Porschelogo72.png" title="Mimo że ich zaangażowanie w sporty motorowe do późnych lat 60. ograniczało się do dostarczania stosunkowo małych silników słabszym wyścigom, w połowie lat 50. Porsche odniosło już umiarkowany sukces w dziedzinie wyścigów samochodów sportowych, zwłaszcza w Carrera Panamericana i Targa Florio. , klasyczne wyścigi, które później posłużyły do ​​nazewnictwa tramwajów. Porsche 917 z 1969 roku przekształciło je w potęgę, wygrywając w 1970 roku pierwszy z kilkunastu 24-godzinnych wyścigów Le Mans, więcej niż jakakolwiek inna firma. Dzięki 911 Carrera RS i Porsche 935 Turbo, Porsche zdominowało lata 70., a nawet pokonało prototypy sportowe, kategorię, w której Porsche weszło do udanych modeli 936, 956 i 962." alt="foto">
+                </ul>
+                <li class="pdpkt" style="color:teal">Tory</li>
+                <ul type="circle" class="pppkt">
+                    <li>Portugalia - Portimao</li>
+                    <img src="dtm/portugalia72.png" title="tor wyścigowy położony w mieście Portimão w Portugalii o długości 4,692 km. W skład kompleksu sportowego wchodzi również: tor kartingowy, park technologiczny, pięciogwiazdkowy hotel, centrum sportowe i apartamenty." alt="foto">
+                    <li>Niemcy - Lausitzring</li>
+                    <img src="dtm/lausitzring72.png" title="tor wyścigowy położony blisko Klettwitz w Brandenburgii we wschodnich Niemczech, niedaleko granicy z Polską i Czechami w bezpośredniej bliskości węzła nr 15 autostrady A13. Używany jest od 2000 roku. Właścicielem jest Förderverein Lausitzring e.V" alt="foto">
+                    <li>Włochy - Imola</li>
+                    <img src="dtm/imola72.png" title="tor wyścigowy znajdujący się w pobliżu włoskiego miasta Imola, w odległości 40 km na wschód od Bolonii i 80 km na wschód od fabryki Ferrari w Maranello. Odbyły się tu wyścigi Formuły 1 o Grand Prix Włoch, Grand Prix San Marino oraz Grand Prix Emilii-Romanii. Autodrom Enzo E Dino Ferrari" alt="foto">
+                    <li>Niemcy - Norisring</li>
+                    <img src="dtm/Norisring72.png" title=" uliczny tor wyścigowy położony w Norymberdze, na terenach służących w latach 1927–1938 jako miejsce zjazdu kongresu nazistowskiej partii NSDAP. W celu uniknięcia zbieżności z torem Nürburgring, nazwa obiektu nawiązuje do XVII-wiecznego określenia miasta, Noris" alt="foto">
+                    <li>Niemcy - Nürburgring</li>
+                    <img src="dtm/nurburgring72.png" title=" tor wyścigowy położony w Niemczech, w miejscowości Nürburg, w kraju związkowym Nadrenia-Palatynat.Obecnie w poważniejszych, międzynarodowych imprezach jest używana skrócona wersja toru, stworzona w latach osiemdziesiątych. Istnieje też starsza, dużo dłuższa i trudniejsza trasa, zwana Nordschleife. Zbudowana w latach 20. trasa biegnie wokół średniowiecznego zamku i miejscowości Nürburg w górach Eifel. Jest wciąż używana. Ze względu na olbrzymią liczbę zakrętów i pułapek jest uważana za jeden z najtrudniejszych i najbardziej wymagających torów wyścigowych na świecie. Jeden z najbardziej znanych kierowców Formuły 1, Jackie Stewart, nazwał tę trasę Green Hell (Zielone Piekło)." alt="foto">
+                    <li>beligia - SPA</li>
+                    <img src="dtm/beligia72.png" title="
+                    Państwo	 Belgia
+                    Lokalizacja	Stavelot
+                    Otwarcie	1922
+                    Używany	od 1922
+                    Długość	7,004 km
+                    Kierunek	zgodnie ze wskazówkami zegara
+                    Rekord okrążenia	1:46,286 (Valtteri Bottas, Mercedes, 2018)
+                    Ostatnie modyfikacje	1958, 1983, 1985, 1992, 1994, 1996, 2004, 2005, 2007
+                    Główne imprezy	Formuła 1
+                    Blancpain Endurance Series
+                    Auto GP
+                    Seria GP2
+                    Seria GP3
+                    Porsche Supercup
+                    World Touring Car Championship
+                    Europejska Formuła 3
+                    World Series by Renault" alt="foto">
+                    <li>Austria - Red Bull Ring</li>
+                    <img src="dtm/austria72.png" title="austriacki tor wyścigowy, położony w mieście Spielberg. Obiekt, początkowo nazwany Österreichring, był gospodarzem wyścigów o Grand Prix Austrii w latach 1970-1987." alt="foto">
+                    <li>Niemcy - HockenHeimring</li>
+                    <img src="dtm/hockenheimring72.png" title="tor wyścigowy położony w pobliżu miasta Hockenheim w Niemczech. Rozgrywane są na nim wyścigi Formuły 1 o Grand Prix Niemiec.
+                    Tor wybudowany został w 1936 na potrzeby testów Mercedesa. Po II wojnie światowej obiekt przebudowano.
+                    Pierwszy wyścig Formuły 1 na tym torze odbył się w roku 1970. Natomiast od roku 1977 (oprócz 1985) tor ten znajduje się stałe w kalendarzu Formuły 1. Do roku 2001 używano dłuższej wersji toru (6,825 km) prowadzącej przez las. Później tor został drastycznie skrócony przez Hermanna Tilke do obecnej formy.
+                    Jedno okrążenie ma 4,574 km. Trybuny wokół toru mogą pomieścić 120 000 kibiców.
+                    Na torze w 1988 roku występował Michael Jackson w ramach trasy Bad World Tour.HockenHeimring" alt="foto">
+                </ul>
+                <li class="pdpkt" style="color: green">Samochody</li>
+                <ul type="circle" class="pppkt" class="cars">
+                    <li>Audi</li>
+                    <img src="dtm/audi72.png" title="Audi A4 DTM to 4-drzwiowy samochód turystyczny (DTM) skonstruowany przez niemieckiego producenta samochodów Audi. Został po raz pierwszy opracowany do użytku w sezonie 2004 DTM, zastępując Audi TT DTM pod koniec sezonu 2003 DTM. Oparty na Audi A4, był stale ulepszany w ciągu sześciu liftingów w latach 2004-2011. Audi A4 DTM zostało zastąpione przez Audi A5 DTM w 2012 roku." alt="foto">
+                    <li>BMW</li>
+                    <img src="dtm/bmw72.png" title="BMW M4 Turbo DTM to samochód turystyczny „klasy 1” skonstruowany przez niemieckiego producenta samochodów BMW do użytku w Deutsche Tourenwagen Masters. Będzie to turbodoładowany wariant swojego poprzednika, BMW M4 DTM, który miał silnik wolnossący. M4 Turbo DTM nadal bazuje na seryjnym BMW M4. BMW M4 Turbo DTM zadebiutowało w DTM w sezonie 2019 DTM. M4 Turbo DTM to drugi samochód DTM BMW z turbodoładowaniem." alt="foto">
+                    <li>Ferrari</li>
+                    <img src="dtm/ferrari72.png" title="Ferrari 488 GTE to samochód wyścigowy typu grand tourer, zbudowany przez wewnętrzną jednostkę Competizioni GT Ferrari, z myślą o rywalizacji w wyścigach wytrzymałościowych. Jest to zamiennik samochodu wyścigowego Ferrari 458 GT2, wykorzystujący Ferrari 488 jako bazę. Samochód jest zbudowany zgodnie z przepisami Automobile Club de l'Ouest/FIA LM GTE wprowadzonymi na sezon 2016 i obecnie startuje w IMSA WeatherTech SportsCar Championship, FIA World Endurance Championship oraz European Le Mans Series. zadebiutował w wyścigu w 24-godzinnym wyścigu Daytona 2016 z zespołami Scuderia Corsa i Risi Competizione." alt="foto">
+                    <li>Lamborghini</li>
+                    <img src="dtm/lamborghini72.png" title="Na początku 2020 roku firma Automobili Lamborghini pokazała Huracana EVO Rear-Wheel Drive (RWD), czyli bazowy wariant napędzany na tylną oś, będący kontynuacją odmiany LP 580-2, a także Gallardo LP-550. Ten sam 5,2-litrowy silnik V10 w tym wydaniu generuje 610 KM i 560 Nm. Zredukowano masę własną z 1422 kg do 1389 kg, czyli o 33 kg. " alt="foto">
+                    <li>McLaren</li>
+                    <img src="dtm/mclaren72.png" title="McLaren 720S GT3 debiutuje w rywalizacji z zespołami klientów w sezonie 2019, po intensywnym programie testowym, który pokonał tysiące kilometrów na całym świecie. Ten najnowszy model przesuwa granice możliwości i rozpoczyna nowy rozdział w naszej legendarnej historii wyścigów samochodów sportowych." alt="foto">
+                    <li>Mercedes-AMG</li>
+                    <img src="dtm/mercedes72.png" title="Firma HWA AG rozpoczęła rozwój, projektowanie i budowę DTM AMG Mercedes C-Coupé w czerwcu 2010 roku. Pierwsze podwozie zostało zmontowane w czerwcu 2011 roku, a pierwszy pojazd ukończono w sierpniu. Pod koniec sezonu 2018 Mercedes-Benz opuścił DTM po 19 latach, przechodząc do Formuły E z sezonu 2019-20; będzie to ostatni pojazd Mercedesa w DTM do tej pory" alt="foto">
+                    <li>Porshe</li>
+                    <img src="dtm/Porsche72.png" title="W maju 2018 roku Porsche wprowadziło nową wersję 911 GT3 R opartą na 991.2 GT3 RS, dostępną dla zespołów klientów w sezonie 2019. Jego 4,0-litrowy, sześciocylindrowy silnik typu bokser, w dużej mierze identyczny z jednostką stosowaną w samochodach ulicznych GT3 i GT3 RS oraz wyścigowych GT3 Cup i RSR, rozwija około. 405 kW (551 KM; 543 KM). Ulepszenia obejmują większy dyfuzor dla wydajniejszej aerodynamiki, przednie zawieszenie z podwójnymi wahaczami zapożyczone z RSR, system podkładek pozwalający na zmiany ustawień bez konieczności zmiany ustawienia, większe przednie opony, sprzęgło uruchamiane elektrohydraulicznie, umożliwiające demontaż pedału sprzęgła, ogniwo paliwowe które można skonfigurować do uzupełniania z lewej lub prawej strony pojazdu w zależności od układu obwodu, kamera cofania i system zapobiegania kolizjom, stałe siedzenie z ruchomą skrzynką na pedały i pochłaniające energię elementy zderzeniowe umieszczone w drzwiach dla zwiększenia bezpieczeństwa a także klimatyzację. GT3 R kosztuje 459 000 euro bez podatków" alt="foto">
+                </ul>
+            </ol>
+
+        </ol>
+        </ol>
+    </div>
+    <br> <br>
+
+    <footer>
+        <span id='zrodla'></span>
+        <p id="author"></p>
+        <button id="dogory"title="odsyłacz do góry">Dalej dalej śmigło gadżeta</button>
+    </footer>
+    <script>
+        var scrollToTop = document.getElementById("dogory")
+        var rootElement = document.documentElement
+        function scroll() {
+          rootElement.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          })
+        }
+        scrollToTop.addEventListener("click", scroll)
+        
+        </script>
+    <script type="text/javascript">
+        new TypeIt("#author", {
+                speed: 50,
+                loop: false,
+                waitUntilVisible: true,
+            })
+            .type("<span id='zrodla'><a href='https://bridgeurl.com/zrodla-13'style='color:blue; text-decoration: underline;'target='_blank'>Źródła</a></span>", {
+                delay: 300,
+            })
+            .type("&copy;autor:", {
+                delay: 300,
+            })
+            .type(" Roma", {
+                delay: 300,
+            })
+            .pause(2000)
+            .delete(4)
+            .type(" Pat", {
+                delay: 300,
+            })
+            .type("ryk", {
+                delay: 300,
+            })
+            .type(" Dobr", {
+                delay: 300,
+            })
+            .type("owol", {
+                delay: 300,
+            })
+            .type("skl", {
+                delay: 300,
+            })
+            .pause(1500)
+            .delete(3)
+            .type("ski", {
+                delay: 300,
+            })
+            .delete(27)
+            .pause(500)
+            .type("<span style='color: lime;' >&copy;autor:</span>", {
+                delay: 300,
+            })
+            .pause(500)
+            .type(" <span  style='color: blue;' >Pat</span>", {
+                delay: 300,
+            })
+            .type("<span style='color: gold;' >ryk &nbsp;</span>", {
+                delay: 300,
+            })
+            .type(" <span  style='color: fuchsia;' >Dobr</span>", {
+                delay: 300,
+            })
+            .type("<span  style='color:red ;' >ow</span>", {
+                delay: 300,
+            })
+            .type("<span  style='color: white;' >ol</span>", {
+                delay: 300,
+            })
+            .type("<span  style='color: yellow;' >skl</span>", {
+                delay: 300,
+            })
+            .pause(1500)
+            .delete(3)
+            .type("<span  style='color: yellow;'>ski</span>", {
+                delay: 300,
+            })
+
+        .go();
+    </script>
+</body>
+
+</html>
+
+
+</html>

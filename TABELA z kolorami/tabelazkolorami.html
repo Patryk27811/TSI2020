@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tabela z kolorami</title>
+    <script src="https://unpkg.com/typeit@8.0.7/dist/index.umd.js"></script>
+    <meta name="author" content="Patryk Dobrowolski 3M">
+    <style>
+	@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Barlow+Condensed:wght@200&family=Road+Rage&display=swap');
+
+        body {
+            background: rgb(142, 14, 0);
+            background: radial-gradient(circle, rgba(142, 14, 0, 1) 12%, rgba(31, 28, 24, 1) 100%);
+	    font-family:Bangers,Arial;
+        }
+        
+        #tabela {
+            display: flex;
+            justify-content: center;
+        }
+        
+        #zrodla {
+            display: flex;
+            justify-content: center;
+        }
+        
+        table {
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        
+        td {
+            height: 120px;
+            width: 120px;
+            border: 2px solid black;
+            padding: 2px 2px 2px 2px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .rainbow-letters {
+            font-size: 40px;
+            font-family: sans-serif;
+            text-transform: uppercase;
+        }
+        .rainbow-letters span:nth-child(10n) {
+            color: #ffc107;
+        }
+        .rainbow-letters span:nth-child(10n + 1) {
+            color: #ef5350;
+        }
+        
+        .rainbow-letters span:nth-child(10n + 2) {
+            color: #ab47bc;
+        }
+        
+        .rainbow-letters span:nth-child(10n + 3) {
+            color: #651fff;
+        }
+        
+        .rainbow-letters span:nth-child(10n + 5) {
+            color: #3949ab;
+        }
+        
+        .rainbow-letters span:nth-child(10n + 4) {
+            color: #2196f3;
+        }
+        
+        .rainbow-letters span:nth-child(10n + 6) {
+            color: #00bcd4;
+        }
+        
+        .rainbow-letters span:nth-child(10n + 7) {
+            color: #4caf50;
+        }
+        
+        .rainbow-letters span:nth-child(10n + 8) {
+            color: #ffc107;
+        }
+        
+        .rainbow-letters span:nth-child(10n + 9) {
+            color: #ffc107;
+        }
+
+        
+        #author {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <marquee class="rainbow-letters">
+        <span>T</span>
+        <span>A</span>
+        <span>B</span>
+        <span>E</span>
+        <span>L</span>
+        <span>A</span> &nbsp
+        <span>K</span>
+        <span>O</span>
+        <span>L</span>
+        <span>O</span>
+        <span>R</span>
+        <span>Ó</span>
+        <span>W</span>
+    </marquee>
+    <div id="tabela">
+        <table>
+            <tr>
+                <td colspan="2" rowspan="3" style="background-color:red; "><a href="https://pl.wikipedia.org/wiki/Barwa_czerwona" target="_blank">Red<br>Czerwony<br>#FF0000<br>RGB (255,0,0)</a></td>
+                <td style="background-color:yellow; color:black;"><a href="https://pl.wikipedia.org/wiki/Barwa_%C5%BC%C3%B3%C5%82ta" style="color:black" target="_blank">Yellow<br>Żółty<br>#FFFF00<br>RGB (255,255,0)</a></td>
+                <td style="background-color:blue;"><a href="https://pl.wikipedia.org/wiki/Barwa_niebieska" target="_blank">Blue<br>Niebieski<br>#0000FF<br>RGB (0,0,255)</td></a>
+                    <td style="background-color:green;"><a href="https://pl.wikipedia.org/wiki/Barwa_zielona" target="_blank"> Green<br>Zielony<br>#008000<br>RGB (0,128,0)</td></a>
+                        <td rowspan="2" style="background-color:gold; color:black;"> <a href="https://pl.wikipedia.org/wiki/Barwa_z%C5%82ota" style="color:black" target="_blank"> Gold<br>Złoty<br>#FFD700<br>RGB (255,215,0)</a></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="background-color:Silver; color:black;"><a href="https://pl.wikipedia.org/wiki/Barwa_srebrna" style="color:black" target="_blank">Silver<br>Srebrny<br>#C0C0C0<br>RGB (192,192,192)</a></td>
+                <td style="background-color:Grey;"><a href="https://pl.wikipedia.org/wiki/Barwa_szara" target="_blank">Grey<br>Szary<br>#808080<br>RGB(128,128,128)</a></td>
+            </tr>
+            <tr>
+                <td style="background-color:Maroon;"><a href="https://pl.wikipedia.org/wiki/Kasztan" target="_blank">Maroon<br>Kasztanowy<br>#4D1F1C<br>RGB (77,31,28)</a></td>
+                <td colspan="3" rowspan="2" style="background-color:#800080;"><a href="https://pl.wikipedia.org/wiki/Barwa_purpurowa" target="_blank">Purple<br>Purpurowy<br>#800080<br>RGB (128, 0, 128)</a></td>
+            </tr>
+            <tr>
+                <td style="background-color:Fuchsia; color:black;"><a href="https://pl.wikipedia.org/wiki/Fuksja_(kolor)" style="color:black" target="_blank">Fuchsia<br>Fuksja<br>#FF00FF<br>RGB (255,0,255)</a></td>
+                <td style="background-color:Lime; color:black;"><a href="https://pl.wikipedia.org/wiki/Barwa_limonkowa" style="color:black" target="_blank"> Lime<br>Limonkowy<br>#93F600<br>RGB (147,246,0)</a></td>
+                <td style="background-color:Cyan; color:black;"><a href="https://pl.wikipedia.org/wiki/Cyjan_(kolor)" style="color:black" target="_blank">Cyan<br>Cyjan<br>#00FFFF<br>RGB (0,255,255)</a></td>
+            </tr>
+            <tr>
+                <td colspan="6" style="background-color:teal;"><a href="https://pl.wikipedia.org/wiki/Barwa_morska#:~:text=Barwa%20morska%20%28turkusowy%2C%20modry%2C%20cyraneczka%2C%20ang.%20teal%29%20%E2%80%93,cyjanu%20zawieraj%C4%85cym%2050%25%20czerni%20w%20przestrzeni%20barw%20CMYK." target="_blank">Teal<br>Morski<br>#008080<br>RGB (0,128,128)</a></td>
+            </tr>
+        </table>
+    </div>
+<br>
+    <span id="zrodla"><a href="https://pl.wikipedia.org/wiki/Lista_kolor%C3%B3w#Lista_kolor%C3%B3w_alfabetycznie"style="color:cyan; text-decoration: underline;"target="_blank">Źródła</a></span>
+    <p id="author"></p>
+    <script type="text/javascript">
+        new TypeIt("#author", {
+                speed: 50,
+                loop: false,
+                waitUntilVisible: true,
+            })
+            .type("&copy;autor:", {
+                delay: 300,
+            })
+            .type(" Roma", {
+                delay: 300,
+            })
+            .pause(2000)
+            .delete(4)
+            .type(" Pat", {
+                delay: 300,
+            })
+            .type("ryk", {
+                delay: 300,
+            })
+            .type(" Dobr", {
+                delay: 300,
+            })
+            .type("owol", {
+                delay: 300,
+            })
+            .type("skl", {
+                delay: 300,
+            })
+            .pause(1500)
+            .delete(3)
+            .type("ski", {
+                delay: 300,
+            })
+            .delete(27)
+            .pause(500)
+            .type("<span style='color: lime;' >&copy;autor:</span>", {
+                delay: 300,
+            })
+            .pause(500)
+            .type(" <span  style='color: green;' >Pat</span>", {
+                delay: 300,
+            })
+            .type("<span style='color: gold;' >ryk &nbsp;</span>", {
+                delay: 300,
+            })
+            .type(" <span  style='color: fuchsia;' >Dobr</span>", {
+                delay: 300,
+            })
+            .type("<span  style='color: teal;' >owol</span>", {
+                delay: 300,
+            })
+            .type("<span  style='color: yellow;' >skl</span>", {
+                delay: 300,
+            })
+            .pause(1500)
+            .delete(3)
+            .type("<span  style='color: yellow;'>ski</span>", {
+                delay: 300,
+            })
+
+        .go();
+    </script>
+</body>
+
+</html>
