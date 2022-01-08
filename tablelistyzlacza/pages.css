@@ -1,0 +1,29 @@
+body {
+    background-color: #0cbaba;
+    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+    box-sizing: border-box;
+    background-attachment: fixed;
+    margin: 0px;
+}
+
+footer {
+    background-color: #0cbaba;
+    height: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#all {
+    /* background-color: #11171a; */
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5px;
+    min-width: 700px;
+    border: 5px solid #0cbaba;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
