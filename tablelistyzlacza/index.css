@@ -212,3 +212,12 @@ input:hover {
     padding: 10px;
     margin: -10px;
 }
+
+#table2 th {
+    width: 120px;
+    height: 50px;
+}
+
+.okladka img:hover {
+    opacity: 0.5;
+}
