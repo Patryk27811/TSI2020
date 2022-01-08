@@ -8,12 +8,98 @@
     <meta name="author" content="Patryk Dobrowolski" />
     <title>Najlepsze piosenki</title>
     <link rel="stylesheet" href="../pages.css" type="text/css" />
+    <script src="https://unpkg.com/typeit@8.0.7/dist/index.umd.js"></script>
 </head>
 
 <body>
+    <center>
+        <div id="all">
+            <img src="../image/oczy.jpg" />
+            <br />
+            <br />
+            <br />
+            <p id="opis">
+                Przez Twe Oczy Zielone
+                <br /><br /> singiel polskiego zespołu muzycznego Akcent, wydany cyfrowo 2 stycznia 2014 pod szyldem wytwórni Green Star i umieszczony na szesnastym albumie studyjnym zespołu pt. Przekorny los z 2016. Autorami piosenki są Marek i Marzanna
+                Zrajkowscy. Piosenka powstała na potrzeby Ogólnopolskiego Festiwalu Muzyki Tanecznej w Ostródzie, gdzie zespół odebrał za nią nagrodę publiczności w 2014, statuetkę za wygraną w plebiscycie na najlepszą piosenkę programu Disco Polo Live
+                w 2016[6] i „Festiwalową Złotą Dwudziestkę” w 2017.
+            </p>
+            <br />
+            <iframe width="75%" height="674" src="https://www.youtube.com/embed/cxtnot8lY4U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://open.spotify.com/embed/track/6q5FIPaFNs5XLvKLKfSdnT?utm_source=generator" width="75%" height="380" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+    </center>
     <footer>
-        <span id="author">&copy Patryk Dobrowolski </span>
+        <p id="author"></p>
     </footer>
+
+    <script type="text/javascript">
+        new TypeIt("#author", {
+            speed: 50,
+            loop: false,
+            waitUntilVisible: true,
+        })
+
+        .type("&copy;autor:", {
+                delay: 300,
+            })
+            .type(" Roma", {
+                delay: 300,
+            })
+            .pause(2000)
+            .delete(4)
+            .type(" Pat", {
+                delay: 300,
+            })
+            .type("ryk", {
+                delay: 300,
+            })
+            .type(" Dobr", {
+                delay: 300,
+            })
+            .type("owol", {
+                delay: 300,
+            })
+            .type("skl", {
+                delay: 300,
+            })
+            .pause(1500)
+            .delete(3)
+            .type("ski", {
+                delay: 300,
+            })
+            .delete(27)
+            .pause(500)
+            .type("<span style='color: lime;' >&copy;autor:</span>", {
+                delay: 300,
+            })
+            .pause(500)
+            .type(" <span  style='color: blue;' >Pat</span>", {
+                delay: 300,
+            })
+            .type("<span style='color: gold;' >ryk &nbsp;</span>", {
+                delay: 300,
+            })
+            .type(" <span  style='color: fuchsia;' >Dobr</span>", {
+                delay: 300,
+            })
+            .type("<span  style='color:red ;' >ow</span>", {
+                delay: 300,
+            })
+            .type("<span  style='color: white;' >ol</span>", {
+                delay: 300,
+            })
+            .type("<span  style='color: yellow;' >skl</span>", {
+                delay: 300,
+            })
+            .pause(1500)
+            .delete(3)
+            .type("<span  style='color: yellow;'>ski</span>", {
+                delay: 300,
+            })
+
+        .go();
+    </script>
 </body>
 
 </html>
