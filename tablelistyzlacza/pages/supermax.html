@@ -8,17 +8,98 @@
     <meta name="author" content="Patryk Dobrowolski" />
     <title>Najlepsze piosenki</title>
     <link rel="stylesheet" href="../pages.css" type="text/css" />
+    <script src="https://unpkg.com/typeit@8.0.7/dist/index.umd.js"></script>
 </head>
 
 <body>
-    <div id="all">
-        <img src="../image/supermaxokladka.jpg" /> wdawdawdawd
+    <center>
+        <div id="all">
+            <img src="../image/supermaxokladka.jpg" />
+            <br />
+            <br />
+            <br />
+            <p id="opis">
+                Super Max!Yo Hé, Yo Hó!<br />
+                <br />Pisoenka ta została napisna przez Pit Stop Boys, którzy są Holendrami i są Oni również wielkimi fanami Maxa Verstappena, który w 2021 zdobył mistrzostwo świata, zabierając je tym samym płaczkowi Lewisowi Hamiltonowi. Z tej okazji
+                napisali oni właśnie tą piosenkę.
+            </p>
+            <br />
+            <iframe width="75%" height="674" src="https://www.youtube.com/embed/ZBJCgrrQhx4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://open.spotify.com/embed/track/4G3VpVB5EADmLNUtaWaCYx?utm_source=generator&theme=0" width="50%" height="380" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+    </center>
 
-        <iframe src="https://open.spotify.com/embed/track/4G3VpVB5EADmLNUtaWaCYx?utm_source=generator&theme=0" width="100%" height="380" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-    </div>
     <footer>
-        <span id="author">&copy Patryk Dobrowolski </span>
+        <p id="author"></p>
     </footer>
+
+    <script type="text/javascript">
+        new TypeIt("#author", {
+            speed: 50,
+            loop: false,
+            waitUntilVisible: true,
+        })
+
+        .type("&copy;autor:", {
+                delay: 300,
+            })
+            .type(" Roma", {
+                delay: 300,
+            })
+            .pause(2000)
+            .delete(4)
+            .type(" Pat", {
+                delay: 300,
+            })
+            .type("ryk", {
+                delay: 300,
+            })
+            .type(" Dobr", {
+                delay: 300,
+            })
+            .type("owol", {
+                delay: 300,
+            })
+            .type("skl", {
+                delay: 300,
+            })
+            .pause(1500)
+            .delete(3)
+            .type("ski", {
+                delay: 300,
+            })
+            .delete(27)
+            .pause(500)
+            .type("<span style='color: lime;' >&copy;autor:</span>", {
+                delay: 300,
+            })
+            .pause(500)
+            .type(" <span  style='color: blue;' >Pat</span>", {
+                delay: 300,
+            })
+            .type("<span style='color: gold;' >ryk &nbsp;</span>", {
+                delay: 300,
+            })
+            .type(" <span  style='color: fuchsia;' >Dobr</span>", {
+                delay: 300,
+            })
+            .type("<span  style='color:red ;' >ow</span>", {
+                delay: 300,
+            })
+            .type("<span  style='color: white;' >ol</span>", {
+                delay: 300,
+            })
+            .type("<span  style='color: yellow;' >skl</span>", {
+                delay: 300,
+            })
+            .pause(1500)
+            .delete(3)
+            .type("<span  style='color: yellow;'>ski</span>", {
+                delay: 300,
+            })
+
+        .go();
+    </script>
 </body>
 
 </html>
