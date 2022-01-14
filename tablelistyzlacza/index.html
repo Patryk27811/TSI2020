@@ -328,9 +328,10 @@
         <table id="table2" cellspacing="100px">
             <thead>
                 <tr bgcolor="#485461">
-                    <th class="liczba" rowspan="2"><b>L.P.</b></th>
+                    <th class="liczba" rowspan="2"><b>LP.</b></th>
+                    <th class="okladka" rowspan="2"><b>OKŁADKA</b></th>
                     <th class="nazwa" rowspan="2" style="cursor: auto">
-                        <b>NAZWA PIOSENKI</b>
+                        <b>TYTUŁ PIOSENKI</b>
                     </th>
                     <th class="artysta" rowspan="2">
                         <b>ARTYSTA</b>
@@ -339,9 +340,8 @@
                     <th class="wydawca" rowspan="2"><b>WYDAWCA</b></th>
                     <th rowspan="2"><b>POCHODZENIE</b></th>
                     <th colspan="2" rowspan="2">
-                        <b>DŁUGOŚĆ<br />[min]</b>
+                        <b>DŁUGOŚĆ<br />[min.]</b>
                     </th>
-                    <th class="okladka" rowspan="2"><b>OKŁADKA</b></th>
                 </tr>
                 <tr bgcolor="#485461">
                     <th class="kwartal"><b>KWARTAŁ</b></th>
@@ -351,7 +351,10 @@
             <tbody>
                 <!--wiersz1-->
                 <tr>
-                    <td class="liczba">1</td>
+                    <td class="liczba">1.</td>
+                    <td class="okladka">
+                        <img onclick="link('pages/supermax.html')" src="image/supermax72.png" />
+                    </td>
                     <td onclick="link('pages/supermax.html')" class="nazwa">
                         Super Max!
                     </td>
@@ -363,13 +366,13 @@
                         <img src="image/holandia.jpeg" />
                     </td>
                     <td colspan="2" class="czas">3:30</td>
-                    <td class="okladka">
-                        <img onclick="link('pages/supermax.html')" src="image/supermax72.png" />
-                    </td>
                 </tr>
                 <!--wiersz2-->
                 <tr>
-                    <td class="liczba">1</td>
+                    <td class="liczba">2.</td>
+                    <td class="okladka" onclick="link('pages/ankh.html')">
+                        <img src="image/ankh72.png" />
+                    </td>
                     <td onclick="link('pages/ankh.html')" class="nazwa">
                         Ankh
                     </td>
@@ -381,16 +384,16 @@
                     <td class="wydawca">QueQuality</td>
                     <td class="pochodzenie"><img src="image/pl.jpg" /></td>
                     <td colspan="2" class="czas" rowspan="2">3:02</td>
-                    <td class="okladka" onclick="link('pages/ankh.html')">
-                        <img src="image/ankh72.png" />
-                    </td>
                 </tr>
                 <!--wiersz3-->
                 <tr>
-                    <td class="liczba" onclick="link('https://genius.com/Drake-the-motto-lyrics')">
-                        3
+                    <td class="liczba">3.</td>
+                    <td class="okladka" onclick="link('https://genius.com/Drake-the-motto-lyrics')">
+                        <img src="image/motto72.png " alt="photo " />
                     </td>
-                    <td class="nazwa">The Motto</td>
+                    <td class="nazwa" onclick="link('https://genius.com/Drake-the-motto-lyrics')">
+                        The Motto
+                    </td>
                     <td class="artysta">
                         <ul>
                             <li>T-minus</li>
@@ -410,14 +413,13 @@
                         <!--Druga trzypunktowa lista z pięciu-->
                     </td>
                     <td class="pochodzenie"><img src="image/NA.png" /></td>
-
-                    <td class="okladka" onclick="link('https://genius.com/Drake-the-motto-lyrics')">
-                        <img src="image/motto72.png " alt="photo " />
-                    </td>
                 </tr>
                 <!--wiersz4-->
                 <tr>
-                    <td class="liczba">4</td>
+                    <td class="liczba">4.</td>
+                    <td class="okladka" onclick="link('https://genius.com/Plk-toute-lannee-lyrics')">
+                        <img src="image/toute.png" />
+                    </td>
                     <td onclick="link('https://genius.com/Plk-toute-lannee-lyrics')" class="nazwa">
                         Toute l'année
                     </td>
@@ -431,15 +433,15 @@
                     </td>
                     <td class="pochodzenie"><img src="image/fr.png" /></td>
                     <td colspan="2" class="czas">3:18</td>
-                    <td class="okladka" onclick="link('https://genius.com/Plk-toute-lannee-lyrics')">
-                        <img src="image/toute.png" />
-                    </td>
                 </tr>
                 <!--wiersz5-->
                 <tr>
-                    <td class="liczba">5</td>
+                    <td class="liczba">5.</td>
+                    <td class="okladka" onclick="link('https://genius.com/Eminem-venom-lyrics')">
+                        <img src="image/venom.jpg" />
+                    </td>
                     <td onclick="link('https://genius.com/Eminem-venom-lyrics')" class="nazwa">
-                        Super Max!
+                        Venom
                     </td>
                     <td class="artysta">Eminem</td>
 
@@ -456,15 +458,15 @@
                         <img src="image/NA.png" />
                     </td>
                     <td colspan="2" class="czas">4:29</td>
-                    <td class="okladka" onclick="link('https://genius.com/Eminem-venom-lyrics')">
-                        <img src="image/venom.jpg" />
-                    </td>
                 </tr>
                 <!--wiersz6-->
                 <tr>
-                    <td class="liczba">6</td>
+                    <td class="liczba">6.</td>
+                    <td class="okladka" onclick="link('https://genius.com/A-ap-rocky-babushka-boi-lyrics')">
+                        <img src="image/babushka.png" />
+                    </td>
                     <td onclick="link('https://genius.com/A-ap-rocky-babushka-boi-lyrics')" class="nazwa">
-                        Super Max!
+                        Babuska Boi
                     </td>
                     <td class="artysta">A$AP Rocky</td>
 
@@ -480,13 +482,13 @@
                     </td>
 
                     <td colspan="2" class="czas">3:07</td>
-                    <td class="okladka" onclick="link('https://genius.com/A-ap-rocky-babushka-boi-lyrics')">
-                        <img src="image/babushka.png" />
-                    </td>
                 </tr>
                 <!--wiersz7-->
                 <tr>
-                    <td class="liczba">7</td>
+                    <td class="liczba">7.</td>
+                    <td class="okladka" onclick="link('https://genius.com/Taco-hemingway-marsz-marsz-lyrics')">
+                        <img src="image/marsz.jpg" />
+                    </td>
                     <td onclick="link('https://genius.com/Taco-hemingway-marsz-marsz-lyrics')" class="nazwa">
                         Marsz Marsz
                     </td>
@@ -498,13 +500,13 @@
                         <img src="image/pl.jpg" />
                     </td>
                     <td colspan="2" class="czas">3:50</td>
-                    <td class="okladka" onclick="link('https://genius.com/Taco-hemingway-marsz-marsz-lyrics')">
-                        <img src="image/marsz.jpg" />
-                    </td>
                 </tr>
                 <!--wiersz8-->
                 <tr>
-                    <td class="liczba">8</td>
+                    <td class="liczba">8.</td>
+                    <td class="okladka" onclick="link('https://genius.com/Ronnie-ferrari-origami-lyrics')">
+                        <img src="image/origami.png" />
+                    </td>
                     <td onclick="link('https://genius.com/Ronnie-ferrari-origami-lyrics')" class="nazwa">
                         Origami
                     </td>
@@ -514,13 +516,13 @@
                     <td class="wydawca">Przemysław Gomuła</td>
 
                     <td colspan="2" class="czas">3:39</td>
-                    <td class="okladka" onclick="link('https://genius.com/Ronnie-ferrari-origami-lyrics')">
-                        <img src="image/origami.png" />
-                    </td>
                 </tr>
                 <!--wiersz9-->
                 <tr>
-                    <td class="liczba">9</td>
+                    <td class="liczba">9.</td>
+                    <td class="okladka" onclick="link('https://genius.com/Czesaw-mozil-kalendarz-adwentowy-lyrics')">
+                        <img src="image/kalendarz.jpg" />
+                    </td>
                     <td onclick="link('https://genius.com/Czesaw-mozil-kalendarz-adwentowy-lyrics')" class="nazwa">
                         Kalendarz Adwentowy
                     </td>
@@ -532,13 +534,13 @@
                     <td class="wydawca">Bartek Magdoń</td>
 
                     <td colspan="2" class="czas">1:39</td>
-                    <td class="okladka" onclick="link('https://genius.com/Czesaw-mozil-kalendarz-adwentowy-lyrics')">
-                        <img src="image/kalendarz.jpg" />
-                    </td>
                 </tr>
                 <!--wiersz10-->
                 <tr>
-                    <td class="liczba">10</td>
+                    <td class="liczba">10.</td>
+                    <td class="okladka">
+                        <img src="image/napadnabankiet.png" onclick="link('https://genius.com/Soko-pl-napad-na-bankiet-lyrics')" />
+                    </td>
                     <td onclick="link('https://genius.com/Soko-pl-napad-na-bankiet-lyrics')" class="nazwa">
                         Napda na bankiet
                     </td>
@@ -554,13 +556,13 @@
                     <td class="rok">2019</td>
                     <td class="wydawca">Dj Steez</td>
                     <td colspan="2" class="czas">4:47</td>
-                    <td class="okladka">
-                        <img src="image/napadnabankiet.png" onclick="link('https://genius.com/Soko-pl-napad-na-bankiet-lyrics')" />
-                    </td>
                 </tr>
                 <!--wiersz11-->
                 <tr>
-                    <td class="liczba">11</td>
+                    <td class="liczba">11.</td>
+                    <td class="okladka" onclick="link('https://genius.com/Travis-scott-sicko-mode-lyrics')">
+                        <img src="image/sickomode.jpg" />
+                    </td>
                     <td onclick="link('https://genius.com/Travis-scott-sicko-mode-lyrics')" class="nazwa">
                         Sicko Mode
                     </td>
@@ -573,13 +575,13 @@
                         <img src="image/NA.png" />
                     </td>
                     <td colspan="2" class="czas">5:12</td>
-                    <td class="okladka" onclick="link('https://genius.com/Travis-scott-sicko-mode-lyrics')">
-                        <img src="image/sickomode.jpg" />
-                    </td>
                 </tr>
                 <!--wiersz12-->
                 <tr>
-                    <td class="liczba">12</td>
+                    <td class="liczba">12.</td>
+                    <td class="okladka">
+                        <img onclick="link('https://genius.com/Post-malone-circles-lyrics')" src="image/circle.jpg" />
+                    </td>
                     <td onclick="link('https://genius.com/Post-malone-circles-lyrics')" class="nazwa">
                         Circles
                     </td>
@@ -589,14 +591,15 @@
                     <td class="wydawca">Republic Records</td>
 
                     <td colspan="2" class="czas">3:35</td>
-                    <td class="okladka">
-                        <img onclick="link('https://genius.com/Post-malone-circles-lyrics')" src="image/circle.jpg" />
-                    </td>
+
                     <!--wiersz13-->
                 </tr>
 
                 <tr>
-                    <td class="liczba">13</td>
+                    <td class="liczba">13.</td>
+                    <td class="okladka">
+                        <img onclick="link('https://genius.com/The-kid-laroi-and-justin-bieber-stay-lyrics')" src="image/stay.jpg" />
+                    </td>
                     <td onclick="link('https://genius.com/The-kid-laroi-and-justin-bieber-stay-lyrics')" class="nazwa">
                         Stay
                     </td>
@@ -607,13 +610,13 @@
                     <td class="rok">2021</td>
                     <td class="wydawca">Columbia Records</td>
                     <td colspan="2" class="czas">2:21</td>
-                    <td class="okladka">
-                        <img onclick="link('https://genius.com/The-kid-laroi-and-justin-bieber-stay-lyrics')" src="image/stay.jpg" />
-                    </td>
                 </tr>
                 <!--wiersz14-->
                 <tr>
-                    <td class="liczba">14</td>
+                    <td class="liczba">14.</td>
+                    <td class="okladka">
+                        <img onclick="link('pages/25h.html')" src="image/25h.png" />
+                    </td>
                     <td onclick="link('pages/25h.html')" class="nazwa">
                         25h
                     </td>
@@ -625,13 +628,13 @@
                         <img src="image/pl.jpg" />
                     </td>
                     <td colspan="2" class="czas">3:30</td>
-                    <td class="okladka">
-                        <img onclick="link('pages/25h.html')" src="image/25h.png" />
-                    </td>
                 </tr>
                 <!--wiersz15-->
                 <tr>
-                    <td class="liczba">15</td>
+                    <td class="liczba">15.</td>
+                    <td class="okladka">
+                        <img onclick="link('https://genius.com/Daria-pol-paranoia-lyrics')" src="image/paranoia.jpg" />
+                    </td>
                     <td onclick="link('https://genius.com/Daria-pol-paranoia-lyrics')" class="nazwa">
                         Paranoia
                     </td>
@@ -641,13 +644,13 @@
                     <td class="wydawca">Pelican</td>
 
                     <td colspan="2" class="czas">2:45</td>
-                    <td class="okladka">
-                        <img onclick="link('https://genius.com/Daria-pol-paranoia-lyrics')" src="image/paranoia.jpg" />
-                    </td>
                 </tr>
                 <!--wiersz16-->
                 <tr>
-                    <td class="liczba">16</td>
+                    <td class="liczba">16.</td>
+                    <td class="okladka">
+                        <img onclick="link('https://genius.com/Gedz-kosmita-lyrics')" src="image/kosmita.png" />
+                    </td>
                     <td onclick="link('https://genius.com/Gedz-kosmita-lyrics')" class="nazwa">
                         Kosmita
                     </td>
@@ -657,13 +660,13 @@
                     <td class="wydawca">Sokos</td>
 
                     <td colspan="2" class="czas">3:06</td>
-                    <td class="okladka">
-                        <img onclick="link('https://genius.com/Gedz-kosmita-lyrics')" src="image/kosmita.png" />
-                    </td>
                 </tr>
                 <!--wiersz17-->
                 <tr>
-                    <td class="liczba">17</td>
+                    <td class="liczba">17.</td>
+                    <td class="okladka">
+                        <img onclick="link('https://genius.com/Pascal-letoublon-friendships-lost-my-love-lyrics')" src="image/friendships.jpg" />
+                    </td>
                     <td onclick="link('https://genius.com/Pascal-letoublon-friendships-lost-my-love-lyrics')" class="nazwa">
                         Friendships
                     </td>
@@ -677,13 +680,13 @@
                         <img src="image/fr.png" />
                     </td>
                     <td colspan="2" class="czas">3:02</td>
-                    <td class="okladka">
-                        <img onclick="link('https://genius.com/Pascal-letoublon-friendships-lost-my-love-lyrics')" src="image/friendships.jpg" />
-                    </td>
                 </tr>
                 <!--wiersz18-->
                 <tr>
-                    <td class="liczba">18</td>
+                    <td class="liczba">18.</td>
+                    <td class="okladka">
+                        <img onclick="link('https://genius.com/Chenda-dj-smooth-criminal-lyrics')" src="image/criminal.jpg" />
+                    </td>
                     <td onclick="link('https://genius.com/Chenda-dj-smooth-criminal-lyrics')" class="nazwa">
                         Smooth Criminal
                     </td>
@@ -695,13 +698,13 @@
                         <img src="image/NA.png" />
                     </td>
                     <td colspan="2" class="czas">3:04</td>
-                    <td class="okladka">
-                        <img onclick="link('https://genius.com/Chenda-dj-smooth-criminal-lyrics')" src="image/criminal.jpg" />
-                    </td>
                 </tr>
                 <!--wiersz19-->
                 <tr>
-                    <td class="liczba">19</td>
+                    <td class="liczba">19.</td>
+                    <td class="okladka">
+                        <img onclick="link('https://genius.com/Lil-nas-x-and-jack-harlow-industry-baby-lyrics')" src="image/industry.jpg" />
+                    </td>
                     <td onclick="link('https://genius.com/Lil-nas-x-and-jack-harlow-industry-baby-lyrics')" class="nazwa">
                         Industry Baby
                     </td>
@@ -712,13 +715,13 @@
                     <td class="wydawca">ASCAP</td>
 
                     <td colspan="2" class="czas">3:34</td>
-                    <td class="okladka">
-                        <img onclick="link('https://genius.com/Lil-nas-x-and-jack-harlow-industry-baby-lyrics')" src="image/industry.jpg" />
-                    </td>
                 </tr>
                 <!--wiersz20-->
                 <tr>
-                    <td class="liczba">20</td>
+                    <td class="liczba">20.</td>
+                    <td class="okladka">
+                        <img onclick="link('https://genius.com/Dj-decks-autentyczna-konfrontacja-5rmx-lyrics')" src="image/konfrontacja.jpg" />
+                    </td>
                     <td onclick="link('https://genius.com/Dj-decks-autentyczna-konfrontacja-5rmx-lyrics')" class="nazwa">
                         Autentyczna konfrontacja
                     </td>
@@ -736,13 +739,13 @@
                         <img src="image/pl.jpg" />
                     </td>
                     <td colspan="2" class="czas">2:14</td>
-                    <td class="okladka">
-                        <img onclick="link('https://genius.com/Dj-decks-autentyczna-konfrontacja-5rmx-lyrics')" src="image/konfrontacja.jpg" />
-                    </td>
                 </tr>
                 <!--wiersz21-->
                 <tr>
-                    <td class="liczba">21</td>
+                    <td class="liczba">21.</td>
+                    <td class="okladka">
+                        <img onclick="link('https://genius.com/Quebonafide-swiatowstret-lyrics')" src="image/swiatlo.png" />
+                    </td>
                     <td onclick="link('https://genius.com/Quebonafide-swiatowstret-lyrics')" class="nazwa">
                         Swiatłowstręt
                     </td>
@@ -752,13 +755,13 @@
                     <td class="wydawca">O.S.T.R</td>
 
                     <td colspan="2" class="czas">3:51</td>
-                    <td class="okladka">
-                        <img onclick="link('https://genius.com/Quebonafide-swiatowstret-lyrics')" src="image/swiatlo.png" />
-                    </td>
                 </tr>
                 <!--wiersz22-->
                 <tr>
-                    <td class="liczba">22</td>
+                    <td class="liczba">22.</td>
+                    <td class="okladka">
+                        <img onclick="link('pages/god.html')" src="image/god.png" />
+                    </td>
                     <td onclick="link('pages/god.html')" class="nazwa">
                         Rap God
                     </td>
@@ -772,14 +775,14 @@
                         <img src="image/NA.png" />
                     </td>
                     <td colspan="2" class="czas">6:03</td>
-                    <td class="okladka">
-                        <img onclick="link('pages/god.html')" src="image/god.png" />
-                    </td>
                 </tr>
 
                 <!--wiersz23-->
                 <tr>
-                    <td class="liczba">23</td>
+                    <td class="liczba">23.</td>
+                    <td class="okladka">
+                        <img onclick="link('https://genius.com/Eminem-godzilla-lyrics')" src="image/godzilla.jpg" />
+                    </td>
                     <td onclick="link('https://genius.com/Eminem-godzilla-lyrics')" class="nazwa">
                         Godzilla
                     </td>
@@ -789,13 +792,13 @@
                     <td class="kwartal">1</td>
                     <td class="rok">2020</td>
                     <td colspan="2" class="czas">3:30</td>
-                    <td class="okladka">
-                        <img onclick="link('https://genius.com/Eminem-godzilla-lyrics')" src="image/godzilla.jpg" />
-                    </td>
                 </tr>
                 <!--wiersz24-->
                 <tr>
-                    <td class="liczba">24</td>
+                    <td class="liczba">24.</td>
+                    <td class="okladka">
+                        <img onclick="link('pages/oczy.html')" src="image/oczy.jpg" />
+                    </td>
                     <td onclick="link('pages/oczy.html')" class="nazwa">
                         Przez Twe Oczy Zielone
                     </td>
@@ -807,9 +810,6 @@
                         <img src="image/pl.jpg" />
                     </td>
                     <td colspan="2" class="czas">3:39</td>
-                    <td class="okladka">
-                        <img onclick="link('pages/oczy.html')" src="image/oczy.jpg" />
-                    </td>
                 </tr>
             </tbody>
         </table>
