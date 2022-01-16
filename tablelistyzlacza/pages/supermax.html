@@ -6,9 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Patryk Dobrowolski" />
-    <title>Najlepsze piosenki</title>
+    <title>Super Max</title>
+    <link rel="icon" href="../image/supermax72.png" />
     <link rel="stylesheet" href="../pages.css" type="text/css" />
     <script src="https://unpkg.com/typeit@8.0.7/dist/index.umd.js"></script>
+
+    <link rel="stylesheet" href="../fontello/css/fontello.css" type="text/css" />
+    <script>
+        function link(url) {
+            window.location = url;
+        }
+    </script>
 </head>
 
 <body>
@@ -24,8 +32,38 @@
                 napisali oni właśnie tą piosenkę.
             </p>
             <br />
-            <iframe width="75%" height="674" src="https://www.youtube.com/embed/ZBJCgrrQhx4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe src="https://open.spotify.com/embed/track/4G3VpVB5EADmLNUtaWaCYx?utm_source=generator&theme=0" width="50%" height="380" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <table id="table2">
+                <thead>
+                    <tr>
+                        <th class="nazwa">Tytuł</th>
+                        <th class="nazwa">Dokładna data wydawania</th>
+                        <th class="nazwa" title="według spotify">
+                            Liczba odsłuchań
+                        </th>
+                        <th class="odsluch" style="cursor: auto">
+                            Spotify
+                        </th>
+                        <th class="odsluch" style="cursor: auto">
+                            Youtube
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Super Max!Yo Hé, Yo Hó!</td>
+                        <td>8 grudnia 2021</td>
+                        <td>1 474 892</td>
+                        <td onclick="link('https://open.spotify.com/embed/track/4G3VpVB5EADmLNUtaWaCYx?utm_source=generator&theme=0')">
+                            <i class="icon-spotify"></i>
+                        </td>
+                        <td onclick="link('https://youtu.be/ZBJCgrrQhx4')">
+                            <i class="icon-youtube-play"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <iframe width="75%" height="380" src="https://www.youtube.com/embed/ZBJCgrrQhx4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://open.spotify.com/embed/track/4G3VpVB5EADmLNUtaWaCYx?utm_source=generator&theme=0" width="75%" height="380" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
         </div>
     </center>
 

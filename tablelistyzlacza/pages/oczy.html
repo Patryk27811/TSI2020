@@ -7,8 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Patryk Dobrowolski" />
     <title>Najlepsze piosenki</title>
+    <link rel="icon" href="../image/oczy.jpg" />
     <link rel="stylesheet" href="../pages.css" type="text/css" />
     <script src="https://unpkg.com/typeit@8.0.7/dist/index.umd.js"></script>
+
+    <link rel="stylesheet" href="../fontello/css/fontello.css" type="text/css" />
+    <script>
+        function link(url) {
+            window.location = url;
+        }
+    </script>
 </head>
 
 <body>
@@ -25,7 +33,37 @@
                 w 2016[6] i „Festiwalową Złotą Dwudziestkę” w 2017.
             </p>
             <br />
-            <iframe width="75%" height="674" src="https://www.youtube.com/embed/cxtnot8lY4U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <table id="table2">
+                <thead>
+                    <tr>
+                        <th class="nazwa">Tytuł</th>
+                        <th class="nazwa">Dokładna data wydawania</th>
+                        <th class="nazwa" title="według spotify">
+                            Liczba odsłuchań
+                        </th>
+                        <th class="odsluch" style="cursor: auto">
+                            Spotify
+                        </th>
+                        <th class="odsluch" style="cursor: auto">
+                            Youtube
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Przez Twe oczy zielone</td>
+                        <td>13 listopada 2014</td>
+                        <td>10 266 291</td>
+                        <td onclick="link('https://open.spotify.com/embed/track/6q5FIPaFNs5XLvKLKfSdnT?utm_source=generator')">
+                            <i class="icon-spotify"></i>
+                        </td>
+                        <td onclick="link('https://www.youtube.com/embed/cxtnot8lY4U')">
+                            <i class="icon-youtube-play"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <iframe width="75%" height="380" src="https://www.youtube.com/embed/cxtnot8lY4U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <iframe src="https://open.spotify.com/embed/track/6q5FIPaFNs5XLvKLKfSdnT?utm_source=generator" width="75%" height="380" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
         </div>
     </center>
