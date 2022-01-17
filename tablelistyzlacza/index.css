@@ -53,7 +53,7 @@
          }
          
          .brake {
-             height: 30px;
+             height: 25px;
              width: 1 044px;
          }
          
@@ -82,10 +82,8 @@
          }
          
          .undertop {
-             font-size: 16px;
+             font-size: 18px;
              text-align: center;
-            
-             font-size: 16px;
              padding: 6px;
          }
          
@@ -101,7 +99,6 @@
          .podpis:hover {
              background-color: #31363b;
              cursor: pointer;
-             
          }
          
          .obrazek:hover {
@@ -113,7 +110,7 @@
              background-color: #18161b;
              color: #fff;
              padding: 10px;
-             width: 250px;
+             width: 215px;
              height: 50px;
              border: none;
              font-size: 20px;
@@ -129,7 +126,7 @@
              background-color: #4d5761;
              color: #fff;
              padding: 10px;
-             width: 250px;
+             width: 215px;
              height: 50px;
              border: none;
              font-size: 20px;
@@ -210,6 +207,7 @@
          .okladka {
              width: 70px;
              height: 70px;
+             cursor: pointer;
          }
          
          .okladka img {
@@ -249,8 +247,4 @@
          
           ::-webkit-scrollbar-thumb:hover {
              background-image: linear-gradient(150deg, #000000 2%, #04619f 75%);
-         }
-         
-         #table2 li {
-             list-style: none;
          }
