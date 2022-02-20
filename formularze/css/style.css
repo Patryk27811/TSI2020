@@ -29,3 +29,16 @@ input {
     margin-bottom: 25px;
     margin-left: 25px;
 }
+
+.btn {
+    height: 35px;
+    width: 90px;
+    background-color: aqua;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    background-color: aquamarine;
+    transition-duration: 0.8s;
+}
