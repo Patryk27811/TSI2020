@@ -15,7 +15,7 @@
         <form action="result.html" method="get" onSubmit="">
             <fieldset id="1" style="border-color: green">
                 <legend>Dane</legend>
-                <fieldset style="text-align: right">
+                <fieldset id="1-1" style="text-align: right">
                     <legend>Logowanie</legend>
                     Login:
                     <input type="login" name="login" />
@@ -24,9 +24,108 @@
                     <br /> Powtórz hasło:
                     <input type="password" name="pass2" />
                 </fieldset>
-            </fieldset>
+                <fieldset id="1-2" style="text-align: right">
+                    <legend>Dane osobowe</legend>
+                    Imie:
+                    <input type="text" name="name" style="width: 150px [A-Za]" />
+                    <br /> Nazwisko:
+                    <input type="text" name="last_name" style="width: 150px [A-Za]" />
+                    <br /> Przedział wiekowy:
+                    <input type="radio" name="wiek" value="0-13" id="wiek1" />
+                    <label for="w1">0-12</label>
+
+                    <input type="radio" name="wiek" value="14-18" id="wiek2" />
+                    <label for="w1">13-18</label>
+
+                    <input type="radio" name="wiek" value="19-25" id="wiek3" />
+                    <label for="w1">19-25</label>
+
+                    <input type="radio" name="wiek" value="26-40" id="wiek4" />
+                    <label for="w1">26-40</label>
+
+                    <input type="radio" name="wiek" value="41-60" id="wiek5" />
+                    <label for="w1">41-70</label>
+
+                    <input type="radio" name="wiek" value=">60" id="wiek6" />
+                    <label for="w1">>70</label>
+                    <br /> Data urodzenia:
+                    <input type="date" name="du" style="width: 200px" />
+                    <br> Płeć:
+                    <input type="radio" name="plc" value="Mężczyzna" id="mn">
+                    <label for="mn">Mężczyzna</label>
+                    <input type="radio" name="plc" value="Kobieta" id="kb">
+                    <label for="kb">Kobieta</label>
+                    <br>
+                </fieldset>
+                <fieldset id="1-3" style="text-align: right">
+                    <legend>Dane kontaktowe</legend>
+                    Numer telefonu:
+                    <input type="tel" name="phone" />
+                    <br> Adres e-mail:
+                    <input type="email" name="email">
+                    <br> Województwo:
+                    <select style="margin-left: 20px; margin-bottom: 20px;" name="wojewodztwa">
+                        <option value="none">wybierz województwo</option>
+                        <option value="dolnośląskie">dolnośląskie</option>
+                        <option value="kujawsko-pomorskie">kujawsko-pomorskie</option>
+                        <option value="lubelskie">lubelskie</option>
+                        <option value="lubuskie">lubuskie</option>
+                        <option value="łódzkie">łódzkie</option>
+                        <option value="małopolskie">małopolskie</option>
+                        <option value="mazowieckie">mazowieckie</option>
+                        <option value="opolskie">opolskie</option>
+                        <option value="podkarpackie">podkarpackie</option>
+                        <option value="podlaskie">podlaskie</option>
+                        <option value="pomorskie">pomorskie</option>
+                        <option value="śląskie">śląskie</option>
+                        <option value="świętokrzyskie">świętokrzyskie</option>
+                        <option value="warmińsko-mazurskie">warmińsko-mazurskie</option>
+                        <option value="wielkopolskie">wielkopolskie</option>
+                        <option value="zachodniopomorskie">zachodniopomorskie</option>
+                    </select>
+                    <br> Miasto:
+                    <input type="text" name="city">
+                    <br> Ulica:
+                    <input type="text" name="ul">
+                    <br> Kod pocztowy:
+                    <input type="number" name="pcode">
+                    <br> Numer domu/mieszkania:
+                    <input type="number" name="nr">
+
+                </fieldset>
+                <fieldset id="1-4" style="text-align: right">
+                    <legend>Wygląd</legend>
+                    Kolor włosów:
+                    <input type="text" name="kwls">
+                    <br> Kolor oczu:
+                    <select style="margin-left: 20px; margin-bottom: 20px;" name="cocz">
+                        <option value="none">Wybierz kolor</option>
+                        <option value="ciemnobrązowe">ciemno-brązowe</option>
+                        <option value="brązowe">brązowe</option>
+                        <option value="jasnobrązowe">jasno-brązowe</option>
+                        <option value="zielonobrązowe">zielono-brązowe</option>
+                        <option value="jasnozielone">jasno-zielone</option>
+                        <option value="jasnoszare">jasno-szare</option>
+                        <option value="niebieskie">niebieskie</option>
+                        <option value="jasnoniebieskie">jasno-niebieskie</option>
+                        <option value="zielone">zielone</option>
+                        <option value="czerwone">czerwone</option>
+                        <option value="różowe">różowe</option>
+                        <option value="sinokoperkowe">sino-koperkowe</option>
+                        <option value="inne">inne</option>
+                    </select>
+                    <br> Wzrost:
+                    <input type="text" name="height">
+                </fieldset>
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                    &copy; Patryk Dobrowolski 3M
+                </div>
         </form>
     </center>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&callback=initMap">
+    </script>
+    <script src="js/passvalid.js"></script>
+
 </body>
 
 </html>
