@@ -24,3 +24,5 @@ document.getElementById("dystro").innerHTML = decodeURIComponent(params.dystro);
 document.getElementById("podszkola").innerHTML = decodeURIComponent(params.podszkola);
 document.getElementById("kpodszkola").innerHTML = decodeURIComponent(params.kpodszkola1) + " " + decodeURIComponent(params.kpodszkola2) + " " + decodeURIComponent(params.kpodszkola3);
 document.getElementById("sredniaszkola").innerHTML = decodeURIComponent(params.sredniaszkola);
+document.getElementById("wyzszaszkola").innerHTML = decodeURIComponent(params.wyzszaszkola);
+document.getElementById("kier").innerHTML = decodeURIComponent(params.kier);

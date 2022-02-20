@@ -14,3 +14,4 @@ function transformToAssocArray(prmstr) {
 }
 
 var params = getSearchParameters();
+console.log(params);
