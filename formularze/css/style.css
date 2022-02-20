@@ -8,8 +8,7 @@ body {
 form {
     background-image: url(../img/tlo2.jpg);
     border: 1px solid;
-    display: flex;
-    justify-content: center;
+    
     width: 750px;
     padding: 25px 25px 25px 25px;
     margin-top: 135px;

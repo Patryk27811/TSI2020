@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <center>
+    <div style="display: flex; justify-content: center;">
         <form action="result.html" method="get" onSubmit="">
             <fieldset id="1" style="border-color: green">
                 <legend>Dane</legend>
@@ -133,11 +133,16 @@
                     <input type="text" name="height" placeholder="wzrost" />
                 </fieldset>
             </fieldset>
+            <fieldset>
+                test
+            </fieldset>
+
         </form>
+        </div>
         <div style="display: flex; justify-content: center; margin-top: 30px">
             &copy; Patryk Dobrowolski 3M
         </div>
-    </center>
+    
     <script async src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&callback=initMap"></script>
     <script src="js/passvalid.js"></script>
 </body>
