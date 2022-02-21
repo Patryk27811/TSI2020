@@ -57,7 +57,7 @@ img{
     margin-right: 7px;
 }
 
-[type=radio] { 
+.awatar[type=radio] { 
     position: absolute;
     opacity: 0;
     width: 0;
@@ -65,11 +65,11 @@ img{
   }
   
   /* IMAGE STYLES */
-  [type=radio] + img {
+  .awatar[type=radio] + img {
     cursor: pointer;
   }
   
   /* CHECKED STYLES */
-  [type=radio]:checked + img {
+  .awatar[type=radio]:checked + img {
     outline: 2px solid #f00;
   }

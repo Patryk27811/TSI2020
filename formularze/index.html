@@ -28,38 +28,38 @@
 						Wybierz swoje profilowe:
 						<br>
 						<label>
-							<input type="radio" name="awatar" value="1">
+							<input type="radio" name="awatar" value="1" class="awatar">
 						<img src="img/awatar1.jpg">
 						  </label>
 						  <label>
-							<input type="radio" name="awatar" value="2">
+							<input type="radio" name="awatar" value="2" class="awatar">
 						<img src="img/awatar2.png">
 						  </label>
 						  <label>
-							<input type="radio" name="awatar" value="3">
+							<input type="radio" name="awatar" value="3" class="awatar">
 						<img src="img/awatar3.jpg">
 						  </label>
 						  <label>
-							<input type="radio" name="awatar" value="4">
+							<input type="radio" name="awatar" value="4" class="awatar">
 						<img src="img/awatar4.jpeg">
 						  </label>
 						  <label>
-							<input type="radio" name="awatar" value="5">
+							<input type="radio" name="awatar" value="5" class="awatar">
 						<img src="img/awatar5.png">
 						  </label>
 						  <br>
-						  Lub wybierz obrazek ze swojego komputera:
+						  Lub wybierz obrazek ze swojego komputera(akceptowane są jpg png oraz jpeg):
 						  <br>
-						  <input type="file" name="awatar1" value="6">
+						  <input type="file" name="awatar" accept=".jpg, .png, .jpeg" class="awatar">
 
 						
                     </fieldset>
                     <fieldset id="1-2" style="text-align: right">
                         <legend>Dane osobowe</legend>
                         Imie:
-                        <input type="text" name="name" style="width: 150px" placeholder="np.Jan" pattern="[A-Za]"/>
+                        <input type="text" name="name" style="width: 150px" placeholder="np.Jan" pattern="[a-zA-Z]"/>
                         <br /> Nazwisko:
-                        <input type="text" name="last_name" style="width: 150px " placeholder="np.Kowalski" pattern="[A-Za]"/>
+                        <input type="text" name="last_name" style="width: 150px " placeholder="np.Kowalski" pattern="[a-zA-Z]"/>
                         <br /> Przedział wiekowy:
                         <input type="radio" name="wiek" value="0-13" id="wiek1" />
                         <label for="wiek1">0-12</label>
@@ -130,18 +130,22 @@
 								</option>
 							</select>
                         <br /> Miejscowość:
-                        <input type="text" name="city" placeholder="np.Warszawa" />
+                        <input type="text" name="city" placeholder="np.Warszawa" pattern="[a-zA-Z]"/>
                         <br /> Ulica:
-                        <input type="text" name="ul" placeholder="np.Kobieca" />
+                        <input type="text" name="ul" placeholder="np.Kobieca" pattern="[a-zA-Z]"/>
                         <br /> Kod pocztowy:
-                        <input type="text" name="pcode" placeholder="np. 21-15" />
+						<input type="number" name="pcode"  pattern="[0-9]" style="margin-right: 10px; width: 68px;" maxlength="2">
+						-
+						<input type="number" name="pcode2" maxlength="3" pattern="[0-9]" style="margin-left: 10px; width: 67px;">
                         <br /> Numer domu/mieszkania:
-                        <input type="text" name="nr" placeholder="np.32/23" />
+						<input type="number" name="nr" maxlength="2" pattern="[0-9]" style="margin-right: 10px; width: 68px;">
+						/
+						<input type="number" name="nr2" maxlength="2" pattern="[0-9]" style="margin-left: 10px; width: 67px;">
                     </fieldset>
                     <fieldset id="1-4" style="text-align: right">
                         <legend>Wygląd</legend>
                         Kolor włosów:
-                        <input type="text" name="kwls" placeholder="kolor włosów" />
+                        <input type="text" name="kwls" placeholder="kolor włosów" pattern="[a-zA-Z]"/>
                         <br /> Kolor oczu:
                         <select style="margin-left: 20px; margin-bottom: 20px" name="cocz">
 								<option value="none">Wybierz kolor</option>
@@ -172,7 +176,7 @@
 								<option value="inne">inne</option>
 							</select>
                         <br /> Wzrost:
-                        <input type="text" name="height" placeholder="wzrost" />
+                        <input type="text" name="height" placeholder="wzrost" pattern="[0-9]"/>
                     </fieldset>
                 </fieldset>
                 <fieldset id="2" style="border-color: blue">
@@ -185,7 +189,7 @@
                             przycisk Ctrl</span
                         >
                         <br />
-                        <select style=" height: 125px; margin-left: 20px; margin-bottom: 20px; margin-top: 20px; overflow: hidden; " name="sport" multiple="multiple ">
+                        <select style=" height: 70px; margin-left: 20px; margin-bottom: 20px; margin-top: 20px;  " name="sport" multiple="multiple ">
 								<option value="pływanie">pływanie</option>
 								<option value="bieganie">bieganie</option>
 								<option value="skokwdal">skok w dal</option>
@@ -201,7 +205,7 @@
 							>
 							<br />
 							<select
-								style=" height: 140px; margin-left: 20px; margin-bottom: 20px; margin-top: 20px;"
+								style=" height: 70px; margin-left: 20px; margin-bottom: 20px; margin-top: 20px;"
 								name="wyrobalkoholowy"
 								multiple="multiple"
 							>
