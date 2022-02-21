@@ -9,6 +9,7 @@
     <script src="js/param.js"></script>
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <title>Formularze Patryk Dobrowolski 3M</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -75,7 +76,8 @@
                 <b>Kierunek</b> <span id="kier"></span>
                 <br />
                 <b>Ocena</b> <span id="ocena"></span>
-                
+                <br />
+                <b>Uwagi</b> <span id="uwagi"></span>
 
                 <div style="
 							margin-top: 25px;
@@ -91,6 +93,9 @@
     </div>
 
     <script src="js/param2s.js"></script>
+    <script>
+        document.getElementById("uwagi").innerHTML = decodeURIComponent(params.uwagi);
+    </script>
 </body>
 
 </html>

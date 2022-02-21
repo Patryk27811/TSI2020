@@ -8,7 +8,7 @@
     <meta name="author" content="Patryk Dobrowolski" />
     <title>Formularze Patryk Dobrowolski 3M</title>
     <link rel="stylesheet" href="css/style.css" type="text/css" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -58,9 +58,9 @@
                     <fieldset id="1-2" style="text-align: right">
                         <legend>Dane osobowe</legend>
                         Imie
-                        <input type="text" name="name" style="width: 150px" placeholder="np.Jan" pattern="[a-zA-Z]"/>
+                        <input type="text" name="name" style="width: 150px" placeholder="np.Jan" />
                         <br /> Nazwisko
-                        <input type="text" name="last_name" style="width: 150px " placeholder="np.Kowalski" pattern="[a-zA-Z]"/>
+                        <input type="text" name="last_name" style="width: 150px " placeholder="np.Kowalski" />
                         <br /> Przedział wiekowy
                         <input type="radio" name="wiek" value="0-13" id="wiek1" />
                         <label for="wiek1">0-12</label>
@@ -373,9 +373,10 @@
 			function xd(){
 				$(":text, :file, :checkbox, select, textarea").each(function() {
    if($(this).val() === "")
-    alert("Empty Fields!!");
+    alert("Niektóre komórki są puste!!");
+	console.log("xd")
 });
-console.log("xd")
+
 }
 		</script>
 	</body>
