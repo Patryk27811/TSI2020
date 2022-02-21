@@ -8,6 +8,7 @@
     <meta name="author" content="Patryk Dobrowolski" />
     <title>Formularze Patryk Dobrowolski 3M</title>
     <link rel="stylesheet" href="css/style.css" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -18,14 +19,14 @@
                     <legend class="group">Dane</legend>
                     <fieldset id="1-1" style="text-align: right">
                         <legend>Logowanie</legend>
-                        Login:
+                        Login
                         <input type="login" name="login" placeholder="login" />
-                        <br /> Hasło:
+                        <br /> Hasło
                         <input type="password" name="pass" placeholder="hasło" />
-                        <br /> Powtórz hasło:
+                        <br /> Powtórz hasło
                         <input type="password" name="pass1" placeholder="powtórz hasło" />
 						<br>
-						Wybierz swoje profilowe:
+						Wybierz swoje profilowe
 						<br>
 						<label>
 							<input type="radio" name="awatar" value="1" class="awatar">
@@ -48,7 +49,7 @@
 						<img src="img/awatar5.png">
 						  </label>
 						  <br>
-						  Lub wybierz obrazek ze swojego komputera(akceptowane są jpg png oraz jpeg):
+						  Lub wybierz obrazek ze swojego komputera(akceptowane są jpg png oraz jpeg)
 						  <br>
 						  <input type="file" name="awatar" accept=".jpg, .png, .jpeg" class="awatar">
 
@@ -56,11 +57,11 @@
                     </fieldset>
                     <fieldset id="1-2" style="text-align: right">
                         <legend>Dane osobowe</legend>
-                        Imie:
+                        Imie
                         <input type="text" name="name" style="width: 150px" placeholder="np.Jan" pattern="[a-zA-Z]"/>
-                        <br /> Nazwisko:
+                        <br /> Nazwisko
                         <input type="text" name="last_name" style="width: 150px " placeholder="np.Kowalski" pattern="[a-zA-Z]"/>
-                        <br /> Przedział wiekowy:
+                        <br /> Przedział wiekowy
                         <input type="radio" name="wiek" value="0-13" id="wiek1" />
                         <label for="wiek1">0-12</label>
 
@@ -89,11 +90,11 @@
                     </fieldset>
                     <fieldset id="1-3" style="text-align: right">
                         <legend>Dane kontaktowe</legend>
-                        Numer telefonu:
+                        Numer telefonu
                         <input type="tel" name="phone" placeholder="numer telefonu" maxlength="9" pattern="[0-9]"/>
-                        <br /> Adres e-mail:
+                        <br /> Adres e-mail
                         <input type="email" name="email" placeholder="email" />
-                        <br /> Województwo:
+                        <br /> Województwo
                         <select style="margin-left: 20px; margin-bottom: 20px" name="wojewodztwa">
 								<option value="none">
 									wybierz województwo
@@ -129,24 +130,24 @@
 									zachodniopomorskie
 								</option>
 							</select>
-                        <br /> Miejscowość:
+                        <br /> Miejscowość
                         <input type="text" name="city" placeholder="np.Warszawa" pattern="[a-zA-Z]"/>
-                        <br /> Ulica:
+                        <br /> Ulica
                         <input type="text" name="ul" placeholder="np.Kobieca" pattern="[a-zA-Z]"/>
-                        <br /> Kod pocztowy:
+                        <br /> Kod pocztowy
 						<input type="number" name="pcode"  pattern="[0-9]" style="margin-right: 10px; width: 68px;" maxlength="2">
 						-
 						<input type="number" name="pcode2" maxlength="3" pattern="[0-9]" style="margin-left: 10px; width: 67px;">
-                        <br /> Numer domu/mieszkania:
+                        <br /> Numer domu/mieszkania
 						<input type="number" name="nr" maxlength="2" pattern="[0-9]" style="margin-right: 10px; width: 68px;">
 						/
 						<input type="number" name="nr2" maxlength="2" pattern="[0-9]" style="margin-left: 10px; width: 67px;">
                     </fieldset>
                     <fieldset id="1-4" style="text-align: right">
                         <legend>Wygląd</legend>
-                        Kolor włosów:
+                        Kolor włosów
                         <input type="text" name="kwls" placeholder="kolor włosów" pattern="[a-zA-Z]"/>
-                        <br /> Kolor oczu:
+                        <br /> Kolor oczu
                         <select style="margin-left: 20px; margin-bottom: 20px" name="cocz">
 								<option value="none">Wybierz kolor</option>
 								<option value="ciemnobrązowe">
@@ -175,8 +176,8 @@
 								</option>
 								<option value="inne">inne</option>
 							</select>
-                        <br /> Wzrost:
-                        <input type="text" name="height" placeholder="wzrost" pattern="[0-9]"/>
+                        <br /> Wzrost
+                        <input type="number" max="250" min="1" name="height" placeholder="wzrost" pattern="[0-9]"/>
                     </fieldset>
                 </fieldset>
                 <fieldset id="2" style="border-color: blue">
@@ -310,13 +311,55 @@
 							</select>
                         </fieldset>
                     </fieldset>
+					<fieldset id="4" >
+						<legend class="group">Ocena formularza</legend>
+						<fieldset id="4-1" style="text-align: right;">
+							<legend >Ocena 1-10</legend>
+							<div style="text-align: left; font-weight: lighter;">
+								1 - źle, 10 - dobrze
+								</div>
+							<br>
+							<div style="text-align: center; margin-top: 20px;">
+								<input type="radio" name="ocena" value="1" id="radio1">
+								<label for="radio1">1</label>
+								<input type="radio" name="ocena" value="2" id="radio2">
+								<label for="radio2">2</label>
+								<input type="radio" name="ocena" value="3" id="radio3">
+								<label for="radio3">3</label>
+								<input type="radio" name="ocena" value="4" id="radio4">
+								<label for="radio4">4</label>
+								<input type="radio" name="ocena" value="5" id="radio5">
+								<label for="radio5">5</label>
+								<input type="radio" name="ocena" value="6" id="radio6">
+								<label for="radio6">6</label>
+								<input type="radio" name="ocena" value="7" id="radio7">
+								<label for="radio7">7</label>
+								<input type="radio" name="ocena" value="8" id="radio8">
+								<label for="radio8">8</label>
+								<input type="radio" name="ocena" value="9" id="radio9">
+								<label for="radio9">9</label>
+								<input type="radio" name="ocena" value="10" id="radio10">
+								<label for="radio10">10</label>
+								</div>
+						</fieldset>
+						<fieldset id="4-2" >
+							<legend style="text-align: left;"> Dodatkowe uwagi</legend>
+							<div style="text-align: center;">
+								<textarea style="height: 80px; width: 630px;" id="uwagi">
+									miejsce na dodatkowe uwagi użytkownika
+								</textarea>
+								</div>
+						</fieldset>
+					</fieldset>
+					
                     <div style="display: flex; justify-content: center; margin-top: 20px;">
                         <input type="reset" value="Wyczyść" class="btn">
                         <input type="submit" value="Wyślij" class="btn">
-                        <input type="button" value="Sprawdź" class="btn">
+						
+                        <input type="button" value="Sprawdź" class="btn" onclick="xd()">
                         </div>
 					<div
-						style=" display: flex; justify-content: center; margin-top: 30px; "
+						style=" display: flex; justify-content: center; margin-top: 30px;"
 					>
 						&copy; Patryk Dobrowolski 3M
 					</div>
@@ -325,5 +368,15 @@
 		</div>
 
 		<script src="js/passvalidation.js "></script>
+
+		<script>
+			function xd(){
+				$(":text, :file, :checkbox, select, textarea").each(function() {
+   if($(this).val() === "")
+    alert("Empty Fields!!");
+});
+console.log("xd")
+}
+		</script>
 	</body>
 </html>

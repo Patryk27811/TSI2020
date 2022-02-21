@@ -66,3 +66,4 @@ document.getElementById("kpodszkola").innerHTML = decodeURIComponent(params.kpod
 document.getElementById("sredniaszkola").innerHTML = decodeURIComponent(params.sredniaszkola);
 document.getElementById("wyzszaszkola").innerHTML = decodeURIComponent(params.wyzszaszkola);
 document.getElementById("kier").innerHTML = decodeURIComponent(params.kier);
+document.getElementById("ocena").innerHTML = decodeURIComponent(params.ocena);
