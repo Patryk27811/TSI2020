@@ -1,5 +1,12 @@
+let awatar=params.awatar;
 document.getElementById("login").innerHTML = decodeURIComponent(params.login);
 document.getElementById("pass").innerHTML = decodeURIComponent(params.pass);
+document.getElementById("awatar").innerHTML = decodeURIComponent(params.awatar);
+switch(awatar){
+case 1:
+    document.getElementById("awatar").innerHTML = document.write("<img src='/img/awatar1.jpg'/>");
+};
+
 document.getElementById("name").innerHTML = decodeURIComponent(params.name);
 document.getElementById("last_name").innerHTML = decodeURIComponent(params.last_name);
 document.getElementById("wiek").innerHTML = decodeURIComponent(params.wiek);
