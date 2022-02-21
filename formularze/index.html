@@ -15,7 +15,7 @@
         <div class="form">
             <form action="result.html" method="get" onSubmit="return checkPassword(this)">
                 <fieldset id="1" style="border-color: green">
-                    <legend>Dane</legend>
+                    <legend class="group">Dane</legend>
                     <fieldset id="1-1" style="text-align: right">
                         <legend>Logowanie</legend>
                         Login:
@@ -28,9 +28,9 @@
                     <fieldset id="1-2" style="text-align: right">
                         <legend>Dane osobowe</legend>
                         Imie:
-                        <input type="text" name="name" style="width: 150px [A-Za]" placeholder="np.Jan" />
+                        <input type="text" name="name" style="width: 150px" placeholder="np.Jan" pattern="[A-Za]"/>
                         <br /> Nazwisko:
-                        <input type="text" name="last_name" style="width: 150px [A-Za]" placeholder="np.Kowalski" />
+                        <input type="text" name="last_name" style="width: 150px " placeholder="np.Kowalski" pattern="[A-Za]"/>
                         <br /> Przedział wiekowy:
                         <input type="radio" name="wiek" value="0-13" id="wiek1" />
                         <label for="wiek1">0-12</label>
@@ -61,7 +61,7 @@
                     <fieldset id="1-3" style="text-align: right">
                         <legend>Dane kontaktowe</legend>
                         Numer telefonu:
-                        <input type="tel" name="phone" placeholder="numer telefonu" />
+                        <input type="tel" name="phone" placeholder="numer telefonu" maxlength="9" pattern="[0-9]"/>
                         <br /> Adres e-mail:
                         <input type="email" name="email" placeholder="email" />
                         <br /> Województwo:
@@ -147,7 +147,7 @@
                     </fieldset>
                 </fieldset>
                 <fieldset id="2" style="border-color: blue">
-                    <legend>inne</legend>
+                    <legend class="group">inne</legend>
                     <fieldset id="2-1" style="text-align: right">
                         <legend>Zainteresowanie</legend>
                         Jaki sport lubisz?
@@ -228,7 +228,7 @@
 					</fieldset>
                     <br>
                     <fieldset id="3" style="border-color: greenyellow;">
-                        <legend>Wykształcenie</legend>
+                        <legend class="group">Wykształcenie</legend>
                         <fieldset id="3-1" style="text-align: right;">
                             <legend>Szkoła podstawowa</legend>
                             Do jakiej szkoły chodziłeś/aś ?
