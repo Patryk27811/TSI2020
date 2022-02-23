@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+
 body {
     font-family: 'Nunito Sans', sans-serif;
     color: black;
@@ -7,6 +8,13 @@ body {
     font-size: 13.5pt;
 }
 
+.awatar {
+    margin-left: -70px;
+    margin-top: 8px;
+}
+
+
+
 .form {
     border: 1px solid black;
     display: flex;
@@ -14,15 +22,17 @@ body {
     width: 800px;
     padding: 20px 20px 20px 20px;
     margin-top: 100px;
-     background-image: url(../img/tlo2.jpg); 
+    background-image: url(../img/tlo2.jpg);
     /* background: rgb(131,58,180);
 background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); */
 }
-.group{
-    color:white;
+
+.group {
+    color: white;
     font-weight: bold;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+
 .center {
     display: flex;
     justify-content: center;
@@ -48,28 +58,29 @@ input {
 .btn:hover {
     background-color: aquamarine;
     transition-duration: 0.8s;
-   
+
 }
-img{
+
+img {
     width: 70px;
     height: 70px;
     margin-left: 7px;
     margin-right: 7px;
 }
 
-.awatar[type=radio] { 
+.awatar[type=radio] {
     position: absolute;
     opacity: 0;
     width: 0;
     height: 0;
-  }
-  
-  /* IMAGE STYLES */
-  .awatar[type=radio] + img {
+}
+
+/* IMAGE STYLES */
+.awatar[type=radio]+img {
     cursor: pointer;
-  }
-  
-  /* CHECKED STYLES */
-  .awatar[type=radio]:checked + img {
+}
+
+/* CHECKED STYLES */
+.awatar[type=radio]:checked+img {
     outline: 2px solid #f00;
-  }
+}
