@@ -47,6 +47,13 @@ input {
     margin-left: 25px;
 }
 
+input[type="text"],
+[type="tel"],
+[type="email"] {
+    width: 150px;
+    height: 20px;
+}
+
 .btn {
     height: 35px;
     width: 90px;
