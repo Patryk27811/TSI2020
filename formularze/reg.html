@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/getparam.js"></script>
-    <script src="js/passvalidation.js "></script>
+    
     <title>Formularze Patryk Dobrowolski 3M</title>
     
 </head>
@@ -14,17 +14,17 @@
     <div class="center">
     <div class="form" style="width: 800px; background-image: url(img/tlo2.jpg);">
         <div>
-            <form action="result.html" style="width: 800px;" onSubmit="return checkPassword(this)" >
+            <form action="form.html" method="get" onSubmit="return checkPassword(this)" >
                 <fieldset style="text-align: right;">
                     <legend style="text-align: left;">Rejestracja</legend>
                     Login
-                    <input type="login" name="login" placeholder="login" />
+                    <input type="login" name="login" placeholder="login" id="login"/>
                     <br>
                     Hasło
-                    <input type="password" name="pass" placeholder="hasło" />
+                    <input type="password" name="pass" placeholder="hasło" id="pass" />
                     <br>
                     Powtórz hasło
-                    <input type="password" name="pass1" placeholder="hasło" />
+                    <input type="password" name="pass1" placeholder="hasło" id="pass1" />
                     <fieldset>
                         <legend style="text-align: center;">Wybierz awatar</legend>
                         <div style="text-align: center; margin-top: 15px;">
@@ -57,7 +57,8 @@
                             window.location = url;
                         }
                     </script>
-                    <button type="button" onclick="link('form.html')" class="btn">Zarejestruj</button>
+                    <!-- <button type="button" onclick="link('form.html')" class="btn">Zarejestruj</button> -->
+                    <input type="submit" value="Zarejestruj" class="btn">
                     </div>
             </form>
         
@@ -68,8 +69,8 @@
     </div>
     
     </div>
-    
-
+    <script src="js/param2s.js"></script>
+    <script src="js/passvalidation.js "></script>
     
 </body>
 </html>
