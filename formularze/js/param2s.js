@@ -57,6 +57,7 @@ document.getElementById("plc").innerHTML = decodeURIComponent(params.plc);
 document.getElementById("height").innerHTML = decodeURIComponent(params.height);
 document.getElementById("sport").innerHTML = decodeURIComponent(params.sport);
 document.getElementById("interesujesz").innerHTML = decodeURIComponent(params.interesujesz);
+document.getElementById("iq").innerHTML = decodeURIComponent(params.iq);
 document.getElementById("wyrobalkoholowy").innerHTML = decodeURIComponent(params.wyrobalkoholowy);
 document.getElementById("ksredniaszkola").innerHTML = decodeURIComponent(params.ksredniaszkola1) + " " + decodeURIComponent(params.ksredniaszkola2) + " " + decodeURIComponent(params.ksredniaszkola3);
 document.getElementById("spr").innerHTML = decodeURIComponent(params.spr);
