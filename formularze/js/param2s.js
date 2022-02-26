@@ -62,6 +62,7 @@ document.getElementById("ksredniaszkola").innerHTML = decodeURIComponent(params.
 document.getElementById("spr").innerHTML = decodeURIComponent(params.spr);
 document.getElementById("urzwyb").innerHTML = decodeURIComponent(params.urzwyb);
 document.getElementById("dystro").innerHTML = decodeURIComponent(params.dystro);
+document.getElementById("milosclinux").innerHTML = decodeURIComponent(params.milosclinux) +"%";
 document.getElementById("podszkola").innerHTML = decodeURIComponent(params.podszkola);
 document.getElementById("kpodszkola").innerHTML = decodeURIComponent(params.kpodszkola1) + " " + decodeURIComponent(params.kpodszkola2) + " " + decodeURIComponent(params.kpodszkola3);
 document.getElementById("sredniaszkola").innerHTML = decodeURIComponent(params.sredniaszkola);
