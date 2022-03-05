@@ -9,6 +9,7 @@
     <script src="js/param.js"></script>
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <title>Formularze Patryk Dobrowolski 3M</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -50,10 +51,14 @@
                 <br />
                 <b>Kolor oczu</b> <span id="cocz"></span>
                 <br />
-                <b>Wzrost</b><span id="height"></span>
+                <b>Wzrost </b><span id="height"></span>
                 <br />
                 <b>Sport</b> <span id="sport"></span>
                 <br />
+                <b>Interesujesz się</b> <span id="interesujesz"></span>
+                <br>
+                <b>IQ</b> <span id="iq"></span>
+                <br>
                 <b>Alkohol</b> <span id="wyrobalkoholowy"></span>
                 <br />
                 <b>Lubisz sport?</b> <span id="spr"></span>
@@ -61,6 +66,8 @@
                 <b>Urządzenie</b> <span id="urzwyb"></span>
                 <br />
                 <b>Ulubiona dystrybucja</b> <span id="dystro"></span>
+                <br />
+                <b>Jak bardzo kochasz linuxa</b> <span id="milosclinux"></span>
                 <br />
                 <b>Szkoła podstawowa</b> <span id="podszkola"></span>
                 <br />
@@ -75,6 +82,7 @@
                 <b>Kierunek</b> <span id="kier"></span>
                 <br />
                 <b>Ocena</b> <span id="ocena"></span>
+                <br />
                 
 
                 <div style="
@@ -91,6 +99,9 @@
     </div>
 
     <script src="js/param2s.js"></script>
+    <script>
+        document.getElementById("uwagi").innerHTML = decodeURIComponent(params.uwagi);
+    </script>
 </body>
 
 </html>
