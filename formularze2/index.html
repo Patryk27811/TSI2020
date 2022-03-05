@@ -13,8 +13,9 @@
         <div class="form">
     <form>
         <center><legend>Witaj! Zapraszam Cię do rozwiązania quizu składającego się z 40 pytań. <br> Każde z pytań ma 1 poprawną odpowiedz, na rozwiązanie quizu masz 40 minut, po upływie tego czasu quiz zamyka się</legend></center>
-        <fieldset>
-        <fieldset id="pytanie1" >
+        <fieldset class="fieldset" id="a">
+           <legend style="text-align: center ">Pytania ogólne</legend>
+        <fieldset id="pytanie1" class="fieldset">
             <legend style="text-align: center">Pytanie 1</legend>
             <center>Jaki jest wynik działania 2+2*2?</center>
             <br>
@@ -30,7 +31,7 @@
             <input type="radio" name="p1" value="false3" id="false3">
             <lable for="false3">Pan Bóg tylko to wie</lable>
         </fieldset>
-        <fieldset id="pytanie2" >
+        <fieldset id="pytanie2" class="fieldset">
             <legend style="text-align: center">Pytanie 2</legend>
             <center>Kto jest najlepszym kierowcą F1?</center>
             <br>
@@ -46,7 +47,7 @@
             <input type="radio" name="p2" value="true2" id="true2">
             <lable for="true2">Max Verstappen</lable>
         </fieldset>
-        <fieldset id="pytanie3" >
+        <fieldset id="pytanie3" class="fieldset">
             <legend style="text-align: center">Pytanie 3</legend>
             <center>Jaką wódkę produkuje Palikot?</center>
             <br>
@@ -62,7 +63,47 @@
             <input type="radio" name="p3" value="false9" id="false9">
             <lable for="false9">Słowacki</lable>
         </fieldset>
+        <fieldset id="pytanie4" class="fieldset">
+            <legend style="text-align: center">Pytanie 4</legend>
+            <center>Ile jest okrążeń podczas wyścigu na Monzy?</center>
+            <input type="number" max="99" min="1" style="width:150px;" placeholder="wpisz liczbę okrążeń">
+        </fieldset>
+        <fieldset id="pytanie5" class="fieldset">
+            <legend style="text-align: center">Pytanie 5</legend>
+            <center>Z ilu liczb składa się numer telefonu?</center>
+            <input type="number" max="99" min="0" style="width:150px;" placeholder="wpisz liczbę">
+        </fieldset>
+        
     </fieldset>
+    <fieldset id="b" class="fieldset">
+        <legend style="text-align:center">Systemy operacyjne</legend>
+        <fieldset class="fieldset" id="pytanie6">
+            <legend style="text-align: center">Pytanie 6</legend>
+            <center>Jak wyłączyć firewall w systemie linux?</center>
+            <br>
+            <input type="radio" name="p4" value="false10" id="false10">
+            <label for="false10">systemctrl off firewall</label>
+            <br>
+            <input type="radio" name="p4" value="false11" id="false11">
+            <lable for="false11">sudo firewall disable</lable>
+            <br>
+            <input type="radio" name="p4" value="false12" id="false12">
+            <lable for="false12">systemctrl stop ufw</lable>
+            <br>
+            <input type="radio" name="p4" value="true4" id="true4">
+            <lable for="true4">sudo ufw disable</lable>
+        </fieldset>
+        <fieldset id="pytanie7" class="fieldset">
+            <legend style="text-align: center">Pytanie 7</legend>
+            <center>Jakie uprawnienia w systemie linux ustawimy jeżeli chcemy aby wszyscy mieli pełną kontrolę ?</center>
+            <input type="number" max="1000" min="0" style="width:150px;" placeholder="wpisz liczbę">
+        </fieldset>
+    </fieldset>
+    <div style="display: flex; justify-content: center; margin-top: 20px;">
+        <input type="reset" value="Wyczyść" class="btn">
+        <input type="submit" value="Wyślij" class="btn">
+        <input type="button" value="Sprawdź" class="btn">
+        </div>
     </form>
     </div>
     </div>
