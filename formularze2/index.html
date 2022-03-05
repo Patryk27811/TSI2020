@@ -22,27 +22,27 @@
             <input type="radio" name="p1" value="true" id="true1">
             <label for="true1">6</label>
             <br>
-            <input type="radio" name="p1" value="false1" id="false1">
-            <lable for="false1">8</lable>
+            <input type="radio" name="p1" value="false" id="false">
+            <lable for="false">8</lable>
             <br>
-            <input type="radio" name="p1" value="false2" id="false2">
-            <lable for="false2">-6</lable>
+            <input type="radio" name="p1" value="false" id="false">
+            <lable for="false">-6</lable>
             <br>
-            <input type="radio" name="p1" value="false3" id="false3">
-            <lable for="false3">Pan Bóg tylko to wie</lable>
+            <input type="radio" name="p1" value="false" id="false">
+            <lable for="false">Pan Bóg tylko to wie</lable>
         </fieldset>
         <fieldset id="pytanie2" class="fieldset">
             <legend style="text-align: center">Pytanie 2</legend>
             <center>Kto jest najlepszym kierowcą F1?</center>
             <br>
-            <input type="radio" name="p2" value="false4" id="false4">
-            <label for="false4">Esteban Ocon</label>
+            <input type="radio" name="p2" value="false" id="false">
+            <label for="false">Esteban Ocon</label>
             <br>
-            <input type="radio" name="p2" value="false5" id="false5">
-            <lable for="false5">Nikita Mazepin</lable>
+            <input type="radio" name="p2" value="false" id="false">
+            <lable for="false">Nikita Mazepin</lable>
             <br>
-            <input type="radio" name="p2" value="false6" id="false6">
-            <lable for="false6">Lewis Hamilton</lable>
+            <input type="radio" name="p2" value="false" id="false">
+            <lable for="false">Lewis Hamilton</lable>
             <br>
             <input type="radio" name="p2" value="true2" id="true2">
             <lable for="true2">Max Verstappen</lable>
@@ -51,17 +51,17 @@
             <legend style="text-align: center">Pytanie 3</legend>
             <center>Jaką wódkę produkuje Palikot?</center>
             <br>
-            <input type="radio" name="p3" value="false7" id="false7">
-            <label for="false4">Soplica</label>
+            <input type="radio" name="p3" value="false" id="false">
+            <label for="false">Soplica</label>
             <br>
             <input type="radio" name="p3" value="true3" id="true3">
             <lable for="true3">Buh</lable>
             <br>
-            <input type="radio" name="p3" value="false8" id="false8">
-            <lable for="false6">Wyborową</lable>
+            <input type="radio" name="p3" value="false" id="false">
+            <lable for="false">Wyborową</lable>
             <br>
-            <input type="radio" name="p3" value="false9" id="false9">
-            <lable for="false9">Słowacki</lable>
+            <input type="radio" name="p3" value="false" id="false">
+            <lable for="false">Słowacki</lable>
         </fieldset>
         <fieldset id="pytanie4" class="fieldset">
             <legend style="text-align: center">Pytanie 4</legend>
@@ -81,22 +81,67 @@
             <legend style="text-align: center">Pytanie 6</legend>
             <center>Jak wyłączyć firewall w systemie linux?</center>
             <br>
-            <input type="radio" name="p4" value="false10" id="false10">
-            <label for="false10">systemctrl off firewall</label>
+            <input type="radio" name="p4" value="false" id="false">
+            <label for="false">systemctrl off firewall</label>
             <br>
-            <input type="radio" name="p4" value="false11" id="false11">
-            <lable for="false11">sudo firewall disable</lable>
+            <input type="radio" name="p4" value="false" id="false">
+            <lable for="false">sudo firewall disable</lable>
             <br>
-            <input type="radio" name="p4" value="false12" id="false12">
-            <lable for="false12">systemctrl stop ufw</lable>
+            <input type="radio" name="p4" value="false" id="false">
+            <lable for="false">systemctrl stop ufw</lable>
             <br>
             <input type="radio" name="p4" value="true4" id="true4">
             <lable for="true4">sudo ufw disable</lable>
         </fieldset>
         <fieldset id="pytanie7" class="fieldset">
             <legend style="text-align: center">Pytanie 7</legend>
-            <center>Jakie uprawnienia w systemie linux ustawimy jeżeli chcemy aby wszyscy mieli pełną kontrolę ?</center>
+            <center>Jakie uprawnienia w systemie linux ustawimy jeżeli chcemy aby wszyscy mieli pełną kontrolę?</center>
             <input type="number" max="1000" min="0" style="width:150px;" placeholder="wpisz liczbę">
+        </fieldset>
+        <fieldset class="fieldset" id="pytanie8">
+            <legend style="text-align: center">Pytanie 8</legend>
+            <center>Jaki parametr jest potrzebny do usuniecia plików z potwierdzeniem?</center>
+            <br>
+            <select style="margin-left: 20px; margin-bottom: 20px" name="parametr1">
+            <option value="-i" id="true5">-i</option>
+            <option value="-G" id="false">-G</option>
+            <option value="-a" id="false">-a</option>
+            <option value="-l" id="false">-l</option>
+            <option value="co?" id="false">co to parametr?</option>
+        </select>
+        </fieldset>
+        <fieldset class="fieldset" id="pytanie9">
+            <legend style="text-align: center">Pytanie 9</legend>
+            <center>Jakim poleceniem dodajemy użytkowników w systemie linux?</center>
+            <br>
+            <select style="margin-left: 20px; margin-bottom: 20px" name="dodawanieuzytkownika">
+            <option value="adduser" id="true6">adduser</option>
+            <option value="netuser" id="false">net user</option>
+            <option value="aduser" id="false">aduser</option>
+            <option value="moduser" id="false">moduser</option>
+            <option value="usermod" id="false">usermod</option>
+        </select>
+        <fieldset class="fieldset" id="pytanie10">
+            <legend style="text-align: center">Pytanie 10</legend>
+            <center>Jak za pomocą jednej komendy użyć apt update i apt upgrade?</center>
+            <br>
+            <input type="text" style="text-align:center">
+        </fieldset>
+        <fieldset id="pytanie11" class="fieldset">
+            <legend style="text-align: center">Pytanie 11</legend>
+            <center>Jakim poleceniem sprawdzimy dysk w cmd?</center>
+            <br>
+            <input type="radio" name="p6" value="false" id="false">
+            <label for="false">df</label>
+            <br>
+            <input type="radio" name="p6" value="false" id="false">
+            <lable for="false">fdisk -l</lable>
+            <br>
+            <input type="radio" name="p6" value="true7" id="true7">
+            <lable for="true7">chkdsk</lable>
+            <br>
+            <input type="radio" name="p6" value="false" id="false">
+            <lable for="false">chkdskntfs</lable>
         </fieldset>
     </fieldset>
     <div style="display: flex; justify-content: center; margin-top: 20px;">
