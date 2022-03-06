@@ -115,6 +115,7 @@
             <center>Jakim poleceniem dodajemy użytkowników w systemie linux?</center>
             <br>
             <select style="margin-left: 20px; margin-bottom: 20px" name="dodawanieuzytkownika">
+                <option value="none" id="none">wybierz odpowiedz</option>
             <option value="adduser" id="true6">adduser</option>
             <option value="netuser" id="false">net user</option>
             <option value="aduser" id="false">aduser</option>
@@ -197,23 +198,205 @@
     </fieldset>
     <fieldset id="c" class="fieldset">
         <legend style="text-align:center">Samochody</legend>
-        <fieldset id="pytanie11" class="fieldset">
+        <fieldset id="pytanie15" class="fieldset">
             <legend style="text-align: center">Pytanie 15</legend>
             <center>Co to za marka samochodu?</center>
             <br>
-            <img>
+            <img src="img/buggati.jpg">
             <br>
-            <input type="radio" name="p6" value="false" id="false">
-            <label for="false">df</label>
+            <input type="radio" name="p10" value="false" id="false">
+            <label for="false">Lamborghini</label>
             <br>
-            <input type="radio" name="p6" value="false" id="false">
-            <lable for="false">fdisk -l</lable>
+            <input type="radio" name="p10" value="false" id="false">
+            <lable for="false">Ferrari</lable>
             <br>
-            <input type="radio" name="p6" value="true7" id="true7">
-            <lable for="true7">chkdsk</lable>
+            <input type="radio" name="p10" value="true12" id="true12">
+            <lable for="true12">Bugatti</lable>
             <br>
-            <input type="radio" name="p6" value="false" id="false">
-            <lable for="false">chkdskntfs</lable>
+            <input type="radio" name="p10" value="false" id="false">
+            <lable for="false">Fiat</lable>
+        </fieldset>
+        <fieldset id="pytanie16" class="fieldset">
+            <legend style="text-align: center">Pytanie 16</legend>
+            <center>Jaki to samochód?</center>
+            <br>
+            <br>
+            <input type="radio" name="p11" value="false" id="false">
+            <label for="false">Lamborghini ventador</label>
+            <br>
+            <input type="radio" name="p11" value="true14" id="true14">
+            <lable for="true14">Ferrari Testarossa</lable>
+            <br>
+            <input type="radio" name="p11" value="false" id="false">
+            <lable for="false">Bugatti veyron</lable>
+            <br>
+            <input type="radio" name="p11" value="false" id="false">
+            <lable for="false">Fiat panda</lable>
+        </fieldset>
+        <fieldset id="pytanie17" class="fieldset">
+            <legend style="text-align: center">Pytanie 17</legend>
+            <center>Jaką prędkość maksymalną ma bugatti veyron?</center>
+            <br>
+            <div style="text-align: left; margin-top: 15px;">
+                <input type="range" min="1" value="1" max="500" style="width: 350px;" oninput="this.nextElementSibling.value = this.value">
+                <output>1</output>km/h
+            </div>
+        </fieldset>
+        <fieldset id="pytanie18" class="fieldset">
+            <legend style="text-align: center">Pytanie 18</legend>
+            <center>Jaki samochód ma najlepszy czas na torze Nürburgring?</center>
+            <br>
+            <br>
+            <input type="radio" name="p12" value="false" id="false">
+            <label for="false">Lamborghini aventador svj</label>
+            <br>
+            <input type="radio" name="p13" value="true15" id="true15">
+            <lable for="true15">Porsche 911 gt2 rs</lable>
+            <br>
+            <input type="radio" name="p13" value="false" id="false">
+            <lable for="false">Bugatti veyron</lable>
+            <br>
+            <input type="radio" name="p13" value="false" id="false">
+            <lable for="false">Mercedes amg gt black series</lable>
+        </fieldset>
+        <fieldset id="pytanie19" class="fieldset">
+            <legend style="text-align: center">Pytanie 19</legend>
+            <center>Do jakiej marki samochodów należy continental gt?</center>
+            <br>
+            
+            <input type="radio" name="p14" value="true16" id="true16">
+            <lable for="true16">Bentley</lable>
+            <br>
+            <input type="radio" name="p14" value="false" id="false">
+            <label for="false">Ferrari</label>
+            <br>
+            
+            <input type="radio" name="p14" value="false" id="false">
+            <lable for="false">Bugatti</lable>
+            <br>
+            <input type="radio" name="p14" value="false" id="false">
+            <lable for="false">Porsche</lable>
+        </fieldset>
+        <fieldset id="pytanie20" class="fieldset">
+            <legend style="text-align: center">Pytanie 20</legend>
+            <center>Do jakiej marki samochodów należy model SS?</center>
+            <br>
+            
+            <input type="radio" name="p14" value="true16" id="true16">
+            <lable for="true16">Chevrolet</lable>
+            <br>
+            <input type="radio" name="p14" value="false" id="false">
+            <label for="false">Peugot</label>
+            <br>
+            
+            <input type="radio" name="p14" value="false" id="false">
+            <lable for="false">Bugatti</lable>
+            <br>
+            <input type="radio" name="p14" value="false" id="false">
+            <lable for="false">Fiat</lable>
+        </fieldset>
+    </fieldset>
+    <fieldset id="d" class="fieldset">
+        <legend style="text-align:center">Pytania inf03</legend>
+        <fieldset id="pytanie21" class="fieldset">
+            <legend style="text-align: center">Pytanie 21</legend>
+            <center>Które z poleceń nadaje najniższy poziom uprawnień użytkownikowi uczen pod względem modyfikacji danych i struktury tabel?</center>
+            <br>
+            
+            <input type="radio" name="p15" value="false" id="false">
+            <lable for="false">GRANT INSERT, DROP ON szkola.przedmioty TO uczen;</lable>
+            <br>
+            <input type="radio" name="p15" value="false" id="false">
+            <label for="false">GRANT DROP ON szkola.przedmioty TO uczen;</label>
+            <br>
+            
+            <input type="radio" name="p15" value="true17" id="true17">
+            <lable for="true17">GRANT SELECT ON szkola.przedmioty TO uczen;</lable>
+            <br>
+            <input type="radio" name="p15" value="false" id="false">
+            <lable for="false">GRANT ALTER, SELECT ON szkola.przedmioty TO uczen;</lable>
+        </fieldset>
+        <fieldset id="pytanie22" class="fieldset">
+            <legend style="text-align: center">Pytanie 22</legend>
+            <center>W kodzie PHP znak "//" oznacza?</center>
+            <br>
+            
+            <input type="radio" name="p15" value="false" id="false">
+            <lable for="false">początek skryptu</lable>
+            <br>
+            <input type="radio" name="p15" value="false" id="false">
+            <label for="false">operator alernatywy</label>
+            <br>
+            
+            <input type="radio" name="p15" value="true17" id="true17">
+            <lable for="true17"> początek komentarza jednoliniowego</lable>
+            <br>
+            <input type="radio" name="p15" value="false" id="false">
+            <lable for="false">operator dzielenia całkowitego</lable>
+        </fieldset>
+        <fieldset id="pytanie23" class="fieldset">
+            <legend style="text-align: center">Pytanie 23</legend>
+            <center>W JavaScript wywołanie zdarzenia onKeydown nastąpi wtedy, gdy klawisz</center>
+            <br>
+            
+            <select style="margin-left: 20px; margin-bottom: 20px" name="js1">
+                <option value="none" id="none">wybierz odpowiedz</option>
+                <option value="kzn" id="true18">klawiatury został naciśnięty</option>
+                <option value="mzz" id="false">myszki został zwolniony</option>
+                <option value="mzn" id="false">myszki został naciśnięty</option>
+                <option value="kzz" id="false">klawiatury został zwolniony</option>
+                <option value="co?" id="false">co to javascript?</option>
+            </select>
+        </fieldset>
+        <fieldset id="pytanie24" class="fieldset">
+            <legend style="text-align: center">Pytanie 24</legend>
+            <center>Wskaż prawidłową kolejność stylów CSS mając na uwadze ich pierwszeństwo w formatowaniu elementów strony WWW.</center>
+            <br>
+            
+            <select style="margin-left: 20px; margin-bottom: 20px" name="js1">
+                <option value="none" id="none">wybierz odpowiedz</option>
+                <option value="rszl" id="false">Rozciąganie stylu, Zewnętrzny, Lokalny</option>
+                <option value="wzrs" id="false">Wewnętrzny, Zewnętrzny, Rozciąganie stylu</option>
+                <option value="lwz" id="true19">Lokalny, Wewnętrzny, Zewnętrzny</option>
+                <option value="zwbl" id="false">Zewnętrzny, Wydzielone bloki, Lokalny</option>
+                <option value="co?" id="false">co to ten cały css??</option>
+            </select>
+        </fieldset>
+        <fieldset id="pytanie25" class="fieldset">
+            <legend style="text-align: center">Pytanie 25</legend>
+            <center>Język JavaScript ma obsługę</center>
+            <br>
+            
+            <input type="radio" name="p15" value="false" id="false">
+            <lable for="false"> funkcji wirtualnych</lable>
+            <br>
+            <input type="radio" name="p15" value="false" id="false">
+            <label for="false">klas abstrakcyjnych</label>
+            <br>
+            
+            <input type="radio" name="p15" value="true20" id="true20">
+            <lable for="true20">obiektów DOM</lable>
+            <br>
+            <input type="radio" name="p15" value="false" id="false">
+            <lable for="false">wysyłania ciastek z tą samą informacją do wielu klientów strony</lable>
+        </fieldset>
+        <fieldset id="pytanie25" class="fieldset">
+            <legend style="text-align: center">Pytanie 26</legend>
+            <center>Język JavaScript ma obsługę</center>
+            <br>
+            
+            <input type="radio" name="p15" value="false" id="false">
+            <lable for="false"> funkcji wirtualnych</lable>
+            <br>
+            <input type="radio" name="p15" value="false" id="false">
+            <label for="false">klas abstrakcyjnych</label>
+            <br>
+            
+            <input type="radio" name="p15" value="true20" id="true20">
+            <lable for="true20">obiektów DOM</lable>
+            <br>
+            <input type="radio" name="p15" value="false" id="false">
+            <lable for="false">wysyłania ciastek z tą samą informacją do wielu klientów strony</lable>
         </fieldset>
     </fieldset>
 </fieldset>
