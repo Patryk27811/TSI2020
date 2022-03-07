@@ -5,24 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
     <title>Formularze Patryk Dobrowolski 3M</title>
+    <script>
+        function link(url) {
+            window.location = url;
+        }
+    </script>
 </head>
-<body >
+<body>
+    
     <div class="center">
-    <div class="form">
-        <div>
-        <div style="margin-top: 40px; display: flex; justify-content: center; margin-bottom: 20px; align-items: center; ">
-            <button style="margin-right: 20px; width: 250px; height: 70px; font-size: 18px; " onclick="window.location.assign('login.html')" class="btn">Logowanie</button>
-            <button style="margin-left: 20px; width: 250px; height: 70px; font-size: 18px; " onclick="window.location.assign('reg.html')" class="btn">Rejestracja</button>
-        </div>
+    <div class="form" style="width: 500px;">
+        <div style="background-image: url(img/tlo2.jpg); margin-top:30px; width:500px;" >
+            
+                <fieldset style="text-align: right;">
+                    <legend style="text-align: left;">Logowanie</legend>
+                    Login
+                    <input type="text">
+                    <br>
+                    Hasło
+                    <input type="password">
+                </fieldset>
+                <button  onclick="link('reg.html')" class="btn-reg">Rejestracja</button>
+                <br>
+                <button  onclick="link('passfor.html')" class="btn-reg">Zapomniałem hasła</button>
+                <div style="display: flex; justify-content: center; margin-top: 20px;">
+                    <input type="submit" value="Zaloguj" class="btn">
+                    </div>
+        
+        
+        
 
         </div>
         
     </div>
     
     </div>
-    
-
+    <script src="js/param2s.js"></script>
+    <script src="js/getparam.js"></script>
     
 </body>
 </html>
