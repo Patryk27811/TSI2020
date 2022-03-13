@@ -91,13 +91,13 @@
                     <fieldset id="1-2" style="text-align: right">
                         <legend>Dane kontaktowe</legend>
                         Numer telefonu
-                        <input type="tel" name="phone" placeholder="numer telefonu" maxlength="9" />
+                        <input type="tel" name="phone" placeholder="np.123123123" maxlength="9" />
                         <br /> Adres e-mail
-                        <input type="email" name="email" placeholder="email" />
+                        <input type="email" name="email" placeholder="np.jankowalski@domena.com" />
                         <br /> Województwo
                         <select style="margin-left: 20px; margin-bottom: 20px" name="wojewodztwa">
 								<option value="none">
-									wybierz województwo
+									wybierz 
 								</option>
 								<option value="dolnośląskie">
 									dolnośląskie
@@ -146,10 +146,10 @@
                     <fieldset id="1-3" style="text-align: right">
                         <legend>Wygląd</legend>
                         Kolor włosów
-                        <input type="text" name="kwls" placeholder="kolor włosów" />
+                        <input type="text" name="kwls" placeholder="np.czerwone" />
                         <br /> Kolor oczu
                         <select style="margin-left: 20px; margin-bottom: 20px" name="cocz">
-								<option value="none">Wybierz kolor</option>
+								<option value="none">Wybierz </option>
 								<option value="ciemnobrązowe">
 									ciemno-brązowe
 								</option>
@@ -177,7 +177,7 @@
 								<option value="inne">inne</option>
 							</select>
                         <br /> Wzrost
-                        <input type="number" max="250" min="1" name="height" placeholder="wzrost" />
+                        <input type="number" max="250" min="1" name="height" placeholder="np.150" />
                     </fieldset>
                 </fieldset>
                 <fieldset id="2" style="border-color: blue">
@@ -244,7 +244,7 @@
 							<select
 								name="interesujesz" multiple="multiple"
 							>
-							<option value="none">Wybierz Zainteresowanie</option>
+							<option value="none">Wybierz </option>
 								<option value="pornhubem">Pornhubem</option>
 								<option value="F1">F1</option>
 								<option value="piłką nożną">Piłką nożną</option>
@@ -276,7 +276,7 @@
 								style="margin-left: 20px; margin-bottom: 20px "
 								name="urzwyb"
 							>
-								<option value="none ">Wybierz urzadzenie</option>
+								<option value="none ">Wybierz </option>
 								<option value="komputer ">komputer</option>
 								<option value="laptop ">laptop</option>
 								<option value="telefon ">telefon</option>
@@ -289,7 +289,8 @@
 							<input type="text " name="dystro" id="dystro" />
 							<br>
 							Jak bardzo kochasz linuxa?
-							<input type="range" name="milosclinux" min="0" max="100"/>
+							<input type="range" min="1" value="1" max="100" style="width: 350px;" oninput="this.nextElementSibling.value = this.value">
+                <output>1</output>%
 							
 						</fieldset>
                         
@@ -333,7 +334,7 @@
 								style="margin-left: 20px; margin-bottom: 20px "
 								name="kier"
 							>
-								<option value="none ">Wybierz kierunek</option>
+								<option value="none ">Wybierz </option>
 								<option value="informatyka">Informatyka</option>
 								<option value="bazydanych">bazy danych</option>
 								<option value="awf">AWF</option>
