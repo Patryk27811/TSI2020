@@ -66,13 +66,18 @@ img{
     border: 1px solid black;
     border-radius: 6px;
 }
- label{
+
+label {
     border: 1px solid black;
     width: 600px;
     display: inline-block;
     padding: 10px 10px 10px 10px;
     margin-bottom: 10px;
- }
-
-
+    
+   }
+   
+   label:hover {
+    background: aqua;
+    cursor:pointer;
+   }
 

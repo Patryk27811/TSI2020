@@ -12,7 +12,7 @@
     <div class="center">
         <div class="form">
     <form action="result.html">
-        <center><legend>Witaj! Zapraszam Cię do rozwiązania quizu składającego się z 40 pytań. <br> Każde z pytań ma 1 poprawną odpowiedz, na rozwiązanie quizu masz 40 minut, po upływie tego czasu quiz zamyka się</legend></center>
+        <center><legend>Witaj! Zapraszam Cię do rozwiązania quizu składającego się z 36 pytań. <br> Na rozwiązanie quizu masz 40 minut, po upływie tego czasu quiz zamyka się</legend></center>
         <fieldset class="fieldset" id="a">
            <legend style="text-align: center ">Pytania ogólne</legend>
         <fieldset id="pytanie1" class="fieldset">
@@ -23,13 +23,13 @@
             <label for="true1">6</label>
             <br>
             <input type="radio" name="p1" value="false1" id="false1">
-            <lable for="false1">8</lable>
+            <label for="false1">8</label>
             <br>
             <input type="radio" name="p1" value="false2" id="false2">
-            <lable for="false2">-6</lable>
+            <label for="false2">-6</label>
             <br>
             <input type="radio" name="p1" value="false" id="false3">
-            <lable for="false3">Pan Bóg tylko to wie</lable>
+            <label for="false3">Pan Bóg tylko to wie</label>
         </fieldset>
         <fieldset id="pytanie2" class="fieldset">
             <legend style="text-align: center">Pytanie 2</legend>
@@ -39,13 +39,13 @@
             <label for="false4">Esteban Ocon</label>
             <br>
             <input type="radio" name="p2" value="false5" id="false5">
-            <lable for="false5">Nikita Mazepin</lable>
+            <label for="false5">Nikita Mazepin</label>
             <br>
             <input type="radio" name="p2" value="false6" id="false6">
-            <lable for="false6">Lewis Hamilton</lable>
+            <label for="false6">Lewis Hamilton</label>
             <br>
             <input type="radio" name="p2" value="true2" id="true2">
-            <lable for="true2">Max Verstappen</lable>
+            <label for="true2">Max Verstappen</label>
         </fieldset>
         <fieldset id="pytanie3" class="fieldset">
             <legend style="text-align: center">Pytanie 3</legend>
@@ -55,13 +55,13 @@
             <label for="false7">Soplica</label>
             <br>
             <input type="radio" name="p3" value="true3" id="true3">
-            <lable for="true3">Buh</lable>
+            <label for="true3">Buh</label>
             <br>
-            <input type="radio" name="p3" value="false" id="false">
-            <lable for="false">Wyborową</lable>
+            <input type="radio" name="p3" value="false8" id="false8">
+            <label for="false8">Wyborową</label>
             <br>
-            <input type="radio" name="p3" value="false" id="false">
-            <lable for="false">Słowacki</lable>
+            <input type="radio" name="p3" value="false9" id="false9">
+            <label for="false9">Słowacki</label>
         </fieldset>
         <fieldset id="pytanie4" class="fieldset">
             <legend style="text-align: center">Pytanie 4</legend>
@@ -81,17 +81,17 @@
             <legend style="text-align: center">Pytanie 6</legend>
             <center>Jak wyłączyć firewall w systemie linux?</center>
             <br>
-            <input type="radio" name="p4" value="false" id="false">
-            <label for="false">systemctrl off firewall</label>
+            <input type="radio" name="p4" value="false10" id="false10">
+            <label for="false10">systemctrl off firewall</label>
             <br>
-            <input type="radio" name="p4" value="false" id="false">
-            <lable for="false">sudo firewall disable</lable>
+            <input type="radio" name="p4" value="false11" id="false11">
+            <label for="false11">sudo firewall disable</label>
             <br>
-            <input type="radio" name="p4" value="false" id="false">
-            <lable for="false">systemctrl stop ufw</lable>
+            <input type="radio" name="p4" value="false12" id="false12">
+            <label for="false12">systemctrl stop ufw</label>
             <br>
             <input type="radio" name="p4" value="true4" id="true4">
-            <lable for="true4">sudo ufw disable</lable>
+            <label for="true4">sudo ufw disable</label>
         </fieldset>
         <fieldset id="pytanie7" class="fieldset">
             <legend style="text-align: center">Pytanie 7</legend>
@@ -103,11 +103,12 @@
             <center>Jaki parametr jest potrzebny do usuniecia plików z potwierdzeniem?</center>
             <br>
             <select style="margin-left: 20px; margin-bottom: 20px" name="parametr1">
+                <option value="none">Wybierz</option>
             <option value="-i" id="true5">-i</option>
-            <option value="-G" id="false">-G</option>
-            <option value="-a" id="false">-a</option>
-            <option value="-l" id="false">-l</option>
-            <option value="co?" id="false">co to parametr?</option>
+            <option value="-G" id="false13">-G</option>
+            <option value="-a" id="false14">-a</option>
+            <option value="-l" id="false15">-l</option>
+            <option value="co?" id="false16">co to parametr?</option>
         </select>
         </fieldset>
         <fieldset class="fieldset" id="pytanie9">
@@ -115,12 +116,12 @@
             <center>Jakim poleceniem dodajemy użytkowników w systemie linux?</center>
             <br>
             <select style="margin-left: 20px; margin-bottom: 20px" name="dodawanieuzytkownika">
-                <option value="none" id="none">wybierz odpowiedz</option>
+                <option value="none" id="none">wybierz </option>
             <option value="adduser" id="true6">adduser</option>
-            <option value="netuser" id="false">net user</option>
-            <option value="aduser" id="false">aduser</option>
-            <option value="moduser" id="false">moduser</option>
-            <option value="usermod" id="false">usermod</option>
+            <option value="netuser" id="false17">net user</option>
+            <option value="aduser" id="false18">aduser</option>
+            <option value="moduser" id="false19">moduser</option>
+            <option value="usermod" id="false20">usermod</option>
         </select>
         </fieldset>
         <fieldset class="fieldset" id="pytanie10">
@@ -133,17 +134,17 @@
             <legend style="text-align: center">Pytanie 11</legend>
             <center>Jakim poleceniem sprawdzimy dysk w cmd?</center>
             <br>
-            <input type="radio" name="p6" value="false" id="false">
-            <label for="false">df</label>
+            <input type="radio" name="p6" value="false21" id="false21">
+            <label for="false21">df</label>
             <br>
-            <input type="radio" name="p6" value="false" id="false">
-            <lable for="false">fdisk -l</lable>
+            <input type="radio" name="p6" value="false22" id="false22">
+            <label for="false22">fdisk -l</label>
             <br>
             <input type="radio" name="p6" value="true7" id="true7">
-            <lable for="true7">chkdsk</lable>
+            <label for="true7">chkdsk</label>
             <br>
-            <input type="radio" name="p6" value="false" id="false">
-            <lable for="false">chkdskntfs</lable>
+            <input type="radio" name="p6" value="false23" id="false23">
+            <label for="false23">chkdskntfs</label>
         </fieldset>
         <fieldset id="pytanie12" class="fieldset">
             <legend style="text-align: center">Pytanie 12</legend>
@@ -152,14 +153,14 @@
             <input type="checkbox" name="p7" value="true8" id="true8">
             <label for="true8">:q</label>
             <br>
-            <input type="checkbox" name="p7" value="false" id="false">
-            <lable for="false">exit</lable>
+            <input type="checkbox" name="p7" value="false24" id="false24">
+            <label for="false24">exit</label>
             <br>
             <input type="checkbox" name="p7" value="true9" id="true9">
-            <lable for="true9">:wq</lable>
+            <label for="true9">:wq</label>
             <br>
-            <input type="checkbox" name="p7" value="false" id="false">
-            <lable for="false">a co to wgl ten vim?</lable>
+            <input type="checkbox" name="p7" value="false25" id="false25">
+            <label for="false25">a co to wgl ten vim?</label>
         </fieldset>
         <fieldset id="pytanie13" class="fieldset">
             <legend style="text-align: center">Pytanie 13</legend>
@@ -168,14 +169,14 @@
             <input type="checkbox" name="p8" value="true10" id="true10">
             <label for="true10">cd</label>
             <br>
-            <input type="checkbox" name="p8" value="false" id="false">
-            <lable for="false">ls</lable>
+            <input type="checkbox" name="p8" value="false26" id="false26">
+            <label for="false26">ls</label>
             <br>
             <input type="checkbox" name="p8" value="true11" id="true9">
-            <lable for="true9">dir</lable>
+            <label for="true9">dir</label>
             <br>
-            <input type="checkbox" name="p8" value="false" id="false">
-            <lable for="false">:q</lable>
+            <input type="checkbox" name="p8" value="false27" id="false27">
+            <label for="false27">:q</label>
         </fieldset>
         <fieldset id="pytanie14" class="fieldset">
             <legend style="text-align: center">Pytanie 14</legend>
@@ -184,14 +185,14 @@
             <input type="checkbox" name="p9" value="true11" id="true11">
             <label for="true11">Linux</label>
             <br>
-            <input type="checkbox" name="p9" value="false" id="false">
-            <lable for="false">Windows</lable>
+            <input type="checkbox" name="p9" value="false28" id="false28">
+            <label for="false28">Windows</label>
             <br>
             <input type="checkbox" name="p9" value="true11" id="true9">
-            <lable for="true9">linux</lable>
+            <label for="true9">linux</label>
             <br>
-            <input type="checkbox" name="p9" value="false" id="false">
-            <lable for="false">Windows</lable>
+            <input type="checkbox" name="p9" value="false29" id="false29">
+            <label for="false29">Windows</label>
         </fieldset>
         
     </fieldset>
@@ -204,17 +205,17 @@
             <br>
             <img src="img/buggati.jpg">
             <br>
-            <input type="radio" name="p10" value="false" id="false">
-            <label for="false">Lamborghini</label>
+            <input type="radio" name="p10" value="false30" id="false30">
+            <label for="false30">Lamborghini</label>
             <br>
-            <input type="radio" name="p10" value="false" id="false">
-            <lable for="false">Ferrari</lable>
+            <input type="radio" name="p10" value="false31" id="false31">
+            <label for="false31">Ferrari</label>
             <br>
             <input type="radio" name="p10" value="true12" id="true12">
-            <lable for="true12">Bugatti</lable>
+            <label for="true12">Bugatti</label>
             <br>
-            <input type="radio" name="p10" value="false" id="false">
-            <lable for="false">Fiat</lable>
+            <input type="radio" name="p10" value="false32" id="false32">
+            <label for="false32">Fiat</label>
         </fieldset>
         <fieldset id="pytanie16" class="fieldset">
             <legend style="text-align: center">Pytanie 16</legend>
@@ -222,17 +223,17 @@
             <img src="img/ferrari.jpg">
             <br>
             <br>
-            <input type="radio" name="p11" value="false" id="false">
-            <label for="false">Lamborghini ventador</label>
+            <input type="radio" name="p11" value="false33" id="false33">
+            <label for="false33">Lamborghini ventador</label>
             <br>
             <input type="radio" name="p11" value="true14" id="true14">
-            <lable for="true14">Ferrari Testarossa</lable>
+            <label for="true14">Ferrari Testarossa</label>
             <br>
-            <input type="radio" name="p11" value="false" id="false">
-            <lable for="false">Bugatti veyron</lable>
+            <input type="radio" name="p11" value="false34" id="false34">
+            <label for="false34">Bugatti veyron</label>
             <br>
-            <input type="radio" name="p11" value="false" id="false">
-            <lable for="false">Fiat panda</lable>
+            <input type="radio" name="p11" value="false35" id="false35">
+            <label for="false35">Fiat panda</label>
         </fieldset>
         <fieldset id="pytanie17" class="fieldset">
             <legend style="text-align: center">Pytanie 17</legend>
@@ -248,17 +249,17 @@
             <center>Jaki samochód ma najlepszy czas na torze Nürburgring?</center>
             <br>
             <br>
-            <input type="radio" name="p12" value="false" id="false">
-            <label for="false">Lamborghini aventador svj</label>
+            <input type="radio" name="p12" value="false36" id="false36">
+            <label for="false36">Lamborghini aventador svj</label>
             <br>
             <input type="radio" name="p13" value="true15" id="true15">
-            <lable for="true15">Porsche 911 gt2 rs</lable>
+            <label for="true15">Porsche 911 gt2 rs</label>
             <br>
-            <input type="radio" name="p13" value="false" id="false">
-            <lable for="false">Bugatti veyron</lable>
+            <input type="radio" name="p13" value="false37" id="false37">
+            <label for="false37">Bugatti veyron</label>
             <br>
-            <input type="radio" name="p13" value="false" id="false">
-            <lable for="false">Mercedes amg gt black series</lable>
+            <input type="radio" name="p13" value="false38" id="false38">
+            <label for="false38">Mercedes amg gt black series</label>
         </fieldset>
         <fieldset id="pytanie19" class="fieldset">
             <legend style="text-align: center">Pytanie 19</legend>
@@ -266,17 +267,17 @@
             <br>
             
             <input type="radio" name="p14" value="true16" id="true16">
-            <lable for="true16">Bentley</lable>
+            <label for="true16">Bentley</label>
             <br>
-            <input type="radio" name="p14" value="false" id="false">
-            <label for="false">Ferrari</label>
+            <input type="radio" name="p14" value="false39" id="false39">
+            <label for="false39">Ferrari</label>
             <br>
             
-            <input type="radio" name="p14" value="false" id="false">
-            <lable for="false">Bugatti</lable>
+            <input type="radio" name="p14" value="false40" id="false40">
+            <label for="false40">Bugatti</label>
             <br>
-            <input type="radio" name="p14" value="false" id="false">
-            <lable for="false">Porsche</lable>
+            <input type="radio" name="p14" value="false41" id="false41">
+            <label for="false41">Porsche</label>
         </fieldset>
         <fieldset id="pytanie20" class="fieldset">
             <legend style="text-align: center">Pytanie 20</legend>
@@ -284,17 +285,17 @@
             <br>
             
             <input type="radio" name="p14" value="true16" id="true16">
-            <lable for="true16">Chevrolet</lable>
+            <label for="true16">Chevrolet</label>
             <br>
-            <input type="radio" name="p14" value="false" id="false">
-            <label for="false">Peugot</label>
+            <input type="radio" name="p14" value="false42" id="false42">
+            <label for="false42">Peugot</label>
             <br>
             
-            <input type="radio" name="p14" value="false" id="false">
-            <lable for="false">Bugatti</lable>
+            <input type="radio" name="p14" value="false43" id="false43">
+            <label for="false43">Bugatti</label>
             <br>
-            <input type="radio" name="p14" value="false" id="false">
-            <lable for="false">Fiat</lable>
+            <input type="radio" name="p14" value="false44" id="false44">
+            <label for="false44">Fiat</label>
         </fieldset>
     </fieldset>
     <fieldset id="d" class="fieldset">
@@ -304,36 +305,36 @@
             <center>Które z poleceń nadaje najniższy poziom uprawnień użytkownikowi uczen pod względem modyfikacji danych i struktury tabel?</center>
             <br>
             
-            <input type="radio" name="p15" value="false" id="false">
-            <lable for="false">GRANT INSERT, DROP ON szkola.przedmioty TO uczen;</lable>
+            <input type="radio" name="p15" value="false45" id="false45">
+            <label for="false45">GRANT INSERT, DROP ON szkola.przedmioty TO uczen;</label>
             <br>
-            <input type="radio" name="p15" value="false" id="false">
-            <label for="false">GRANT DROP ON szkola.przedmioty TO uczen;</label>
+            <input type="radio" name="p15" value="false46" id="false46">
+            <label for="false46">GRANT DROP ON szkola.przedmioty TO uczen;</label>
             <br>
             
             <input type="radio" name="p15" value="true17" id="true17">
-            <lable for="true17">GRANT SELECT ON szkola.przedmioty TO uczen;</lable>
+            <label for="true17">GRANT SELECT ON szkola.przedmioty TO uczen;</label>
             <br>
-            <input type="radio" name="p15" value="false" id="false">
-            <lable for="false">GRANT ALTER, SELECT ON szkola.przedmioty TO uczen;</lable>
+            <input type="radio" name="p15" value="false47" id="false47">
+            <label for="false47">GRANT ALTER, SELECT ON szkola.przedmioty TO uczen;</label>
         </fieldset>
         <fieldset id="pytanie22" class="fieldset">
             <legend style="text-align: center">Pytanie 22</legend>
             <center>W kodzie PHP znak "//" oznacza?</center>
             <br>
             
-            <input type="radio" name="p15" value="false" id="false">
-            <lable for="false">początek skryptu</lable>
+            <input type="radio" name="p16" value="false48" id="false48">
+            <label for="false48">początek skryptu</label>
             <br>
-            <input type="radio" name="p15" value="false" id="false">
-            <label for="false">operator alernatywy</label>
+            <input type="radio" name="p16" value="false49" id="false49">
+            <label for="false49">operator alernatywy</label>
             <br>
             
-            <input type="radio" name="p15" value="true17" id="true17">
-            <lable for="true17"> początek komentarza jednoliniowego</lable>
+            <input type="radio" name="p16" value="true17" id="true17">
+            <label for="true17"> początek komentarza jednoliniowego</label>
             <br>
-            <input type="radio" name="p15" value="false" id="false">
-            <lable for="false">operator dzielenia całkowitego</lable>
+            <input type="radio" name="p16" value="false50" id="false50">
+            <label for="false50">operator dzielenia całkowitego</label>
         </fieldset>
         <fieldset id="pytanie23" class="fieldset">
             <legend style="text-align: center">Pytanie 23</legend>
@@ -341,12 +342,12 @@
             <br>
             
             <select style="margin-left: 20px; margin-bottom: 20px" name="js1">
-                <option value="none" id="none">wybierz odpowiedz</option>
+                <option value="none" id="none">wybierz </option>
                 <option value="kzn" id="true18">klawiatury został naciśnięty</option>
-                <option value="mzz" id="false">myszki został zwolniony</option>
-                <option value="mzn" id="false">myszki został naciśnięty</option>
-                <option value="kzz" id="false">klawiatury został zwolniony</option>
-                <option value="co?" id="false">co to javascript?</option>
+                <option value="mzz" id="false51">myszki został zwolniony</option>
+                <option value="mzn" id="false52">myszki został naciśnięty</option>
+                <option value="kzz" id="false53">klawiatury został zwolniony</option>
+                <option value="co?" id="false54">co to javascript?</option>
             </select>
         </fieldset>
         <fieldset id="pytanie24" class="fieldset">
@@ -355,12 +356,12 @@
             <br>
             
             <select style="margin-left: 20px; margin-bottom: 20px" name="js1">
-                <option value="none" id="none">wybierz odpowiedz</option>
-                <option value="rszl" id="false">Rozciąganie stylu, Zewnętrzny, Lokalny</option>
-                <option value="wzrs" id="false">Wewnętrzny, Zewnętrzny, Rozciąganie stylu</option>
+                <option value="none" id="none">wybierz </option>
+                <option value="rszl" id="false55">Rozciąganie stylu, Zewnętrzny, Lokalny</option>
+                <option value="wzrs" id="false56">Wewnętrzny, Zewnętrzny, Rozciąganie stylu</option>
                 <option value="lwz" id="true19">Lokalny, Wewnętrzny, Zewnętrzny</option>
-                <option value="zwbl" id="false">Zewnętrzny, Wydzielone bloki, Lokalny</option>
-                <option value="co?" id="false">co to ten cały css??</option>
+                <option value="zwbl" id="false57">Zewnętrzny, Wydzielone bloki, Lokalny</option>
+                <option value="co?" id="false58">co to ten cały css??</option>
             </select>
         </fieldset>
         <fieldset id="pytanie25" class="fieldset">
@@ -368,72 +369,137 @@
             <center>Język JavaScript ma obsługę</center>
             <br>
             
-            <input type="radio" name="p15" value="false" id="false">
-            <lable for="false"> funkcji wirtualnych</lable>
+            <input type="radio" name="p17" value="false59" id="false59">
+            <label for="false59"> funkcji wirtualnych</label>
             <br>
-            <input type="radio" name="p15" value="false" id="false">
-            <label for="false">klas abstrakcyjnych</label>
+            <input type="radio" name="p17" value="false60" id="false60">
+            <label for="false60">klas abstrakcyjnych</label>
             <br>
             
-            <input type="radio" name="p15" value="true20" id="true20">
-            <lable for="true20">obiektów DOM</lable>
+            <input type="radio" name="p17" value="true20" id="true20">
+            <label for="true20">obiektów DOM</label>
             <br>
-            <input type="radio" name="p15" value="false" id="false">
-            <lable for="false">wysyłania ciastek z tą samą informacją do wielu klientów strony</lable>
+            <input type="radio" name="p17" value="false70" id="false70">
+            <label for="false70">wysyłania ciastek z tą samą informacją do wielu klientów strony</label>
         </fieldset>
         <fieldset id="pytanie26" class="fieldset">
             <legend style="text-align: center">Pytanie 26</legend>
             <center>W HTML, aby wstawić obrazek z tekstem przyległym, znajdującym się pośrodku obrazka, należy zapisać znacznik</center>
             <br>
             
-            <input type="radio" name="p15" value="false" id="false">
-            <lable for="false"> < img src="obrazek.png" alt="obraz4">tekst</lable>
+            <input type="radio" name="p18" value="false71" id="false71">
+            <label for="false71"> < img src="obrazek.png" alt="obraz4">tekst</label>
             <br>
-            <input type="radio" name="p15" value="false" id="false">
-            <label for="false">< img src="obrazek.png" alt="obraz3" height="50%"> tekst</label>
+            <input type="radio" name="p18" value="false72" id="false72">
+            <label for="false72">< img src="obrazek.png" alt="obraz3" height="50%"> tekst</label>
             <br>
             
-            <input type="radio" name="p15" value="true20" id="true20">
-            <lable for="true21">< img src="obrazek.png" alt="obraz2" align="middle"> tekst</lable>
+            <input type="radio" name="p18" value="true20" id="true20">
+            <label for="true21">< img src="obrazek.png" alt="obraz2" align="middle"> tekst</label>
             <br>
-            <input type="radio" name="p15" value="false" id="false">
-            <lable for="false">< img src="obrazek.png" alt="obraz1" hspace="30px"> tekst</lable>
+            <input type="radio" name="p18" value="false73" id="false73">
+            <label for="false73">< img src="obrazek.png" alt="obraz1" hspace="30px"> tekst</label>
         </fieldset>
         <fieldset id="pytanie27" class="fieldset">
             <legend style="text-align: center">Pytanie 27</legend>
             <center>Do poprawnego i spójnego działania bazy danych niezbędne jest umieszczenie w każdej tabeli</center>
             <br>
             
-            <input type="radio" name="p15" value="false" id="false">
-            <lable for="false"> klucza obcego z wartością NOT NULL i UNIQUE</lable>
+            <input type="radio" name="p19" value="false74" id="false74">
+            <label for="false74"> klucza obcego z wartością NOT NULL i UNIQUE</label>
             <br>
-            <input type="radio" name="p15" value="false" id="false">
-            <label for="false">klucza FOREIGN KEY z wartością NOT NULL</label>
+            <input type="radio" name="p19" value="false75" id="false75">
+            <label for="false75">klucza FOREIGN KEY z wartością NOT NULL</label>
             <br>
             
-            <input type="radio" name="p15" value="true20" id="true20">
-            <lable for="true22">klucza PRIMARY KEY z wartością NOT NULL i UNIQUE</lable>
+            <input type="radio" name="p19" value="true20" id="true20">
+            <label for="true22">klucza PRIMARY KEY z wartością NOT NULL i UNIQUE</label>
             <br>
-            <input type="radio" name="p15" value="false" id="false">
-            <lable for="false">kluczy PRIMARY KEY i FOREIGN KEY</lable>
+            <input type="radio" name="p19" value="false76" id="false76">
+            <label for="false76">kluczy PRIMARY KEY i FOREIGN KEY</label>
         </fieldset>
         <fieldset id="pytanie28" class="fieldset">
             <legend style="text-align: center">Pytanie 28</legend>
             <center>Testy dotyczące skalowalności oprogramowania mają za zadanie sprawdzić, czy aplikacja</center>
             <br>
-            <input type="radio" name="p15" value="true23" id="true23">
-            <lable for="true23"> potrafi działać przy zakładanym i większym obciążeniu</lable>
+            <input type="radio" name="p20" value="true23" id="true23">
+            <label for="true23"> potrafi działać przy zakładanym i większym obciążeniu</label>
             <br>
-            <input type="radio" name="p15" value="false" id="false">
-            <lable for="false">jest zabezpieczona przed niedozwolonymi operacjami, np. dzielenie przez zero</lable>
+            <input type="radio" name="p20" value="false77" id="false77">
+            <label for="false77">jest zabezpieczona przed niedozwolonymi operacjami, np. dzielenie przez zero</label>
             <br>
-            <input type="radio" name="p15" value="false" id="false">
-            <label for="false">jest odpowiednio udokumentowana</label>
+            <input type="radio" name="p20" value="false78" id="false78">
+            <label for="false78">jest odpowiednio udokumentowana</label>
             <br>
-            <input type="radio" name="p15" value="false" id="false">
-            <lable for="false">ma odpowiednią funkcjonalność</lable>
+            <input type="radio" name="p20" value="false79" id="false79">
+            <label for="false79">ma odpowiednią funkcjonalność</label>
         </fieldset>
     </fieldset>
+</fieldset>
+<fieldset id="xD" class="fieldset">
+    <legend style="text-align: center">Formuła 1</legend>
+<fieldset id="pytanie29">
+    <legend style="text-align: center">Pytanie 29</legend>
+    <center>Z jakim kolorem jest kojarzony zespół Ferarri</center>
+<input type="color"><!--czerwony-->
+</fieldset>
+<fieldset id="pytanie230">
+    <legend style="text-align: center">Pytanie 30</legend>
+    <center>W jakim miesiącu zaczyna się wyścig w Bahrajnie w 2022 roku</center>
+<input type="month"><!--marzec-->
+</fieldset>
+<fieldset id="pytanie230">
+    <legend style="text-align: center">Pytanie 31</legend>
+    <center>Jaki jest rekord toru w Bahrajnie</center>
+<input type="time"> <!--1:32-->
+</fieldset>
+<fieldset id="pytanie32">
+    <legend style="text-align: center">Pytanie 32</legend>
+    <center>Podaj konretną date gp Bahrajnu 2022</center>
+<input type="date"> <!--18.03-->
+</fieldset>
+<fieldset id="pytanie33">
+    <legend style="text-align: center">Pytanie 33</legend>
+    <center>W którym tygodniu kwietnia nie zobaczymy żadnego wyścigu F1?</center>
+<input type="week"> <!--25-30-->
+</fieldset>
+<fieldset id="pytanie34">
+    <legend style="text-align: center">Pytanie 34</legend>
+    <center>Czyj bolid ma nazwę W13?</center>
+<input type="text"> <!--mercedes-->
+</fieldset>
+<fieldset id="pytanie35">
+    <legend style="text-align: center">Pytanie 35</legend>
+    <center>Kto został mistrzem świata w sezonie 2021?</center>
+    <br>
+    <input type="radio" name="p21" value="true24" id="true24">
+    <label for="true24">Max Verstappen</label>
+    <br>
+    <input type="radio" name="p21" value="false80" id="false80">
+    <label for="false80">Lewis Hamilton</label>
+    <br>
+    <input type="radio" name="p21" value="false81" id="false81">
+    <label for="false81">Esteban Ocon</label>
+    <br>
+    <input type="radio" name="p21" value="false82" id="false82">
+    <label for="false82">Nikita Mazespin</label>
+</fieldset>
+<fieldset id="pytanie36">
+    <legend style="text-align: center">Pytanie 36</legend>
+    <center>Kto został mistrzem konstruktorów 2021?</center>
+    <br>
+    <input type="radio" name="p22" value="false83" id="false83">
+    <label for="false83">Alpine</label>
+    <br>
+    <input type="radio" name="p22" value="false84" id="false84">
+    <label for="false84">Haas</label>
+    <br>
+    <input type="radio" name="p22" value="false85" id="false85">
+    <label for="false85">Redbull</label>
+    <br>
+    <input type="radio" name="p22" value="true24" id="true25">
+    <label for="true24">Mercedes</label>
+</fieldset>
 </fieldset>
     <div style="display: flex; justify-content: center; margin-top: 20px;">
         <input type="reset" value="Wyczyść" class="btn">
