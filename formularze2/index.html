@@ -11,10 +11,16 @@
 <body>
     <div class="center">
         <div class="form">
-    <form action="mailto:patryk@pdobrowolski.com?subject=myform_submission" enctype="text/plain" onsubmit="location.href='result.html';">
+    <form action="result.html" method="get">
         <center><legend>Witaj! Zapraszam Cię do rozwiązania quizu składającego się z 36 pytań. <br> Na rozwiązanie quizu masz 40 minut, po upływie tego czasu quiz zamyka się</legend></center>
         <fieldset class="fieldset" id="a">
            <legend style="text-align: center ">Pytania ogólne</legend>
+           <fieldset id="pytanie0" class="fieldset">
+            <legend>E-mail</legend>
+            <p>  <b>Jaki jest twój adres e-mail ?</b>
+            </p>
+        <input type="email" name="usrmail">
+        </fieldset>
         <fieldset id="pytanie1" class="fieldset">
             <legend style="text-align: center">Pytanie 1</legend>
             <center>Jaki jest wynik działania 2+2*2?</center>
@@ -500,6 +506,7 @@
     <input type="radio" name="p23" value="true27" id="true27">
     <label for="true27">Mercedes</label>
 </fieldset>
+
 </fieldset>
     <div style="display: flex; justify-content: center; margin-top: 20px;">
         <input type="reset" value="Wyczyść" class="btn">
@@ -514,5 +521,11 @@
     </form>
     </div>
     </div>
+    <script>
+
+        document.registrationForm.ageInputId.oninput = function(){
+            document.registrationForm.ageOutputId.value = document.registrationForm.ageInputId.value;
+         }
+            </script>
 </body>
 </html>

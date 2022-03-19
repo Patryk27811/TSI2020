@@ -6,10 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <script>function getSearchParameters() {
+        var prmstr = window.location.search.substr(1);
+        return prmstr != null && prmstr != "" ? transformToAssocArray(prmstr) : {};
+    }
+    
+    function transformToAssocArray( prmstr ) {
+        var params = {};
+        var prmarr = prmstr.split("&");
+        for ( var i = 0; i < prmarr.length; i++) {
+            var tmparr = prmarr[i].split("=");
+            params[tmparr[0]] = tmparr[1];
+        }
+        return params;
+    }
+    
+    var params = getSearchParameters();
+    console.log(params);
+    </script>
 </head>
 <body>
     <div class="center">
-    <h1 style="color:white; font-size:40px; margin-top: 40px; display: flex; justify-content: center; margin-bottom: 20px; align-items: center; " class="form"> Dzięki za przesłanie</h1>
+    <h1 style="color:white; font-size:40px; margin-top: 40px; display: flex; justify-content: center; margin-bottom: 20px; align-items: center; " class="form"> Dzięki za przesłanie</h1><br>
+    <p id="send"class="form"></p>
+
+    <script>
+        let usermail=decodeURIComponent(params.usrmail);
+        document.getElementById("send").innerHTML="<a href='mailto:"+usermail+"?subject=Odpowiedzi&body=odpowiedzi'><button class='btn'>Wyślij</button</a>";
+        
+        
+            </script>
 </div>
 </body>
 </html>
