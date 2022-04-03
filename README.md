@@ -1,6 +1,8 @@
-##TSI2020
+TSI2020
+<hr>
 Repo containing code for school
-##Live:
+<hr>
+Live:
 [Tabele,listy, łącza](https://patryk27811.github.io/TSI2020/tablelistyzlacza)
 [Tabela z kolorami](https://patryk27811.github.io/TSI2020/tabela-z-kolorami)
 [Formularze](https://patryk27811.github.io/TSI2020/formularze)
@@ -9,6 +11,3 @@ Repo containing code for school
 [Listy](https://patryk27811.github.io/TSI2020/listy)
 [Multimedia](https://patryk27811.github.io/TSI2020/multimedia)
 [Główna](https://patryk27811.github.io/TSI2020/glowna)
-<a href="#" class="button">Post comment (link)</a>
-<input class="button" type="submit" value="Post comment (input)">
-<button class="button" type="submit">Post comment (button)</button>
