@@ -1,7 +1,7 @@
 TSI2020
-<hr>
+<hr width:50px;>
 Repo containing code for school
-<hr>
+<hr width:50px;>
 Live:
 [Tabele,listy, łącza](https://patryk27811.github.io/TSI2020/tablelistyzlacza)
 [Tabela z kolorami](https://patryk27811.github.io/TSI2020/tabela-z-kolorami)
