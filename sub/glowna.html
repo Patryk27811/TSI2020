@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap");
+			body {
+				font-family: "Nunito Sans", sans-serif;
+				margin: 0px 0px 0px 0px;
+				color: black;
+			}
+
+			.content {
+				margin-top: 30px;
+				display: flex;
+				justify-content: center;
+				font-size: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="content">
+			<div>
+				<p id="tytul"></p>
+			</div>
+		</div>
+
+		<script src="https://unpkg.com/typeit@8.1.0/dist/index.umd.js"></script>
+		<script>
+			new TypeIt("#tytul", {
+				speed: 50,
+				startDelay: 1000,
+				afterComplete: function (instance1) {
+					instance1.destroy();
+				},
+			})
+				.type(
+					"Cześć profesjonalisto!<br> <br> Nauczysz się być tu profesjonalny."
+				)
+				.go();
+		</script>
+	</body>
+</html>
