@@ -1,0 +1,4 @@
+w kontakcie wpierdol linki do map google na adresie i do swojej strony na imieniu
+mlody zmien czcionke, wysrodkuj napisy na kartkach i wyjeb odstepy
+zaokraglenie do sekcji i wszystkiego
+ajfrejmy takiego samego rozmiaru, szerokosci przynajmniej
