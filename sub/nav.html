@@ -1,88 +1,84 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<style>
-			body {
-				overflow: hidden;
-			}
-			.navbtn {
-				height: 60px;
-				width: 100%;
-				border: 0px solid white;
-				background-color: transparent;
-				color: white;
-				font-size: 18px;
-			}
 
-			.navbtn:hover {
-				color: #15142b;
-			}
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            overflow: hidden;
+        }
+        
+        .navbtn {
+            height: 60px;
+            width: 100%;
+            border: 0px solid white;
+            background-color: transparent;
+            color: white;
+            font-size: 18px;
+        }
+        
+        .navbtn:hover {
+            color: #15142b;
+        }
+        
+        .dropbtn:hover {
+            color: #15142b;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            height: 60px;
+            width: 100%;
+        }
+        
+        .dropbtn {
+            height: 60px;
+            width: 100%;
+            border: 0px solid white;
+            background-color: transparent;
+            color: white;
+            font-size: 18px;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #ddd;
+            background: rgb(0, 168, 155);
+            background: linear-gradient( 90deg, rgba(0, 168, 155, 1) 0%, rgba(102, 102, 102, 1) 64%);
+        }
+        /* Show the dropdown menu on hover */
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+            background: rgb(0, 168, 155);
+            background: linear-gradient( 90deg, rgba(0, 168, 155, 1) 0%, rgb(3, 58, 211) 64%);
+        }
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+    </style>
+</head>
 
-				.dropbtn:hover {
-				color: #15142b;
-			}
-
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  height: 60px;
-				width: 100%;
-}
-	.dropbtn{
-	height: 60px;
-				width: 100%;
-				border: 0px solid white;
-				background-color: transparent;
-				color: white;
-				font-size: 18px;
-}
-
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-.dropdown-content a:hover {background-color: #ddd;background: rgb(0, 168, 155);
-				background: linear-gradient(
-					90deg,
-					rgba(0, 168, 155, 1) 0%,
-					rgba(102, 102, 102, 1) 64%
-				);}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block; background: rgb(0, 168, 155);
-				background: linear-gradient(
-					90deg,
-					rgba(0, 168, 155, 1) 0%,
-					rgb(3, 58, 211) 64%
-				);}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-
-
-		</style>
-	</head>
-	<body>
-		<div style="width: 150px; background-color: #f5f5f517">
-			<a target="content" href="glowna.html"
-				><button class="navbtn">Główna</button></a
+<body>
+    <div style="width: 150px; background-color: #f5f5f517">
+        <a target="content" href="glowna.html"><button class="navbtn">Główna</button></a
 			>
 			<br />
 			<a target="content" href="nic"
@@ -116,10 +112,10 @@
 				<button class="dropbtn navbtn">Formularz</button>
 				<div class="dropdown-content">
 				  <a target="content" href="../formularze/index.html">Formularz 1</a>
-				  <a target="content" href="../formularze2/index.html">Formularz 2</a>
-				</div>
-			  </div> 
-			<!-- <a
+        <a target="content" href="../formularze2/index.html">Formularz 2</a>
+    </div>
+    </div>
+    <!-- <a
 				target="content"
 				href="../formularze/index.html"
 				target="content"
@@ -134,16 +130,15 @@
 				><button class="navbtn">Formularze 2</button></a
 			> -->
 
-			<br />
-			<a target="content" href="../multimedia/index.html"
-				><button class="navbtn">Multimedia</button></a
+    <br />
+    <a target="content" href="../multimedia/index.html"><button class="navbtn">Multimedia</button></a
 			>
 			<br />
 			<a target="content" href="nic"
 				><button class="navbtn">Ciekawostki</button></a
 			>
 			<br />
-			<a target="content" href="nic"
+			<a target="content" href="../linki/index.html"
 				><button class="navbtn">Linki</button></a
 			>
 			<br />
