@@ -105,10 +105,26 @@
                 </tr>
                 <tr id="w11">
                     <td id="liczba">11.</td>
-                    <td id="logo"><img src="loga/pornhub.png"></td>
+                    <td id="logo"><img src="loga/pornhub.png" onclick="check()" style="cursor: pointer;"></td>
                     <td id="nazwa">Porn Hub</td>
-                    <td id="link">4</td>
+                    <td id="link"><button onclick="check()">Przejdź</button>
+                    </td>
                     <!--Zrobić tu alert, czy na pewno masz 18lat i będzie kox chłopie-->
+                    <script>
+                        function check() {
+
+                            var age = window.prompt("Podaj swój wiek");
+                            let url = window.location.href;
+                            if (age < 18) {
+                                alert("Jesteś gówniakiem");
+                                alert("Nie dostaniesz się na stronę, ponieważ masz" + " " + age + "lat");
+                            } else {
+
+                                window.alert("Jesteś pełnoletni w takim razie zapraszam");
+                                window.open('http://www.pornhub.com', '_blank');
+                            }
+                        }
+                    </script>
                 </tr>
                 <tr id="w12">
                     <td id="liczba">12.</td>
