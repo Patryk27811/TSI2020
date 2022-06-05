@@ -8,10 +8,144 @@
     <title>
         Kurs HTML tekst
     </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div class="nav">
+		<ol>
+			<li><a href="index.html">Wstęp</a></li>
+			<li><div style="background-color: rgb(46,46,46); height: 35px"><a href="tekst.html">Tekst</a></div></li>
+			<li><a href="znaki.html">Znaki </a></li>
+			<li><a href="listy.html">Listy</a></li>
+			<li><a href="tabele.html">Tabele</a></li>
+			<li><a href="hiperlacza.html">Hiperłącza</a></li>
+			<li><a href="grafika.html">Grafika</a></li>
+			<li><a href="multimedia.html">Multimedia</a></li>
+			<li><a href="inputy.html">Inputy</a></li>
+			<li><a href="formularz.html">Formularze</a></li>
+		</ol>
+	</div>
+    <div class="container">
+        <div class="one">
+            <h3>Tekst</h3>
+            <div class="two"><br><br><br>
+                <p style="text-align:center"><b>Aby uatrakcyjnić naszą stronę pownniśmy formwatować tekst zawarty na niej</b></p>
+            </div>
+        </div>
+        <div class="one">
+            <h3>Wielkość tekstu</h3>
+            <div class="two" style="height: 450px"><br><br><br>
+                <p style="text-align:center"><b>Według mnie jedna z najbardziej podstawowych rzeczy, a żeby powiększyć tekst używamy polecenia <span style="color:red">&ltfont size</span>=<span style="color:yellow">"X"</span><span style="color:red">&gt&lt/font&gt</span>. W miejscu <span style="color:yellow">X</span> wstawiamy wartość oraz w jednostkę w px,em itd.</b></p>
+                <br><br>
+                <div class="half">
+                    <h4>Kod HTML</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style="padding-top: 25px; height: 100px"><span class="tag">&lt;font</span> <span class="atrybut">size=</span><span class="green">"150em"</span><span class="tag">&gt;</span>Tekst<span class="tag">&lt;font&gt;</span></div>
+                </div>
+                <div class="half">
+                    <h4>Rezultat</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style=" padding-top: 25px;height: 100px">
+                        <font size="150em">Tekst</font>
+                    </div>
+                </div>
+            </div><br>
 
+
+        </div>
+        <div class="one">
+            <h3>Kolor tekstu</h3>
+            <div class="two" style="height: 450px"><br><br><br>
+                <p style="text-align:center"><b>By zmienić kolor i np. tym samym wyróżnić jakiś tekst nalezy użyć polecenia <span style="color:red">&ltfont color</span>=<span style="color:yellow">"X"</span><span style="color:red">&gt&lt/font&gt</span>. W miejscu <span style="color:yellow">X</span> wstawiamy interesujący nas kolor w języku angielski, bądz w hexie, bądz też w rgb </b></p>
+                <br><br>
+                <div class="half">
+                    <h4>Kod HTML</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style="padding-top: 25px; height: 100px"><span class="tag">&lt;font</span> <span class="atrybut">color=</span><span class="green">"green"</span><span class="tag">&gt;</span>Tekst<span class="tag">&lt;font&gt;</span></div>
+                </div>
+                <div class="half">
+                    <h4>Rezultat</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style=" padding-top: 25px;height: 100px">
+                        <font color="green">Tekst</font>
+                    </div>
+                </div>
+            </div><br>
+
+
+        </div>
+        <div class="one">
+            <h3>Animacje tekstu</h3>
+            <div class="two" style="height: 2200px"><br><br><br>
+                <h4>Podstawowa animacja</h4>
+                <xmp class="example"><marquee>Tu wpisz swój tekst</marquee></xmp>
+                  <marquee>Tu wpisz swój tekst</marquee>
+                  <br><br><br>
+            <h4>Typ animacji</h4>
+            <xmp class="example"><marquee behavior="typ">Tu wpisz tekst</marquee></xmp>
+            <br>
+            <p>gdzie jako „typ” należy wpisać:</p>
+			 <ul>
+			 <li><kbd>scroll</kbd> -  tekst przesuwa się od prawej do lewej (domyślnie)</li>
+			 <li><kbd>alternate</kbd> – tekst przesuwa się od prawej do lewej, a następnie „odbija się” i powraca</li>
+			 <li><kbd>slide</kbd> – tekst przesunie się od prawej do lewej tylko raz, a później się zatrzyma i pozostanie nieruchomy</li>
+			 </ul>
+             <br>
+             <xmp class="example"><marquee behavior="kierunek">Tu wpisz tekst</marquee></xmp>
+            <br>
+            <p>gdzie jako „kierunek” należy wpisać:</p>
+			 <ul>
+			 <li><kbd>left</kbd> -  będzie przesuwał się w lewo</li>
+			 <li><kbd>right</kbd> – będzie przesuwał się w prawo </li>
+			 <li><kbd>up</kbd> – będzie się przesuwał w góre</li>
+             <li><kbd>down</kbd> – będzie się przesuwał w dół</li>
+			 </ul>
+             <br>
+             <h4>Ilość powtórzeń</h4>
+                <xmp class="example"><marquee loop="liczba">Tu wpisz swój tekst</marquee></xmp>
+                <h4>Szybkość animacji</h4>
+                <xmp class="example"><marquee scrollamount="liczba">Tu wpisz swój tekst</marquee></xmp>
+            <h4>Przykłady</h4>
+            <xmp class="example2"><marquee scrollamount="50">Tu wpisz swój tekst</marquee></xmp>
+            <marquee scrollamount="50">Tu wpisz swój tekst</marquee>
+            <xmp class="example2"><marquee loop="2">Tu wpisz swój tekst</marquee></xmp>
+            <marquee loop="2">Tu wpisz swój tekst</marquee>
+            <xmp class="example2"><marquee direction="up">Tu wpisz swój tekst</marquee></xmp>
+            <marquee direction="up">Tu wpisz swój tekst</marquee>
+            <xmp class="example2"><marquee direction="right">Tu wpisz swój tekst</marquee></xmp>
+            <marquee direction="right">Tu wpisz swój tekst</marquee>
+            <xmp class="example2"><marquee behavior="slide">Tu wpisz swój tekst</marquee></xmp>
+            <marquee behavior="slide">Tu wpisz swój tekst</marquee>
+        </div>
+        
+    </div>
+    <script src="../jquery-1.11.3.min.js"></script>
+	
+	<script>
+
+	$(document).ready(function() {
+	var NavY = $('.nav').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.nav').addClass('sticky');
+	} else {
+		$('.nav').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+</script>
 </body>
 
 </html>
