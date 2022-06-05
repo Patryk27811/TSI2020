@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mini poradnik HTML</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="../img/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="nav">
+        <ol>
+            <li>
+                <div style="background-color: rgb(46, 46, 46); height: 35px"><a href="html.html">Wstęp</a></div>
+            </li>
+            <li><a href="tekst.html">Tekst</a></li>
+            <li><a href="znaki.html">Znaki </a></li>
+            <li><a href="listy.html">Listy</a></li>
+            <li><a href="tabele.html">Tabele</a></li>
+            <li><a href="hiperlacza.html">Hiperłącza</a></li>
+            <li><a href="grafika.html">Grafika</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="inputy.html">Inputy</a></li>
+            <li><a href="formularz.html">Formularze</a></li>
+        </ol>
+    </div>
+    <div class="container">
+        <script src="../jquery-1.11.3.min.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                var NavY = $('.nav').offset().top;
+
+                var stickyNav = function() {
+                    var ScrollY = $(window).scrollTop();
+
+                    if (ScrollY > NavY) {
+                        $('.nav').addClass('sticky');
+                    } else {
+                        $('.nav').removeClass('sticky');
+                    }
+                };
+
+                stickyNav();
+
+                $(window).scroll(function() {
+                    stickyNav();
+                });
+            });
+        </script>
+</body>
+
+</html>
