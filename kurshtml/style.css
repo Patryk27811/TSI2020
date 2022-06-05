@@ -87,6 +87,18 @@
         border-right: 2px solid black;
         margin-left: 0px;
     }
+    .scrollup
+{
+	width: 64px;
+	height: 64px;
+	text-decoration: none;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+
+	display:none;
+	background: url("scrollup.png") no-repeat 0px 0px;
+}
     
         
     .nav ol>li:hover {

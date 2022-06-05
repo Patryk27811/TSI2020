@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mini poradnik HTML</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="../img/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <div class="nav">
+        <ol>
+            <li>
+                <a href="index.html">Wstęp</a>
+            </li>
+            <li><a href="tekst.html">Tekst</a></li>
+            <li><a href="znaki.html">Znaki </a></li>
+            <li><div style="background-color: rgb(46, 46, 46); height: 35px"><a href="listy.html">Listy</a></div></li>
+            <li><a href="tabele.html">Tabele</a></li>
+            <li><a href="hiperlacza.html">Hiperłącza</a></li>
+            <li><a href="grafika.html">Grafika</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="inputy.html">Inputy</a></li>
+            <li><a href="formularz.html">Formularze</a></li>
+        </ol>
+    </div>
+    <div class="container">
+        <div class="one">
+      <h4>Listy</h4>
+      <div class="two" ><br>
+          <p style="padding-left: 30px;padding-right: 30px; text-align: center; font-size: 30px;">Do grupowania treści w html'u używamy list. Listy można pogrupować na uporządkowane(ol) oraz nieuporządkowane(ul)</p>
+      </div>
+      <div class="one">
+        <h4>Listy uporządkowane</h4>
+        <div class="two" ><br>
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center; font-size: 30px;">Listy uporządkowane(ordered list) wyróżniają się w html'u tym, że mają one numerację, może być to cyfra, bądz też litera. <br><br><br> Listę uporządkowaną umieszczamy pomiędzy znacznikami<span style="color:red;">&lt;ol&gt; &lt;/ol&gt;</span><br> Do utworzenia listy będą nam również potrzebne tagi, żeby w jakiś sposób w ogóle móc stworzyć takie podpunkty, do tego własnie użejmy zaniczników <span style="color:yellow;">&lt;li&gt; &lt;/li&gt;</span>, ponieważ <span style="color:red;">&lt;ol&gt; &lt;/ol&gt;</span> wskazuje nam tylko rodzaj listy. Wszystkie elementy muszą znajdować się pomiędzy <span style="color:yellow;">&lt;li&gt; &lt;/li&gt;</span></p>
+        </div>
+        <br><br>
+        <div class="half">
+            <h4>Kod HTML</h4>
+            <hr width="100%" color="yellow">
+            <div class="halfin" style="padding-top: 25px; height: 200px; ">     <span > &lt;ol&gt; </span><br>
+                &nbsp;&nbsp;&nbsp; <span class="atrybut">&lt;li&gt;</span>Wódka<span class="atrybut">&lt;/li&gt;</span>  <br>
+                &nbsp;&nbsp;&nbsp; <span class="atrybut">&lt;li&gt;</span>Piwo<span class="atrybut">&lt;/li&gt;</span>  <br>
+                &nbsp;&nbsp;&nbsp; <span class="atrybut">&lt;li&gt;</span>Sok malinowy<span class="atrybut">&lt;/li&gt; </span> <br>
+                <span >&lt;/ol&gt; </span> <br></div>
+        </div>
+        <div class="half">
+            <h4>Rezultat</h4>
+            <hr width="100%" color="yellow">
+            <div class="halfin" style=" padding-top: 25px;height: 200px">
+           <ol>
+               <li>Wódka</li>
+               <li>Piwo</li>
+               <li>Sok malinowy</li>
+           </ol>
+            </div>
+        </div>
+        <p style="padding-left: 30px;padding-right: 30px; text-align: center; font-size: 30px;">Możemy również zmienić wygląd numeracji oraz kiedy nasza lista nam się zacznie:<br><br> Gdy jako wartość ustawimy "A" podpunkty listy będą numerowane wielkimi literami alfabetu (A, B, C, D, E, F...) <br>
+            Gdy jako wartość ustawimy "a" podpunkty listy będą numerowane małymi literami alfabetu (a, b, c, d, e, f...) <br>
+            Gdy jako wartość ustawimy "I" podpunkty listy będą numerowane cyframi rzymskimi (I, II, III, IV, V, VI...) <br>
+            Możemy rozpocząć numerowanie od dowolnej litery lub liczby. By to zrobić musimy dodać atrybut <span style="color:yellow">start</span>, a jako wartość ustawić numer pierwszego podpunku.</p><br><br><br>
+            <div class="half">
+                <h4>Kod HTML</h4>
+                <hr width="100%" color="yellow">
+                <div class="halfin" style="padding-top: 25px; height: 200px; ">     <span > &lt;ol type="I" start="3"&gt; </span><br>
+                    &nbsp;&nbsp;&nbsp; <span class="atrybut">&lt;li&gt;</span>Wódka<span class="atrybut">&lt;/li&gt;</span>  <br>
+                    &nbsp;&nbsp;&nbsp; <span class="atrybut">&lt;li&gt;</span>Piwo<span class="atrybut">&lt;/li&gt;</span>  <br>
+                    &nbsp;&nbsp;&nbsp; <span class="atrybut">&lt;li&gt;</span>Sok malinowy<span class="atrybut">&lt;/li&gt; </span> <br>
+                    <span >&lt;/ol&gt; </span> <br></div>
+            </div>
+            <div class="half">
+                <h4>Rezultat</h4>
+                <hr width="100%" color="yellow">
+                <div class="halfin" style=" padding-top: 25px;height: 200px">
+               <ol type="I" start="3">
+                   <li>Wódka</li>
+                   <li>Piwo</li>
+                   <li>Sok malinowy</li>
+               </ol>
+                </div>
+        </div>
+        <div class="one">
+            <h4>Listy nieuporządkowane</h4>
+            <div class="two" ><br>
+                <p style="padding-left: 30px;padding-right: 30px; text-align: center; font-size: 30px;">Listy nieuporządkowane(unordered list) wyróżniają się w html'u tym, że mają nie mają one numeracji, są tylko wypuntkowane np. kropkami. <br><br><br> Listę nieuporządkowaną umieszczamy pomiędzy znacznikami<span style="color:red;">&lt;ul&gt; &lt;/ul&gt;</span><br> Do utworzenia listy będą nam również potrzebne tagi, żeby w jakiś sposób w ogóle móc stworzyć takie podpunkty, do tego własnie użejmy zaniczników <span style="color:yellow;">&lt;li&gt; &lt;/li&gt;</span>, ponieważ <span style="color:red;">&lt;ol&gt; &lt;/ol&gt;</span> wskazuje nam tylko rodzaj listy. Wszystkie elementy muszą znajdować się pomiędzy <span style="color:yellow;">&lt;li&gt; &lt;/li&gt;</span></p>
+            </div>
+            <br><br>
+            <div class="half">
+                <h4>Kod HTML</h4>
+                <hr width="100%" color="yellow">
+                <div class="halfin" style="padding-top: 25px; height: 200px; ">     <span > &lt;ul&gt; </span><br>
+                    &nbsp;&nbsp;&nbsp; <span class="atrybut">&lt;li&gt;</span>Wódka<span class="atrybut">&lt;/li&gt;</span>  <br>
+                    &nbsp;&nbsp;&nbsp; <span class="atrybut">&lt;li&gt;</span>Piwo<span class="atrybut">&lt;/li&gt;</span>  <br>
+                    &nbsp;&nbsp;&nbsp; <span class="atrybut">&lt;li&gt;</span>Sok malinowy<span class="atrybut">&lt;/li&gt; </span> <br>
+                    <span >&lt;/ul&gt; </span> <br></div>
+            </div>
+            <div class="half">
+                <h4>Rezultat</h4>
+                <hr width="100%" color="yellow">
+                <div class="halfin" style=" padding-top: 25px;height: 200px">
+               <ul>
+                   <li>Wódka</li>
+                   <li>Piwo</li>
+                   <li>Sok malinowy</li>
+               </ul>
+                </div>
+            </div>
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center; font-size: 30px;">Podobnie jak w listach uporządkowanych możemy sobie zmienić wygląd numerowania <br>Gdy jako wartość atrybutu ustawimy <span style="color:yellow">disk</span> przed podpunktem zobaczymy taki znaczek: ○.
+                <br> Gdy jako wartość atrybutu ustawimy <span style="color:yellow">circle</span> przed podpunktem zobaczymy taki znaczek: ●.<br>Natomiast gdy jako wartość atrybutu ustawimy <span style="color:yellow">square</span> przed podpunktem zobaczymy taki znaczek: ■.</p>
+                
+            </div>
+            <div class="one" ><h3>Nadawanie tytułów listom</h3>
+                <div class="two" style="height: 750px;">
+               <br><br>
+                   <p style="padding-left: 30px;padding-right: 30px; text-align: center; font-size: 30px;"> 
+                      W celu dobrania odpowiedniego nagłówka, będziemy musieli się zastanowić jak istotna jest nasza lista dla całości artykuły. 
+                      
+                   </p><br><br><br><br>
+                   <div class="half">
+                      <h4>Kod HTML</h4>
+                      <div  class="halfin" style="padding-top: 35px; height: 340px; text-align: left;">
+                         <p ><br><br><br><span >&lt;h2&gt;</span>Lista zakupów na impreze <span >&lt;/h2&gt;</span></p>
+                         <span > &lt;ol&gt; </span><br>
+                        &nbsp;&nbsp;&nbsp; <span >&lt;li&gt;</span>Wódka<span >&lt;/li&gt;</span>  <br>
+                        &nbsp;&nbsp;&nbsp; <span >&lt;li&gt;</span>Piwo<span >&lt;/li&gt;</span>  <br>
+                        &nbsp;&nbsp;&nbsp; <span >&lt;li&gt;</span>Sok malinowy<span>&lt;/li&gt; </span> <br>
+                        <span >&lt;/ol&gt; </span> <br>
+                      </div>
+                   </div>
+                   <div class="half">
+                      <h4>Rezultat</h4>
+                      
+                      <div class="halfin" style="height: 340px; text-align: left;">
+                         <h2 class="lista">Lista zakupów na impreze</h2>
+                         <ol>
+                            <li>Wódka</li>
+                            <li>Piwo</li>
+                            <li>Sok malinowy</li>
+                        </ol></div>
+                   </div>
+                  
+                   <br><br><br>
+                 </div>
+                 <div class="one" ><h4>Listyt zagnieżdzone</h4>
+                    <div class="two" style="height: 750px;">
+                   <br><br>
+                       <p style="padding-left: 30px;padding-right: 30px; text-align: center; font-size: 30px;"> 
+                          Najprościej, rzecz ujmując listy zagnieżdzone to listy będące częścią innej listy
+                          
+                       </p><br><br><br><br>
+                       <div class="half">
+                          <h4>Kod HTML</h4>
+                          <div  class="halfin" style="padding-top: 35px; height: 450px; text-align: left;">
+                             <p ><br><br><br><span >&lt;h2&gt;</span>Lista zakupów na impreze <span >&lt;/h2&gt;</span></p>
+                             <span > &lt;ol&gt; </span><br>
+                            &nbsp;&nbsp;&nbsp; <span >&lt;li&gt;</span>Wódka<span >&lt;/li&gt;</span><br><span > &lt;ol type="a"&gt; </span> <br><span >&lt;li&gt;</span>Smakowa<span >&lt;/li&gt;</span><br><span >&lt;/ol&gt; </span> <br>
+                            &nbsp;&nbsp;&nbsp; <span >&lt;li&gt;</span>Piwo<span >&lt;/li&gt;</span> <span ><br> &lt;ul type="circle"&gt; </span> <br><span >&lt;li&gt;</span>jasne<span >&lt;/li&gt;</span><br><span >&lt;/ul&gt; </span>  <br>
+                            &nbsp;&nbsp;&nbsp; <span >&lt;li&gt;</span>Sok malinowy<span>&lt;/li&gt; </span> <br>
+                            <span >&lt;/ol&gt; </span> <br>
+                          </div>
+                       </div>
+                       <div class="half">
+                          <h4>Rezultat</h4>
+                          
+                          <div class="halfin" style="height: 450px; text-align: left;">
+                             <h2 class="lista">Lista zakupów na impreze</h2>
+                             <ol>
+                                <li>Wódka</li>
+                                <ol type="a"><li>Smakowa</li></ol>
+                                <li >Piwo</li>
+                                <ol type="circle" ><li>jasne</li></ol>
+                                <li>Sok malinowy</li>
+                            </ol></div>
+                       </div>
+                      
+                       <br><br><br>
+                     </div>
+                </div>
+
+
+
+
+
+
+
+
+    <script src="../jquery-1.11.3.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var NavY = $('.nav').offset().top;
+
+            var stickyNav = function() {
+                var ScrollY = $(window).scrollTop();
+
+                if (ScrollY > NavY) {
+                    $('.nav').addClass('sticky');
+                } else {
+                    $('.nav').removeClass('sticky');
+                }
+            };
+
+            stickyNav();
+
+            $(window).scroll(function() {
+                stickyNav();
+            });
+        });
+    </script>
+</body>
+
+</html>

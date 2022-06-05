@@ -9,7 +9,7 @@
         Kurs HTML tekst
     </title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -42,7 +42,7 @@
                 <div class="half">
                     <h4>Kod HTML</h4>
                     <hr width="100%" color="yellow">
-                    <div class="halfin" style="padding-top: 25px; height: 100px"><span class="tag">&lt;font</span> <span class="atrybut">size=</span><span class="green">"150em"</span><span class="tag">&gt;</span>Tekst<span class="tag">&lt;font&gt;</span></div>
+                    <div class="halfin" style="padding-top: 25px; height: 100px"><span >&lt;font</span> <span class="atrybut">size=</span><span class="green">"150em"</span><span >&gt;</span>Tekst<span >&lt;font&gt;</span></div>
                 </div>
                 <div class="half">
                     <h4>Rezultat</h4>
@@ -63,7 +63,7 @@
                 <div class="half">
                     <h4>Kod HTML</h4>
                     <hr width="100%" color="yellow">
-                    <div class="halfin" style="padding-top: 25px; height: 100px"><span class="tag">&lt;font</span> <span class="atrybut">color=</span><span class="green">"green"</span><span class="tag">&gt;</span>Tekst<span class="tag">&lt;font&gt;</span></div>
+                    <div class="halfin" style="padding-top: 25px; height: 100px"><span >&lt;font</span> <span class="atrybut">color=</span><span class="green">"green"</span><span >&gt;</span>Tekst<span >&lt;font&gt;</span></div>
                 </div>
                 <div class="half">
                     <h4>Rezultat</h4>
@@ -119,7 +119,90 @@
             <xmp class="example2"><marquee behavior="slide">Tu wpisz swój tekst</marquee></xmp>
             <marquee behavior="slide">Tu wpisz swój tekst</marquee>
         </div>
-        
+        <div class="one">
+            <h3>Wyróżnianie tekstu</h3>
+            <div class="two" style="height: 450px"><br><br><br>
+                <p style="text-align:center"><b>Jak sam tytuł podrozdziału mówi wyróżniają one tekst. Tekst możemy wyróżnić na kilka sposobów, np. pogrubiając tekst, podkreślając, bądz też przekreślając</b></p>
+                <br><br>
+                <div class="half">
+                    <h4>Kod HTML</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style=" padding-top: 25px;height: 1000px">
+                        <span >&lt;b&gt;<span >Tekst pogrubiony</span>&lt;/b&gt;</span><br><br>
+                        <span >&lt;strong&gt;<span >Tekst pogrubiony</span>&lt;/strong&gt;</span><br><br>
+                        <span >&lt;s&gt;<span >Skreślony tekst</span>&lt;/s&gt;</span><br><br>
+                        <span >&lt;del&gt;<span >Skreślony tekst</span>&lt;/del&gt;</span><br><br>
+                        <span >&lt;u&gt;<span >Podkreślony tekst</span>&lt;/u&gt;</span><br><br>
+                        <span >&lt;ins&gt;<span >Podkreślony tekst</span>&lt;/ins&gt;</span><br><br>
+                        <span >&lt;mark&gt;<span >Tekst podświetlony</span>&lt;/mark&gt;</span><br><br>
+                        <span >&lt;big&gt;<span >Tekst powiększony</span>&lt;/big&gt;</span><br><br>
+                        <span >&lt;small&gt;<span >Tekst pomniejszony</span>&lt;/small&gt;</span><br><br>
+                        Indeks<span >&lt;sup&gt;<span >górny</span>&lt;/sup&gt;</span><br><br>
+                        Indeks<span >&lt;sub&gt;<span >dolny</span>&lt;/sub&gt;</span><br><br>
+                        <span >&lt;i&gt;<span >Tekst pochylony</span>&lt;/i&gt;</span><br><br>
+                        <span >&lt;em&gt;<span >Tekst pochylony</span>&lt;/em&gt;</span><br><br>
+                        
+                    </div>
+                </div>
+                <div class="half">
+                    <h4>Rezultat</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style=" padding-top: 25px;height: 1000px;">
+                        <b>Pogrubiony teskt</b><br><br>
+                        <strong>Pogrubiony teskt</strong><br><br>
+                        <s>Skreślony</s><br><br>
+                        <del>Skreślony</del><br><br>
+                        <u>Podkreślony teskt</u><br><br>
+                        <ins>Podkreślony teskt</ins><br><br>
+                        <mark>Podświetlony teskt</mark><br><br>
+                        <big>Powiększony tekst</big><br><br>
+                        <small>Pomniejszony tekst</small><br><br>
+                        Indeks <sup>górny</sup><br><br>
+                        Indeks <sub>dolny</sub><br><br>
+                        <i>Pogrubiony teskt</i><br><br>
+                        <em>Pogrubiony teskt</em><br><br>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="one">
+                <h3>Cytaty</h3>
+                <div class="two" style="height: 550px"><br><br><br>
+                    <p style="text-align:center"><b>Aby tworzyć cytaty używamy dwóch dodatkowych znaczników.<br> Aby ukazać czyjś cytat osobę wypowiadającą umieszczamy pomiędzy znacznikami <span style="color:red;">&lt;cite&gt; &lt;/cite&gt;</span>.<br>Natomiast sam cytat pomiędzy znacznikami<span style="color:red;">&lt;q&gt; &lt;/q&gt;</span>.  </b></p>
+                    <br><br>
+                    <div class="half">
+                        <h4>Kod HTML</h4>
+                        <hr width="100%" color="yellow">
+                        <div class="halfin" style="padding-top: 25px; height: 200px"><span >&lt;cite</span> <span >&gt;</span>Napoleon Bonaparte<span >&lt;/cite&gt;</span><span >&lt;q</span> <span >&gt;</span>Zostawcie to Polakom. Dla nich nie ma nic niemożliwego.<span >&lt;/q&gt;</span></div>
+                    </div>
+                    <div class="half">
+                        <h4>Rezultat</h4>
+                        <hr width="100%" color="yellow">
+                        <div class="halfin" style=" padding-top: 25px;height: 200px">
+                            <cite>Napoleon Bonaparte</cite> powiedział:
+                            <q>Zostawcie to Polakom. Dla nich nie ma nic niemożliwego.</q>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="one">
+                    <h3>Akronimy</h3>
+                    <div class="two" style="height: 550px"><br><br><br>
+                        <p style="text-align:center"><b>Do tworzenia akronimów używamy znaczników: <span style="color:red;">&lt;abbr&gt; &lt;/abbr&gt;</span> oraz <span style="color:red;">&lt;acronym&gt; &lt;/acronym&gt;</span>.<br><br> Trzeba również pamiętać o podaniu dwóch atrybutów: <br><font color="yellow">lang</font>- gdzie podajmy język(np.pl,en)<br><font color="yellow">title</font>- gdzie rozwijamy nasz akronim   </b></p>
+                        <br><br>
+                        <div class="half">
+                            <h4>Kod HTML</h4>
+                            <hr width="100%" color="yellow">
+                            <div class="halfin" style="padding-top: 25px; height: 200px; "><span >&lt;acronym lang="en" title="United States of America"&gt; &lt;/acronym&gt;</span><br><br><span >&lt;abbr lang="en" title="United States of America" &gt; &lt;/abbr&gt;</span></div>
+                        </div>
+                        <div class="half">
+                            <h4>Rezultat</h4>
+                            <hr width="100%" color="yellow">
+                            <div class="halfin" style=" padding-top: 25px;height: 200px">
+                                <acrronym lang="en" title="United States of America">USA</acronnym><br><br>
+                                <abbr lang="en" title="United States of America">USA</abbr>
+                            </div>
+                        </div>
+                    </div><br>
     </div>
     <script src="../jquery-1.11.3.min.js"></script>
 	
