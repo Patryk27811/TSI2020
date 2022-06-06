@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mini kurs HTML</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="../img/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <div class="nav">
+        <ol>
+            <li>
+                <a href="index.html">Wstęp</a>
+            </li>
+            <li><a href="tekst.html">Tekst</a></li>
+            <li><a href="znaki.html">Znaki </a></li>
+            <li><a href="listy.html">Listy</a></li>
+            <li><div style="background-color: rgb(46, 46, 46); height: 35px"><a href="tabele.html">Tabele</a></div></li>
+            <li><a href="hiperlacza.html">Hiperłącza</a></li>
+            <li><a href="grafika.html">Grafika</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="inputy.html">Inputy</a></li>
+            <li><a href="formularz.html">Formularze</a></li>
+        </ol>
+    </div>
+    <div class="container">
+    <div class="one">
+        <h4>Tabele</h4>
+        <div class="two"><br>
+        <p style="padding-left: 30px;padding-right: 30px; text-align: center; font-size: 30px;">Tabele twprzymy poprzez użycie tagu <span style="color:red;">&lt;table&gt; &lt;/table&gt;</span></p>
+        <div class="three">
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center; font-size: 30px;">Ponieważ samo wpisanie tych tagów nie ukaże nam tablicy, dlatego też musimy dodać sobie parametry <span style="color:green;">border</span>,<span style="color:yellowgreen;">width</span>,<span style="color:pink">height</span></p><br><br>
+            <div class="half">
+                <h4>Kod HTML</h4>
+                <hr width="100%" color="yellow">
+                <div class="halfin" style="padding-top: 25px; height: 300px"><span >&lt;table <span style="color:green;">border</span>="1px"</span> <span style="color:yellowgreen;">width</span><span class="green">="150px"</span> <span style="color:pink;">height</span>="200px"<span >&gt;</span><span >&lt;table&gt;</span></div>
+            </div>
+            <div class="half">
+                <h4>Rezultat</h4>
+                <hr width="100%" color="yellow">
+                <div class="halfin" style=" padding-top: 25px;height: 300px;display: flex;
+                justify-content: center;">
+                    <table border="1px" height="200px" width="150px"></table>
+                </div>
+            </div>
+        </div>
+        <div class="four">
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center; font-size: 30px;">Ponieważ, żeby tabela miała sens i jakoś wyglądala są nam potrzebne wiersze, a tworzymy je za pomocą znaczników <span style="color:yellowgreen;">&lt;tr&gt;&lt;/tr&gt;</span></p><br><br>
+            <div class="half">
+                <h4>Kod HTML</h4>
+                <hr width="100%" color="yellow">
+                <div class="halfin" style="padding-top: 25px; height: 300px"><span >&lt;table <span style="color:green;">border</span>="1px"</span> <span style="color:yellowgreen;">width</span><span class="green">="150px"</span> <span style="color:pink;">height</span>="200px"<span >&gt;</span><br><span style="color:yellowgreen;">&lt;tr&gt;&lt;/tr&gt;</span></p><br><span style="color:yellowgreen;">&lt;tr&gt;&lt;/tr&gt;</span></p><br><span style="color:yellowgreen;">&lt;tr&gt;&lt;/tr&gt;</span></p><br><span >&lt;table&gt;</span></div>
+            </div>
+            <div class="half">
+                <h4>Rezultat</h4>
+                <hr width="100%" color="yellow">
+                <div class="halfin" style=" padding-top: 25px;height: 300px;display: flex;
+                justify-content: center;">
+                    <table border="1px" height="200px" width="150px"><tr></tr><tr></tr><tr></tr></table>
+                </div>
+            </div>
+        </div>
+        <div class="five">
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center; font-size: 30px;">Zapytasz teraz pewnie czemu dalej nic się nie zmieniło... A to dlatego, że musimy dodać jeszcze komórki do tych naszych wierszy,a zrobimy to za pomocą znaczników<span style="color:yellowgreen;">&lt;td&gt;&lt;/td&gt;</span></p><br><br>
+            <div class="half">
+                <h4>Kod HTML</h4>
+                <hr width="100%" color="yellow">
+                <div class="halfin" style="padding-top: 25px; height: 300px"><span >&lt;table <span style="color:green;">border</span>="1px"</span> <span style="color:yellowgreen;">width</span><span class="green">="150px"</span> <span style="color:pink;">height</span>="200px"<span >&gt;</span><br><span style="color:yellowgreen;">&lt;tr&gt;&lt;/tr&gt;</span></p><br><span style="color:yellowgreen;">&lt;tr&gt;&lt;/tr&gt;</span></p><br><span style="color:yellowgreen;">&lt;tr&gt;&lt;/tr&gt;</span></p><br><span >&lt;table&gt;</span></div>
+            </div>
+            <div class="half">
+                <h4>Rezultat</h4>
+                <hr width="100%" color="yellow">
+                <div class="halfin" style=" padding-top: 25px;height: 300px;display: flex;
+                justify-content: center;">
+                    <table border="1px" height="200px" width="150px"><tr></tr><tr></tr><tr></tr></table>
+                </div>
+            </div>
+        </div>
+        <div class="five">
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center; font-size: 30px;">Zapytasz teraz pewnie czemu dalej nic się nie zmieniło... A to dlatego, że musimy dodać jeszcze komórki do tych naszych wierszy,a zrobimy to za pomocą znaczników<span style="color:yellowgreen;">&lt;td&gt;&lt;/td&gt;</span></p><br><br>
+            <div class="half">
+                <h4>Kod HTML</h4>
+                <hr width="100%" color="yellow">
+                <div class="halfin" style="padding-top: 25px; height: 300px"><span >&lt;table <span style="color:green;">border</span>="1px"</span> <span style="color:yellowgreen;">width</span><span class="green">="150px"</span> <span style="color:pink;">height</span>="200px"<span >&gt;</span><br><span style="color:yellowgreen;">&lt;tr&gt;<span style="color:green;">&lt;td&gt;&lt;/td&gt;</span><span style="color:green;">&lt;td&gt;&lt;/td&gt;</span><span style="color:green;">&lt;td&gt;&lt;/td&gt;</span>&lt;/tr&gt;</span></p><br><span style="color:yellowgreen;">&lt;tr&gt;<span style="color:green;">&lt;td&gt;&lt;/td&gt;</span><span style="color:green;">&lt;td&gt;&lt;/td&gt;</span><span style="color:green;">&lt;td&gt;&lt;/td&gt;</span>&lt;/tr&gt;</span></p><br><span style="color:yellowgreen;">&lt;tr&gt;<span style="color:green;">&lt;td&gt;&lt;/td&gt;</span><span style="color:green;">&lt;td&gt;&lt;/td&gt;</span><span style="color:green;">&lt;td&gt;&lt;/td&gt;</span>&lt;/tr&gt;</span></p><br><span >&lt;table&gt;</span></div>
+            </div>
+            <div class="half">
+                <h4>Rezultat</h4>
+                <hr width="100%" color="yellow">
+                <div class="halfin" style=" padding-top: 25px;height: 300px;display: flex;
+                justify-content: center;">
+                    <table border="1px" height="200px" width="150px"><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr></table>
+                </div>
+            </div>
+        </div>
+        <div class="five">
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center; font-size: 30px;">Żeby lepiej zobaczyć jak to wygląda powiększymy sobie troche tabelę oraz dodamy do niej wartości</p><br><br>
+            <div class="half">
+                <h4>Kod HTML</h4>
+                <hr width="100%" color="yellow">
+                <div class="halfin" style="padding-top: 25px; height: 500px"><span >&lt;table <span style="color:green;">border</span>="1px"</span> <span style="color:yellowgreen;">width</span><span class="green">="250px"</span> <span style="color:pink;">height</span>="400px"<span >&gt;</span><br><span style="color:yellowgreen;">&lt;tr&gt;<span style="color:green;">&lt;td&gt;<span style="color:white">1</span>&lt;/td&gt;</span><span style="color:green;">&lt;td&gt;<span style="color:white">1</span>&lt;/td&gt;</span><span style="color:green;">&lt;td&gt;<span style="color:white">1</span>&lt;/td&gt;</span>&lt;/tr&gt;</span></p><br><span style="color:yellowgreen;">&lt;tr&gt;<span style="color:green;">&lt;td&gt;<span style="color:white">1</span>&lt;/td&gt;</span><span style="color:green;">&lt;td&gt;<span style="color:white">1</span>&lt;/td&gt;</span><span style="color:green;">&lt;td&gt;<span style="color:white">1</span>&lt;/td&gt;</span>&lt;/tr&gt;</span></p><br><span style="color:yellowgreen;">&lt;tr&gt;<span style="color:green;">&lt;td&gt;<span style="color:white">1</span>&lt;/td&gt;</span><span style="color:green;">&lt;td&gt;<span style="color:white">1</span>&lt;/td&gt;</span><span style="color:green;">&lt;td&gt;<span style="color:white">1</span>&lt;/td&gt;</span>&lt;/tr&gt;</span></p><br><span >&lt;table&gt;</span></div>
+            </div>
+            <div class="half">
+                <h4>Rezultat</h4>
+                <hr width="100%" color="yellow">
+                <div class="halfin" style=" padding-top: 25px;height: 500px;display: flex;
+                justify-content: center;">
+                    <table border="1px" height="400px" width="250px"><tr><td>1</td><td>1</td><td>1</td></tr><tr><td>1</td><td>1</td><td>1</td></tr><tr><td>1</td><td>1</td><td>1</td></tr></table>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="../jquery-1.11.3.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var NavY = $('.nav').offset().top;
+
+            var stickyNav = function() {
+                var ScrollY = $(window).scrollTop();
+
+                if (ScrollY > NavY) {
+                    $('.nav').addClass('sticky');
+                } else {
+                    $('.nav').removeClass('sticky');
+                }
+            };
+
+            stickyNav();
+
+            $(window).scroll(function() {
+                stickyNav();
+            });
+        });
+    </script>
+</body>
+
+</html>
