@@ -113,6 +113,39 @@
                 </div>
             </div>
         </div>
+        <div class="five">
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center; font-size: 30px;">Tak jak w przypadku całej tabeli możemy zmieniać rozmiary całych wierszy lub poszczególnych komórek (height="" width=""). <br>A dodatkowo możemy zmieniać kolor tła wiersza/komórki (bgcolor="").</p><br><br>
+            <div class="half">
+                <h4>Kod HTML</h4>
+                <hr width="100%" color="yellow">
+                <div class="halfin" style="padding-top: 25px; height: 500px"><span >&lt;table <span style="color:green;">border</span>="1px"</span> <span style="color:yellowgreen;">width</span><span class="green">="250px"</span> <span style="color:pink;">height</span>="400px"<span >&gt;</span><br><span style="color:yellowgreen;">&lt;tr height="10px" bgcolor="red"&gt;<span style="color:green;">&lt;td&gt;<span style="color:white">1</span>&lt;/td&gt;</span><span style="color:green;">&lt;td&gt;<span style="color:white">1</span>&lt;/td&gt;</span><span style="color:green;">&lt;td&gt;<span style="color:white">1</span>&lt;/td&gt;</span>&lt;/tr&gt;</span></p><br><span style="color:yellowgreen;">&lt;tr&gt;<span style="color:green;">&lt;td&gt;<span style="color:white">1</span>&lt;/td&gt;</span><span style="color:green;">&lt;td&gt;<span style="color:white">1</span>&lt;/td&gt;</span><span style="color:green;">&lt;td&gt;<span style="color:white">1</span>&lt;/td&gt;</span>&lt;/tr&gt;</span></p><br><span style="color:yellowgreen;">&lt;tr&gt;<span style="color:green;">&lt;td&gt;<span style="color:white">1</span>&lt;/td&gt;</span><span style="color:green;">&lt;td&gt;<span style="color:white">1</span>&lt;/td&gt;</span><span style="color:green;">&lt;td&gt;<span style="color:white">1</span>&lt;/td&gt;</span>&lt;/tr&gt;</span></p><br><span >&lt;table&gt;</span></div>
+            </div>
+            <div class="half">
+                <h4>Rezultat</h4>
+                <hr width="100%" color="yellow">
+                <div class="halfin" style=" padding-top: 25px;height: 500px;display: flex;
+                justify-content: center;">
+                    <table border="1px" height="400px" width="250px"><tr height="10px" bgcolor="red"><td>1</td><td>1</td><td>1</td></tr><tr><td>1</td><td>1</td><td>1</td></tr><tr><td>1</td><td>1</td><td>1</td></tr></table>
+                </div>
+            </div>
+        </div><br>
+        <div class="five">
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center; font-size: 30px;">Możemy również scalać komórki tabeli za pomocą atrybutów <span style="color:cadetblue">colspan</span> (scalanie w poziomie) oraz <span style="color:cadetblue">rowspan</span> (scalanie w pionie).<br>
+                Po wpiasniu <span style="color:cadetblue">colspan=""</span>/<span style="color:cadetblue">rowspan=""</span> w cudzysłowie należy podać liczbę komórek jaką chcemy scalić, a potem usunąć je z tabeli (poza komórką scalującą, czyli tą w której znajduję się atrybuty <span style="color:cadetblue">rowspan</span> lub <span style="color:cadetblue">colspan</span>).</p><br>
+            <div class="half">
+                <h4>Kod HTML</h4>
+                <hr width="100%" color="yellow">
+                <div class="halfin" style="padding-top: 25px; height: 500px"><span >&lt;table <span style="color:green;">border</span>="1px"</span> <span style="color:yellowgreen;">width</span><span class="green">="250px"</span> <span style="color:pink;">height</span>="400px"<span >&gt;</span><br><span style="color:yellowgreen;">&lt;tr height="10px" bgcolor="red"&gt;<span style="color:green;">&lt;td <span style="color:cadetblue">colspan=2</span>&gt;<span style="color:white">1</span>&lt;/td&gt;</span><span style="color:green;">&lt;td&gt;<span style="color:white">1</span>&lt;/td&gt;</span><span style="color:green;">&lt;td&gt;<span style="color:white">1</span>&lt;/td&gt;</span>&lt;/tr&gt;</span></p><br><span style="color:yellowgreen;">&lt;tr&gt;<span style="color:green;">&lt;td&gt;<span style="color:white">1</span>&lt;/td&gt;</span><span style="color:green;">&lt;td&gt;<span style="color:white">1</span>&lt;/td&gt;</span><span style="color:green;">&lt;td&gt;<span style="color:white">1</span>&lt;/td&gt;</span>&lt;/tr&gt;</span></p><br><span style="color:yellowgreen;">&lt;tr&gt;<span style="color:green;">&lt;td&gt;<span style="color:white">1</span>&lt;/td&gt;</span><span style="color:green;">&lt;td&gt;<span style="color:white">1</span>&lt;/td&gt;</span><span style="color:green;"></span>&lt;/tr&gt;</span></p><br><span >&lt;table&gt;</span></div>
+            </div>
+            <div class="half">
+                <h4>Rezultat</h4>
+                <hr width="100%" color="yellow">
+                <div class="halfin" style=" padding-top: 25px;height: 500px;display: flex;
+                justify-content: center;">
+                    <table border="1px" height="400px" width="250px"><tr height="10px" bgcolor="red"><td >1</td><td>1</td><td>1</td></tr><tr><td rowspan="2">1</td><td>1</td><td>1</td></tr><tr><td >1</td><td>1</td></tr></table>
+                </div>
+            </div>
+        </div>
     </div><br><br>
     </div>
     </div>
