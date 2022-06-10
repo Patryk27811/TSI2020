@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mini kurs HTML</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="../img/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <div class="nav">
+        <ol>
+            <li>
+                <a href="index.html">Wstęp</a>
+            </li>
+            <li><a href="tekst.html">Tekst</a></li>
+            <li><a href="znaki.html">Znaki </a></li>
+            <li><a href="listy.html">Listy</a></li>
+            <li><a href="tabele.html">Tabele</a></li>
+            <li><div style="background-color: rgb(46, 46, 46); height: 35px"><a href="hiperlacza.html">Hiperłącza</a></div></li>
+            <li><a href="grafika.html">Grafika</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="inputy.html">Inputy</a></li>
+            <li><a href="formularz.html">Formularze</a></li>
+        </ol>
+    </div>
+    <div class="container">
+        <div class="one">
+            <h3>Hiperłącza</h3><br><br>
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center; font-size: 30px;"><b>O hiperłączach będzie krótko i na temat, ponieważ nie jest to jakiś bardzo rozległy temat. Ogólnie hiperłącza są to odnośniki do stron zewnętrzych, bądź też wewnętrznych. Do utworzenia takiego hiperłącza używamy znaczników <span style="color:red">&lt;a&gt;&lt;/a&gt;</span> oraz dodać atrubut <span style="color:yellow">href="link"</span></b></p><br><br>
+            <div class="half">
+                <h4>Kod HTML</h4>
+                <hr width="100%" color="yellow">
+                <div class="halfin" style="padding-top: 25px; height: 150px"><span>&lt;a href="https://pdobrowolski.com"&gt;Kliknij mnie &lt;/a&gt;</span></div>
+            </div>
+            <div class="half">
+                <h4>Rezultat</h4>
+                <hr width="100%" color="yellow">
+                <div class="halfin" style=" padding-top: 25px;height: 150px;display: flex;
+                justify-content: center;">
+                    <a href="https://pdobrowolski.com">Kliknij mnie</a>
+                </div>
+              </div>
+              <div class="two">
+                  <h3></h3>
+                <p style="padding-left: 30px;padding-right: 30px; text-align: center; font-size: 30px;"><b>Możemy również odpalić stronę w nowym oknie poprzez dodanie po <span style="color:yellow">href="link"</span> <span style="color:green">target="blank"</span> bądź </span><span style="color:green">target="new window"</span></b></p><br><br>
+                <div class="half">
+                    <h4>Kod HTML</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style="padding-top: 25px; height: 150px"><span>&lt;a href="https://pdobrowolski.com" target="_blank"&gt;Kliknij mnie &lt;/a&gt;</span></div>
+                </div>
+                <div class="half">
+                    <h4>Rezultat</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style=" padding-top: 25px;height: 150px;display: flex;
+                    justify-content: center;">
+                        <a href="https://pdobrowolski.com" target="_blank">Kliknij mnie</a>
+                    </div>
+                    </div>
+                    <div class="half">
+                        <h4>Kod HTML</h4>
+                        <hr width="100%" color="yellow">
+                        <div class="halfin" style="padding-top: 25px; height: 150px"><span>&lt;a href="https://pdobrowolski.com" target="new window"&gt;Kliknij mnie &lt;/a&gt;</span></div>
+                    </div>
+                    <div class="half">
+                        <h4>Rezultat</h4>
+                        <hr width="100%" color="yellow">
+                        <div class="halfin" style=" padding-top: 25px;height: 150px;display: flex;
+                        justify-content: center;">
+                            <a href="https://pdobrowolski.com" target="new window">Kliknij mnie</a>
+                        </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+
+
+    <!-- <p style="text-align:center"><b>Możemy również odpalić stronę w nowym oknie poprzez dodanie po <span style="color:yellow">href="link"</span> <span style="color:green">target="blank"</span> bądź </span><span style="color:green">target="new window"</span></b></p><br><br> -->
+
+
+
+
+    <script src="../jquery-1.11.3.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var NavY = $('.nav').offset().top;
+
+            var stickyNav = function() {
+                var ScrollY = $(window).scrollTop();
+
+                if (ScrollY > NavY) {
+                    $('.nav').addClass('sticky');
+                } else {
+                    $('.nav').removeClass('sticky');
+                }
+            };
+
+            stickyNav();
+
+            $(window).scroll(function() {
+                stickyNav();
+            });
+        });
+    </script>
+</body>
+
+</html>
