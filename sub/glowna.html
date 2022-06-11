@@ -4,43 +4,202 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<title>Document</title>
 		<style>
-			@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap");
-			body {
-				font-family: "Nunito Sans", sans-serif;
-				margin: 0px 0px 0px 0px;
-				color: black;
-			}
-
-			.content {
-				margin-top: 30px;
-				display: flex;
-				justify-content: center;
-				font-size: 30px;
-			}
-		</style>
-	</head>
-	<body>
-		<div class="content">
-			<div>
-				<p id="tytul"></p>
-			</div>
+			
+				
+				p{
+		
+		text-align: justify;
+		font-size: 24px;
+		margin: 8px 0 0 8px;
+		white-space: nowrap;
+		overflow: hidden;
+		width: 40%;
+		animation: type 4s steps(80, end); 
+	  }
+	  
+	  p:nth-child(2){
+		animation: type2 8s steps(80, end);
+		  width: 90%;
+	  }
+	  p:nth-child(3){
+		animation: type2 14s steps(120, end);
+		  width: 90%;
+	  }
+				
+	  p:nth-child(4){
+		animation: type2 21s steps(140, end);
+		  width: 90%;
+	  }
+	  p:nth-child(5){
+		animation: type2 26s steps(170, end);
+		  width: 90%;
+	  }
+	  
+	  
+	  .center{
+		display: flex;
+		justify-content: center;
+	  }
+	  
+	  
+	  
+	  span{
+		animation: blink 1s infinite;
+	  }
+	  
+	  @keyframes type{ 
+		from { width: 0; } 
+	  } 
+	  
+	  @keyframes type2{
+		0%{width: 0;}
+		50%{width: 0;}
+		100%{ width: 100; } 
+	  } 
+				
+	  
+	  
+	  @keyframes blink{
+		to{opacity: .0;}
+	  }
+	  
+	  ::selection{
+		background: black;
+	  }
+	  .down:hover
+				{
+					height: 200px;
+					transition-duration:2s;
+				}
+	  a
+				{
+				   color:yellow;
+				   text-decoration: none;
+					
+				}
+				  
+	  .przyklady img
+				{
+					-webkit-box-shadow: 0px 0px 9px 5px rgba(0,0,0,0.75);
+	  -moz-box-shadow: 0px 0px 9px 5px rgba(0,0,0,0.75);
+	  box-shadow: 0px 0px 9px 5px rgba(0,0,0,0.75);
+				}
+	  .przyklady
+				{
+					width: 80%;
+					margin-left: auto;
+					margin-right: auto;
+				}
+				h2
+				{
+					text-decoration: none;
+					color: black;
+				}
+				h3
+				{
+					font-weight: 300;
+					text-decoration: none;
+					color: black;
+				}
+			</style>
+		</head>
+		   
+	   <body>
+		<div class="center">
+	  <div style="width:80%">
+	  <p style="text-align: center; padding: 30px; padding-bottom: 80px; font-size: 30px; text-transform: uppercase;  ">Witaj Profesjonalisto!</p>
+	  <p>W moim mini kursie nauczysz się korzystać z języka znaczników jakim jest <b>HTML</b> oraz arkusza kaskadowego <b>CSS</b>.</p>
+	  <p>Na stronie będziesz mógł zobaczyć kilka moich prac</p>
+	  <p>Kliknij w strzałkę, żeby zacząć zabawę</p>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br><br>
+	  <br><br><br>
+	  <br><br><br>
+	  <br>
+		   <div align="center">
+		  <a href="#sec2"><img class="down" height="150px "src="down.png"></a>
+	  </div>
+	  <br><br><br>
+	  <br><br><br>
+	  <br><br><br><br><br><br><br><br><br>
+	  <div id="sec2">
+		   <h1 style="text-align: center">Czym jest HTML?</h1>
+		   <h2 style="font-size: 25px; text-align: justify; padding: 20px; font-weight: 100;"><b>HTML (HyperText Markup Language)</b> jest językiem używanym do tworzenia stron internetowych. Jest to także język znaczników, czyli oprócz głównego tekstu dokument zawiera w sobie informację opisujące go. Te dodatkowe informacje wplotywane są za pomocą znaczników, onegdaj wykorzystywanych w przemyśle wydawniczym. Dzięki językowi HTML możemy dodawać do tekstu akapity, hiperłącza, nagłówki, pliki graficzne czy multimedialne czy formularze. HTML określa także jak dokument będzie wyglądał w przeglądarce internetowej. Język ten używa znaczników występujących w parach, np: &lt;body&gt; &lt;/body&gt;, &lt;title&gt; &lt;/title&gt;. Dzięki nim w dokumencie wpleść również można język skryptowy, służacy do kontrolowania aplikacji. <a target="_blank" href="http://stronymalowane.pl/html/">&#8594; źródło</a></h2>
+		  <br>
+		  <br>
+		  <div align="center">
+		  <video class="item-frame" width="600px"   src="kurs-html.mp4" controls></video>
+	  
+	  
+	  
+	  <h4>Były to pierwsze 3 minuty kursu video HTML autorstwa <a target="_blank" href="https://miroslawzelent.pl/">Mirosława Zelenta</a> , cały film dostępny <a target="_blank" href="https://www.youtube.com/watch?v=k2IydkL3EOs">tutaj.</a></h4></div>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <h1 style="text-align: center">Czym jest CSS?</h1>
+		   <h2 style="font-size: 25px; text-align: justify; padding: 20px; font-weight: 100;"><b>CSS</b>, czyli kaskadowe arkusze stylów (od ang. Cascading Style Sheets) to język używany do opisu układu elementów na stronie WWW. Można za jego pomocą zdefiniować wiele parametrów, takich jak rodzaj czcionek, kolor tła, wyrównanie elementów na stronie itp. Jest kilka sposobów stosowania CSS, przykładowo: użycie wewnątrz danego dokumentu znacznika „style”, jednak najbardziej użyteczną jest posłużenie się osobnym arkuszem stylów, w którym zawrzemy wszystkie informacje dotyczące układu graficznego strony.
+	  
+	  <a target="_blank" href="http://stronymalowane.pl/css/">&#8594; źródło</a></h2>
+		  <div align="center">
+		  <video class="item-frame" width="600px"  src="kurs-css.mp4" controls></video>
+	  
+	  
+	  
+	  <h4>Były to pierwsze 3 minuty kursu video CSS autorstwa <a target="_blank"
+	  href="https://miroslawzelent.pl/">Mirosława Zelenta</a> , cały film dostępny <a target="_blank" href="https://www.youtube.com/watch?v=RJEKMbD_kEk">tutaj.</a></h4>
+			  
+		   </div>
+		   </div>
 		</div>
+		  </div>
+		   <br>
+		   <br>
+		   <hr color="black" width="90%" size="3px">	
+		   <br>
+		   <br>
+		   
+		   
+		  <div align="center">
+			  <h1>Sprawdź czego możesz spodziewać się po kursie</h1>
+	  <h3 style="text-transform:uppercase">Poniżej są moje prace, z których możesz zaczerpnąć inspiracje, bądz skopiować je 1:1</h3>
+			  <div>
+				<!--Sprawdzian-->
+<h3 style="font-size: 25px; text-align: justify; padding: 20px; font-weight: 100; text-align: center;">Formatowanie tekstu</h3>
+<font style="font-size: 19px; text-align: justify; padding: 20px; font-weight: 100; text-align: center;">Aby uatrakcyjnić treść naszej strony powinniśmy nasz tekst sformatować tj. zmienić kolor czcionki, krój czcionki, kolor tła, położenie tekstu oraz zastosowanie takich elementów jak: listy, łącza, pola tekstowe itd;</font>	<br><br>
+			  
+<a href="../Sprawdzian/kartkówka.html"><img src="sprawdzian.PNG" style="width:auto;height:400px;border-radius: 5px;"></a>
+<!--Listy-->
+<h3 style="font-size: 25px; text-align: justify; padding: 20px; font-weight: 100; text-align: center;">Listy</h3>
+<font style="font-size: 19px; text-align: justify; padding: 20px; font-weight: 100; text-align: center;">Aby pogrupować treść na naszej stronie są potrzebne nam listy.Listy mogą być ponumerowane, uporządkowane, nieuporządkowane itp.</font>	<br><br>
+			  
+<a href="../listy/index.html"><img src="listy.PNG" style="width:auto;height:400px;border-radius: 5px;"></a>
+<!--Tabele
+-->
+<h3 style="font-size: 25px; text-align: justify; padding: 20px; font-weight: 100; text-align: center;">Tabele</h3>
+<font style="font-size: 19px; text-align: justify; padding: 20px; font-weight: 100; text-align: center;">Innym sposobem na pogrupowanie sobie tekstu są tabele, które możesz zobaczyć w mojej poniższej pracy na przykładzie kolorów </font>	<br><br>
+			  
+<a href="../tabela-z-kolorami/index.html"><img src="tabela.PNG" style="width:auto;height:400px;border-radius: 5px;"></a>
+<!--Formularze
+-->
+<h3 style="font-size: 25px; text-align: justify; padding: 20px; font-weight: 100; text-align: center;">Formularze</h3>
+<font style="font-size: 19px; text-align: justify; padding: 20px; font-weight: 100; text-align: center;">Jeśli chcemy, żeby nasza strona była interaktywna oraz żeby użytkownik mógł wprowadzić jakieś dane a nie tylko czytał nasze wypociny musimy użyć formularzy </font>	<br><br>
+			  
+<a href="../formularze/index.html"><img src="formularze.PNG" style="width:auto;height:400px;border-radius: 5px;"></a>
+<!--listylacz
+-->
+<h3 style="font-size: 25px; text-align: justify; padding: 20px; font-weight: 100; text-align: center;">Formularze</h3>
+<font style="font-size: 19px; text-align: justify; padding: 20px; font-weight: 100; text-align: center;">Często bywa, że na naszej stronie musimy użyć wielu elementów jednocześnie np. Tabel, list, oraz hiperłącz. Warto umieć łączyć te wszystkie elementy.</font>	<br><br>
+			  
+<a href="../tablelistyzlacza/index.html"><img src="listylacza.PNG" style="width:auto;height:400px;border-radius: 5px;"></a>
+</div>
+<br><br><br><br><br><br>
 
-		<script src="https://unpkg.com/typeit@8.1.0/dist/index.umd.js"></script>
-		<script>
-			new TypeIt("#tytul", {
-				speed: 50,
-				startDelay: 1000,
-				afterComplete: function (instance1) {
-					instance1.destroy();
-				},
-			})
-				.type(
-					"Cześć profesjonalisto!<br> <br> Nauczysz się być tu profesjonalny."
-				)
-				.go();
-		</script>
-	</body>
+	   </body>
 </html>
