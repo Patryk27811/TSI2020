@@ -150,6 +150,17 @@
         padding: 5px;
         text-shadow: 4px 4px black;
     }
+    h5 {
+        font-family: 'Open Sans', sans-serif;
+        color: rgb(255, 0, 128);
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 40px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 5px;
+        text-shadow: 4px 4px black;
+    }
     
     .one p,
     ul {
@@ -194,4 +205,48 @@
 			  margin-right: auto;
 			  color: black;
 			  border: grey solid 2px;
+    }
+    #linkiinput a{
+        text-decoration: none;
+        color: yellow;
+        font-size: 25px;
+        
+    }
+    #photos {
+        
+        width: 700px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        margin-top: 50px;
+        border-radius: 20px;
+    }
+    
+    .code {
+        background-image: url(test.jpg);
+        width: 500px;
+        height: 200px;
+        color: black;
+        border: 1px solid black;
+        padding: 10px 10px 10px 10px;
+        margin-top: 20px;
+        font-size: 20px;
+        border-radius: 20px;
+    }
+    .center {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .content {
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 60px;
+    }
+    #wideo {
+        
+        width: 700px;
+        padding-top: 20px;
+        padding-bottom: 35px;
+        border-radius: 20px;
     }

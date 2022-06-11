@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mini kurs HTML</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="../img/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500&display=swap" rel="stylesheet">
+   
+</head>
+
+
+<body>
+    
+
+     <div class="nav">
+        <ol>
+            <li>
+                <a href="index.html">Wstęp</a>
+            </li>
+            <li><a href="tekst.html">Tekst</a></li>
+            <li><a href="znaki.html">Znaki </a></li>
+            <li><a href="listy.html">Listy</a></li>
+            <li><a href="tabele.html">Tabele</a></li>
+            <li><a href="hiperlacza.html">Hiperłącza</a></li>
+            <li><a href="grafika.html">Grafika</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="inputy.html">Inputy</a></li>
+            <li><div style="background-color: rgb(46, 46, 46); height: 35px"><a href="formularz.html">Formularze</a></div></li>
+        </ol>
+    </div>
+    <div class="container">
+        <div class="one"><h3>Formularze</h3>
+        <div class="two" style="height: 1550px;">
+          <br><br><p style="text-align: center;">
+           By uporządkować wszystkie dane oraz przesłać je na serwer, na którym znajduje się nasza strona wszystkie pola mające na celu odebrać dane od użytkownika strony musimy umieścić w formularzu.
+           <br> Formularze tworzymy za pomocą znacznika <span >&lt;form&gt;&lt;/form&gt;</span>.<br>
+           Musimy pamiętać by dodawać tytuły naszym polom wejscia, możemy to zrobić za pomocą znacznika <span >&lt;label&gt;&lt;/label&gt;</span>.<br>
+           Więcej na temat formularzy znajdziesz <a href="../formularze/index.html">TUTAJ</a> i <a href="../formularze2/index.html">TUTAJ</a>
+     </p><br><br>
+     <div class="half">
+        <h4>Kod HTML</h4>
+        <div  class="halfin" style="padding-top: 25px; height: 1200px; text-align: left;">
+           <span >&lt;form&gt;</span><br><br>
+     
+     
+     
+     
+           &nbsp;<span >&lt;label&gt;</span>Imię<span >&lt;br&gt;</span><br>
+     
+           &nbsp;<span > &lt;input <span >type=<span >"text"</span></span>&gt;&lt;/label&gt;&lt;br&gt;&lt;br&gt;</span><br><br>
+     
+     
+           &nbsp;<span >&lt;label&gt;</span>Nazwisko<span > &lt;br&gt;
+              <br>&nbsp; &lt;input </span> <span > type=</span><span >"text"</span><span >&gt;&lt;/label&gt;&lt;br&gt;&lt;br&gt;<br><br>
+     
+                 &nbsp; &lt;label&gt;</span>Login<span >&lt;br&gt;
+              
+              <br>&nbsp;&lt;input</span> <span >type=</span><span >"text"</span><span >&gt;&lt;/label&gt;&lt;br&gt;&lt;br&gt;<br><br>
+     
+     
+                 &nbsp;&lt;label&gt;</span>Email<span >&lt;br&gt;<br>
+              
+                    &nbsp; &lt;input</span><span > type=</span><span >"email"</span><span >&gt;&lt;/label&gt;&lt;br&gt;&lt;br&gt;<br><br>
+                       &nbsp;&lt;label&gt;</span>Hasło<span >&lt;br&gt;<br>
+              
+                          &nbsp;&lt;input </span><span >type=</span><span >password"</span><span >&gt;&lt;/label&gt;&lt;br&gt;&lt;br&gt;<br><br>
+            
+            
+            
+            
+            
+                         &nbsp; &lt;label&gt;</span>Data<span >&lt;br&gt;
+              
+              <br>&nbsp;&lt;input</span> <span >type=</span><span >"date"</span><span >&gt;&lt;/label&gt;&lt;br&gt;&lt;br&gt;<br><br>
+            
+            
+            
+            
+            
+            
+            
+                 &nbsp; &lt;label&gt;</span>Czas<span >&lt;br&gt;
+              
+              <br>&nbsp;&lt;input</span> <span >type=</span><span >"time"</span><span >&gt;&lt;/label&gt;&lt;br&gt;&lt;br&gt;<br><br>
+            
+            
+            
+            
+            
+                 &nbsp; &lt;label&gt;</span>Plik<span >&lt;br&gt;
+              
+              <br>&nbsp;&lt;input</span> <span >type=</span><span >"file"</span><span >&gt;&lt;/label&gt;&lt;br&gt;&lt;br&gt;<br><br>
+            
+            
+            
+            
+            
+            
+                 &nbsp; &lt;label&gt;</span>Kolor<span >&lt;br&gt;
+              
+              <br>&nbsp;&lt;input</span> <span >type=</span><span >"color"</span><span >&gt;&lt;/label&gt;&lt;br&gt;&lt;br&gt;<br><br>
+            
+            
+            
+            
+            
+                             &nbsp; &lt;input </span><span >type=<span >"submit"</span> value=<span >"Prześlij"</span>&gt;</span><br><br>
+           
+           
+           
+           
+           
+           <span >&lt;/form&gt;</span>
+        </div>
+        
+        </div>
+        <div class="half">
+        <h4>Rezultat</h4>
+        <div class="halfin" style=" padding-top: 25px;height: 1200px">
+        <form>
+           
+           <label>Imię<br><input type="text"></label><br><br>
+           <label>Nazwisko<br><input type="text"></label><br><br>
+           <label>Login<br><input type="text"></label><br><br>
+           <label>Email<br><input type="email"></label><br><br>
+           <label>Hasło<br><input type="password"></label><br><br>
+           <label>Data<br><input type="date"></label><br><br>
+           <label>Czas<br><input type="time"></label><br><br>
+           <label>Plik<br><input type="file"></label><br><br>
+           <label>Kolor<br><input type="color"></label><br><br>
+           <input type="submit" value="Prześlij">
+        </form>
+     
+     
+     
+        </div>
+         </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="../jquery-1.11.3.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var NavY = $('.nav').offset().top;
+
+            var stickyNav = function() {
+                var ScrollY = $(window).scrollTop();
+
+                if (ScrollY > NavY) {
+                    $('.nav').addClass('sticky');
+                } else {
+                    $('.nav').removeClass('sticky');
+                }
+            };
+
+            stickyNav();
+
+            $(window).scroll(function() {
+                stickyNav();
+            });
+        });
+    </script>
+    
+</body>
+
+</html>

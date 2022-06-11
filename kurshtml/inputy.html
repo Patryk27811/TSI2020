@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mini kurs HTML</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="../img/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery.scrollto.min.js"></script>
+    <script>
+           
+        jQuery(function($)
+     {
+         
+         $.scrollTo(0);
+          
+         $('#link1').click(function() { $.scrollTo($('#button'), 1000); });
+         $('#link2').click(function() { $.scrollTo($('#checkbox'), 1000); });
+         $('#link3').click(function() { $.scrollTo($('#color'), 1000); });
+         $('#link4').click(function() { $.scrollTo($('#date'), 1000); });
+         $('#link5').click(function() { $.scrollTo($('#email'), 1500); });
+         $('#link6').click(function() { $.scrollTo($('#file'), 1500); });
+         $('#link7').click(function() { $.scrollTo($('#image'), 1500); });
+         $('#link8').click(function() { $.scrollTo($('#month'), 1500); });
+         $('#link9').click(function() { $.scrollTo($('#number'), 2000); });
+         $('#link10').click(function() { $.scrollTo($('#password'), 2000); });
+         $('#link11').click(function() { $.scrollTo($('#radio'), 2000); });
+         $('#link12').click(function() { $.scrollTo($('#range'), 2000); });
+         $('#link13').click(function() { $.scrollTo($('#reset'), 2000); });
+         $('#link14').click(function() { $.scrollTo($('#submit'), 2500); });
+         $('#link15').click(function() { $.scrollTo($('#tel'), 2500); });
+         $('#link16').click(function() { $.scrollTo($('#text'), 2500); });
+         $('#link17').click(function() { $.scrollTo($('#time'), 2500); });
+         $('#link18').click(function() { $.scrollTo($('#url'), 3000); });
+         $('#link19').click(function() { $.scrollTo($('#week'), 3000); });
+         $('#link20').click(function() { $.scrollTo($('#select'), 3000); });
+         $('#link21').click(function() { $.scrollTo($('#textarea'), 3000); });
+
+
+  
+         $('.scrollup').click(function() { $.scrollTo($('.gora'), 2000); });
+     }
+     );
+
+
+     $(window).scroll(function()
+     {
+         if($(this).scrollTop()>1000) $('.scrollup').fadeIn();
+         else $('.scrollup').fadeOut();      
+     }
+     );
+  </script>
+</head>
+
+
+<body>
+    <div class="gora"></div>
+    <a href="#" class="scrollup"></a>
+    <div class="nav">
+        <ol>
+            <li>
+                <a href="index.html">Wstęp</a>
+            </li>
+            <li><a href="tekst.html">Tekst</a></li>
+            <li><a href="znaki.html">Znaki </a></li>
+            <li><a href="listy.html">Listy</a></li>
+            <li><a href="tabele.html">Tabele</a></li>
+            <li><a href="hiperlacza.html">Hiperłącza</a></li>
+            <li><a href="grafika.html">Grafika</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><div style="background-color: rgb(46, 46, 46); height: 35px"><a href="inputy.html">Inputy</a></div></li>
+            <li><a href="formularz.html">Formularze</a></li>
+        </ol>
+    </div>
+    <div class="container">
+       <h3>Inputy</h3>
+       <p style="padding-left: 30px;padding-right: 30px; text-align: center; font-size: 30px;"><b>Jeśli chcemy by nasza strona była bardzeij interaktywna i umożliwiała jakąś ingerencje użytkownika musimy użyć pola, w których użytkownik będzie mógł te dane przekazać i do tego służy znacznik <span style="color:red;">&lt;input&gt</span>. Mamy różne rodzaje takich inputów:
+        <ul id="linkiinput">
+            <li><a id="link1" href="#"><b>button</b></a> - pozwala na wysłanie formularza</li>
+            <li><a id="link2" href="#"><b>checkbox</b></a> - pozwala na wielokrotny wybór, bądź zatwierdzenie czegoś</li>
+            <li><a id="link3" href="#"><b>color</b></a> - pozwala na wybranie koloru</li>
+            <li><a id="link4" href="#"><b>date</b></a> - pozwala na wybranie daty</li>
+            <li><a id="link5" href="#"><b>email</b></a> -  pozwala na wprowadzenie email, którego składnia będzie sprawdzana</li>
+            <li><a id="link6" href="#"><b>file</b></a> -  pozwala na przesłanie pliku.</li>
+            <li><a id="link7" href="#"><b>image</b></a> - pozwala na przesłanie pliku, którego rozszerzenie pokazuje, że jest to grafika</li>
+            <li><a id="link8" href="#"><b>month</b></a> - pozwala jak sama nazwa mówi wybrać nam dany miesiąc</li>
+            <li><a id="link9" href="#"><b>number </b></a> - pozwala na wpisanie liczby</li>
+            <li><a id="link10" href="#"><b>password </b> </a>- pozwala na wpisaniu hasła, które oczywiście jest zakropkowane</li>
+            <li><a id="link11" href="#"><b>radio</b></a> - ppozwala na wybranie opcji, a przy identycznych nazwach jedno wybranie wyklucza drugie</li>
+            <li><a id="link12" href="#"><b>range</b></a> - pozwala na wybranie wartości paskiem</li>
+            <li><a id="link13" href="#"><b>reset</b></a> - resetuje cały formularz</li>
+            <li><a id="link14" href="#"><b>submit </b></a> - zatwierdza formularz</li>
+            <li><a id="link15" href="#"><b>tel</b></a> - umożliwia wpisanie nr.tel</li>
+            <li><a id="link16" href="#"><b>text </b></a> - jak sama nazwa mówi, pozwala nam wpisać zwykły tekst</li>
+            <li><a id="link17" href="#"><b>time</b></a> - pozwala na wprowadzenie czasu</li>
+            <li><a id="link18" href="#"><b>url</b></a> - pozwala na wprowadzenie linku</li>
+            <li><a id="link19" href="#"><b>week </b></a> - pozwala na wprowadzenie dnia tygodnia</li></ul>
+    
+    </b></p>
+    
+    <div class="container">
+        <!--Przycisk-->
+    <div class="one">
+<div id="button">
+    <h5>Button</h5><br><br>
+    <p style="text-align: center;">Datkowo by wyświetlić napis na przycisku możemy dodać atrybut <span style="color:yellow;">value</span>, a jako wartość podać interesujący nas tekst. </p><br>
+    <div class="half">
+    <h4>Kod HTML</h4>
+    <hr width="100%" color="yellow">
+    <div class="halfin" style="padding-top: 25px; height: 100px"><span>&lt;input type=button value="kliknij mnie"&gt</span></div>
+</div>
+    <div class="half">
+    <h4>Rezultat</h4>
+    <hr width="100%" color="yellow">
+    <div class="halfin" style=" padding-top: 25px;height: 100px;display: flex;
+    justify-content: center;">
+        <input type="button" value="Kliknij mnie" style="height:22px; width: 100px;">
+    </div>
+  </div>
+    </div>
+    <!--Checkbox-->
+    <div class="two">
+        <div id="checkbox">
+            <h5>Checkbox</h5><br><br>
+            <p style="text-align: center;">By nadać typ checkbox musimy dać wartość type na <span style="color:green">checkbox</span> </p><br>
+            <div class="half">
+            <h4>Kod HTML</h4>
+            <hr width="100%" color="yellow">
+            <div class="halfin" style="padding-top: 25px; height: 200px"><span >&lt;input <span >type=<span style="color:green">"checkbox"</span></span>&gt;</span><br>
+                <span >&lt;label&gt;</span>Opcja 1<span >&lt;/label&gt;&lt;br&gt;</span><br>
+                <span >&lt;input <span >type=<span style="color:green">"checkbox"</span></span>&gt;</span><br>
+                <span >&lt;label&gt;</span>Opcja 2<span >&lt;/label&gt;</span><br></div>
+        </div>
+            <div class="half">
+            <h4>Rezultat</h4>
+            <hr width="100%" color="yellow">
+            <div class="halfin" style="height:225px">
+                <input type="checkbox">
+                <label>Opcja 1</label><br>
+                <input type="checkbox">
+                <label>Opcja 2</label>
+               
+            </div>
+          </div>
+            </div>
+        <!--Color-->
+            <div class="one">
+                <div id="color">
+                    <h5>Color</h5><br><br>
+                    <p style="text-align: center;">By nadać inputowi typ <i>„color”</i> musimy dodać atrybut <span style="color:yellow">type</span> wraz z wartością <span style="color:green">color</span>.</p><br>
+                    <div class="half">
+                    <h4>Kod HTML</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style="padding-top: 25px; height: 100px"><span >&ltinput type="color"&gt</span><br></div>
+            </div>
+                    <div class="half">
+                    <h4>Rezultat</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style=" padding-top: 25px;height: 100px;display: flex;
+                    justify-content: center;">
+                        <input type="color">
+                    </div>
+                  </div>
+            </div>
+             <!--Date-->
+            <div class="one">
+                <div id="date">
+                    <h5>Date</h5><br><br>
+                    <p style="text-align: center;">By nadać inputowi typ <i>„date”</i> musimy dodać atrybut <span style="color:yellow">type</span> wraz z wartością <span style="color:green">date</span>.</p><br>
+                    <div class="half">
+                    <h4>Kod HTML</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style="padding-top: 25px; height: 100px"><span >&ltinput type="date"&gt</span><br></div>
+            </div>
+                    <div class="half">
+                    <h4>Rezultat</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style=" padding-top: 25px;height: 100px;display: flex;
+                    justify-content: center;">
+                        <input type="date" style="height:22px; width: 100px;">
+                    </div>
+                  </div>
+            </div>
+             <!--Email-->
+            <div class="one">
+                <div id="email">
+                    <h5>Email</h5><br><br>
+                    <p style="text-align: center;">By nadać inputowi typ <i>„date”</i> musimy dodać atrybut <span style="color:yellow">type</span> wraz z wartością <span style="color:green">email</span>.</p><br>
+                    <div class="half">
+                    <h4>Kod HTML</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style="padding-top: 25px; height: 100px"><span >&ltinput type="email"&gt</span><br></div>
+            </div>
+                    <div class="half">
+                    <h4>Rezultat</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style=" padding-top: 25px;height: 100px;display: flex;
+                    justify-content: center;">
+                        <input type="email" style="height:22px; width: 100px;">
+                    </div>
+                  </div>
+            </div>
+             <!--File-->
+            <div class="one">
+                <div id="file">
+                    <h5>File</h5><br><br>
+                    <p style="text-align: center;">By nadać inputowi typ <i>„date”</i> musimy dodać atrybut <span style="color:yellow">type</span> wraz z wartością <span style="color:green">file</span>.</p><br>
+                    <div class="half">
+                    <h4>Kod HTML</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style="padding-top: 25px; height: 100px"><span >&ltinput type="file"&gt</span><br></div>
+            </div>
+                    <div class="half">
+                    <h4>Rezultat</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style=" padding-top: 25px;height: 100px;display: flex;
+                    justify-content: center;">
+                        <input type="file">
+                    </div>
+                  </div>
+            </div>
+             <!--Image-->
+            <div class="one">
+                <div id="image">
+                    <h5>Image</h5><br><br>
+                    <p style="text-align: center;">By nadać inputowi typ <i>„image”</i> musimy dodać atrybut <span style="color:yellow">type</span> wraz z wartością <span style="color:green">image</span>.<br>
+                        By wyświetlić obraz na <i>inpucie</i> musimy dodać atrybut <span style="color:yellow">src</span>, a jako wartość podać ścieżke interesującego nasz pliku.</p><br>
+                    <div class="half">
+                    <h4>Kod HTML</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style="padding-top: 25px; height: 100px"><span >&ltinput type="image" src="abudabi.png"width="100px"&gt</span><br></div>
+            </div>
+                    <div class="half">
+                    <h4>Rezultat</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style=" padding-top: 25px;height: 100px;display: flex;
+                    justify-content: center;">
+                        <input type="image" src="abudabi.png" width="100px">
+                    </div>
+                  </div>
+            </div>
+            <!--Month-->
+            <div class="one">
+                <div id="month">
+                    <h5>Month</h5><br><br>
+                    <p style="text-align: center;">By nadać inputowi typ <i>„month”</i> musimy dodać atrybut <span style="color:yellow">type</span> wraz z wartością <span style="color:green">month</span>.<br>
+                        </p><br>
+                    <div class="half">
+                    <h4>Kod HTML</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style="padding-top: 25px; height: 100px"><span >&ltinput type="month" &gt</span><br></div>
+            </div>
+                    <div class="half">
+                    <h4>Rezultat</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style=" padding-top: 25px;height: 100px;display: flex;
+                    justify-content: center;">
+                        <input type="month" style="height:22px; width: 100px;">
+                    </div>
+                  </div>
+            </div>
+            <!--Number-->
+            <div class="one">
+                <div id="number">
+                    <h5>Number</h5><br><br>
+                    <p style="text-align: center;">By nadać inputowi typ <i>„number”</i> musimy dodać atrybut <span style="color:yellow">type</span> wraz z wartością <span style="color:green">number</span>.<br>
+                        </p><br>
+                    <div class="half">
+                    <h4>Kod HTML</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style="padding-top: 25px; height: 100px"><span >&ltinput type="number" &gt</span><br></div>
+            </div>
+                    <div class="half">
+                    <h4>Rezultat</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style=" padding-top: 25px;height: 100px;display: flex;
+                    justify-content: center;">
+                        <input type="number" style="height:22px; width: 100px;">
+                    </div>
+                  </div>
+            </div>
+            <!--password-->
+            <div class="one">
+                <div id="password">
+                    <h5>Password</h5><br><br>
+                    <p style="text-align: center;">By nadać inputowi typ <i>„password”</i> musimy dodać atrybut <span style="color:yellow">type</span> wraz z wartością <span style="color:green">password</span>.<br>
+                        </p><br>
+                    <div class="half">
+                    <h4>Kod HTML</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style="padding-top: 25px; height: 100px"><span >&ltinput type="password" &gt</span><br></div>
+            </div>
+                    <div class="half">
+                    <h4>Rezultat</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style=" padding-top: 25px;height: 100px;display: flex;
+                    justify-content: center;">
+                        <input type="password" style="height:22px; width: 100px;">
+                    </div>
+                  </div>
+            </div>
+            <!--Radio-->
+            <div class="one">
+                <div id="radio">
+                    <h5>Radio</h5><br><br>
+                    <p style="text-align: center;">By nadać inputowi typ <i>„radio”</i> musimy dodać atrybut <span style="color:yellow">type</span> wraz z wartością <span style="color:green">radio</span>.<br>
+                        By pola wzajemnie się wykluczały należy nadać im taką samą nazwę za pomocą atrybutu <span style="color:yellow">name</span></p><br>
+                    <div class="half">
+                    <h4>Kod HTML</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style="padding-top: 25px; height: 150px"><span >&lt;input <span >type=<span >"radio"</span></span>&gt;</span><br>
+                        <span >&lt;label&gt;</span>Opcja 1<span >&lt;/label&gt;&lt;br&gt;</span><br>
+                        <span >&lt;input <span >type=<span >"radio"</span></span>&gt;</span><br>
+                        <span >&lt;label&gt;</span>Opcja 2<span >&lt;/label&gt;</span><br><br></div>
+            </div>
+                    <div class="half">
+                    <h4>Rezultat</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style=" padding-top: 25px;height: 150px;display: flex;
+                    justify-content: center;">
+                        <input type="password" style="height:22px; width: 100px;">
+                    </div>
+                  </div>
+            </div>
+            <!--Range-->
+            <div class="one">
+                <div id="range">
+                    <h5>Range</h5><br><br>
+                    <p style="text-align: center;">By nadać inputowi typ <i>„range”</i> musimy dodać atrybut <span style="color:yellow">type</span> wraz z wartością <span style="color:green">range</span>.<br>
+                        </p><br>
+                    <div class="half">
+                    <h4>Kod HTML</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style="padding-top: 25px; height: 150px"><span >&lt;input type="range" &gt</span><br><br></div>
+            </div>
+                    <div class="half">
+                    <h4>Rezultat</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style=" padding-top: 25px;height: 150px;display: flex;
+                    justify-content: center;">
+                        <input type="range" style="height:22px; width: 100px;">
+                    </div>
+                  </div>
+            </div>
+            <!--Reset-->
+            <div class="one">
+                <div id="reset">
+                    <h5>Reset</h5><br><br>
+                    <p style="text-align: center;">By nadać inputowi typ <i>„reset”</i> musimy dodać atrybut <span style="color:yellow">type</span> wraz z wartością <span style="color:green">reset</span>.<br>
+                        </p><br>
+                    <div class="half">
+                    <h4>Kod HTML</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style="padding-top: 25px; height: 150px"><span >&lt;input type="reset" &gt</span><br><br></div>
+            </div>
+                    <div class="half">
+                    <h4>Rezultat</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style=" padding-top: 25px;height: 150px;display: flex;
+                    justify-content: center;">
+                        <input type="reset" style="height:22px; width: 100px;">
+                    </div>
+                  </div>
+            </div>
+            <!--Submit-->
+            <div class="one">
+                <div id="submit">
+                    <h5>Submit</h5><br><br>
+                    <p style="text-align: center;">By nadać inputowi typ <i>„submit”</i> musimy dodać atrybut <span style="color:yellow">type</span> wraz z wartością <span style="color:green">submit</span>.<br>
+                        </p><br>
+                    <div class="half">
+                    <h4>Kod HTML</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style="padding-top: 25px; height: 150px"><span >&lt;input type="submit" &gt</span><br><br></div>
+            </div>
+                    <div class="half">
+                    <h4>Rezultat</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style=" padding-top: 25px;height: 150px;display: flex;
+                    justify-content: center;">
+                        <input type="submit" style="height:22px; width: 100px;">
+                    </div>
+                  </div>
+            </div>
+            <!--Tel-->
+            <div class="one">
+                <div id="tel">
+                    <h5>Tel</h5><br><br>
+                    <p style="text-align: center;">By nadać inputowi typ <i>„tel”</i> musimy dodać atrybut <span style="color:yellow">type</span> wraz z wartością <span style="color:green">tel</span>.<br>
+                        </p><br>
+                    <div class="half">
+                    <h4>Kod HTML</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style="padding-top: 25px; height: 150px"><span >&lt;input type="tel" &gt</span><br><br></div>
+            </div>
+                    <div class="half">
+                    <h4>Rezultat</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style=" padding-top: 25px;height: 150px;display: flex;
+                    justify-content: center;">
+                        <input type="tel" style="height:22px; width: 100px;">
+                    </div>
+                  </div>
+            </div>
+            <!--Text-->
+            <div class="one">
+                <div id="text">
+                    <h5>Text</h5><br><br>
+                    <p style="text-align: center;">By nadać inputowi typ <i>„text”</i> musimy dodać atrybut <span style="color:yellow">type</span> wraz z wartością <span style="color:green">text</span>.<br>
+                        </p><br>
+                    <div class="half">
+                    <h4>Kod HTML</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style="padding-top: 25px; height: 150px"><span >&lt;input type="text" &gt</span><br><br></div>
+            </div>
+                    <div class="half">
+                    <h4>Rezultat</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style=" padding-top: 25px;height: 150px;display: flex;
+                    justify-content: center;">
+                        <input type="text" style="height:22px; width: 100px;">
+                    </div>
+                  </div>
+            </div>
+            <!--Time-->
+            <div class="one">
+                <div id="time">
+                    <h5>Time</h5><br><br>
+                    <p style="text-align: center;">By nadać inputowi typ <i>„time”</i> musimy dodać atrybut <span style="color:yellow">type</span> wraz z wartością <span style="color:green">time</span>.<br>
+                        </p><br>
+                    <div class="half">
+                    <h4>Kod HTML</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style="padding-top: 25px; height: 150px"><span >&lt;input type="time" &gt</span><br><br></div>
+            </div>
+                    <div class="half">
+                    <h4>Rezultat</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style=" padding-top: 25px;height: 150px;display: flex;
+                    justify-content: center;">
+                        <input type="time" style="height:22px; width: 100px;">
+                    </div>
+                  </div>
+            </div>
+            <!--Url-->
+            <div class="one">
+                <div id="url">
+                    <h5>Url</h5><br><br>
+                    <p style="text-align: center;">By nadać inputowi typ <i>„url”</i> musimy dodać atrybut <span style="color:yellow">type</span> wraz z wartością <span style="color:green">url</span>.<br>
+                        </p><br>
+                    <div class="half">
+                    <h4>Kod HTML</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style="padding-top: 25px; height: 150px"><span >&lt;input type="url" &gt</span><br><br></div>
+            </div>
+                    <div class="half">
+                    <h4>Rezultat</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style=" padding-top: 25px;height: 150px;display: flex;
+                    justify-content: center;">
+                        <input type="url" style="height:22px; width: 100px;">
+                    </div>
+                  </div>
+            </div>
+            <!--Week-->
+            <div class="one">
+                <div id="week">
+                    <h5>Url</h5><br><br>
+                    <p style="text-align: center;">By nadać inputowi typ <i>„week”</i> musimy dodać atrybut <span style="color:yellow">type</span> wraz z wartością <span style="color:green">week</span>.<br>
+                        </p><br>
+                    <div class="half">
+                    <h4>Kod HTML</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style="padding-top: 25px; height: 150px"><span >&lt;input type="week" &gt</span><br><br></div>
+            </div>
+                    <div class="half">
+                    <h4>Rezultat</h4>
+                    <hr width="100%" color="yellow">
+                    <div class="halfin" style=" padding-top: 25px;height: 150px;display: flex;
+                    justify-content: center;">
+                        <input type="week" style="height:22px; width: 100px;">
+                    </div>
+                  </div>
+            </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <script>
+        $(document).ready(function() {
+            var NavY = $('.nav').offset().top;
+
+            var stickyNav = function() {
+                var ScrollY = $(window).scrollTop();
+
+                if (ScrollY > NavY) {
+                    $('.nav').addClass('sticky');
+                } else {
+                    $('.nav').removeClass('sticky');
+                }
+            };
+
+            stickyNav();
+
+            $(window).scroll(function() {
+                stickyNav();
+            });
+        });
+    </script>
+</body>
+
+</html>
