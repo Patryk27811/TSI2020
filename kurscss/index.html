@@ -7,6 +7,16 @@
     <link rel="icon" type="image/png" href="../img/icon.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        #wikipedia1 a{
+        color: #ffffff;
+        text-decoration: none;
+       display: inline-block;
+    }
+    #wikipedia1 a:hover{
+        color:aqua;
+    }
+    </style>
 </head>
 
 
@@ -33,20 +43,78 @@
         <div class="two">
             <h4>Czym jest css?</h4><br><br>
             <p style="padding-left: 30px;padding-right: 30px; text-align: center;">CSS (ang. Cascading Style Sheets, kaskadowe arkusze stylów) to kod służący do nadawania wyglądu strony. <br><br>Podobnie jak HTML, CSS nie jest językiem programowania. Nie jest jednak też językiem znaczników — jest językiem arkuszy stylów (ang. style sheet language). Oznacza to, że pozwala on selektywnie stosować style do elementów w dokumentach HTML.</p>
-        </div>
+        </div><br><br><br>
         <div class="three">
-            <h4>Właściwości HTML</h4><br><br>
-            <p style="padding-left: 30px;padding-right: 30px; text-align: center;"> Właściwości CSS możemy podzielić na kilka grup kategorii. Każda z tych grup jest odpowiedzialna za zmianę konkretnych cech wyglądu elementu HTML, na przykład:<br>
+            <h4>Właściwości HTML</h4><br><br><br>
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center;"> Właściwości CSS możemy podzielić na kilka grup kategorii. Każda z tych grup jest odpowiedzialna za zmianę konkretnych cech wyglądu elementu HTML, na przykład:<br><br>
 
-                <b>Tekst</b> - właściwości odpowiedzialne za formatowanie cech wyglądu tekstu w danym elemencie HTML, np. text-align:center; wyśrodkuje tekst w elemencie.<br>
-                <b>Czcionka</b> - właściwości odpowiedzialne za formatowanie wyglądu czcionki tekstu w danym elemencie HTML, np. font-size:15px; zmieni rozmiar wyświetlanej czcionki tekstu.<br>
-                <b>Rozmiary</b> - właściwości odpowiedzialne za formatowanie szerokości i wysokości w danym elemencie HTML, np. width:200px; sprawi że szerokość elementu HTML będzie wynosić 200 pikseli.<br>
-                <b>Tło</b> - właściwości odpowiedzialne za formatowanie cech wyglądu tła w danym elemencie HTML, np. background-color:lightblue; zmieni kolor tła elementu HTML na jasnoniebieski.<br>
-                <b>Marginesy</b> - właściwości odpowiedzialne za formatowanie wartości marginesów wewnętrznych i zewnętrznych w danym elemencie HTML, np. margin:10px; sprawi że wszystkie marginesy zewnętrzne elementu HTML będą wynosić 10 pikseli.<br>
-                <b>Obramowanie</b> - właściwości odpowiedzialne za formatowanie cech wyglądu obramowania w danym elemencie HTML, np. border-top-style:solid; doda do elementu HTML górne obramowanie, którego stylem będzie styl solid, czyli ciągła pojedyncza linia.<br>
-            </p>
-
+               <span style="font-size: 25px;"> Tekst</span> - właściwości odpowiedzialne za formatowanie cech wyglądu tekstu w danym elemencie HTML, np. text-align:center; wyśrodkuje tekst w elemencie.<br>
+               <span style="font-size: 25px;">Czcionka</span> - właściwości odpowiedzialne za formatowanie wyglądu czcionki tekstu w danym elemencie HTML, np. font-size:15px; zmieni rozmiar wyświetlanej czcionki tekstu.<br>
+                 <span style="font-size: 25px;">Rozmiary</span> - właściwości odpowiedzialne za formatowanie szerokości i wysokości w danym elemencie HTML, np. width:200px; sprawi że szerokość elementu HTML będzie wynosić 200 pikseli.<br>
+                 <span style="font-size: 25px;">Tło</span> - właściwości odpowiedzialne za formatowanie cech wyglądu tła w danym elemencie HTML, np. background-color:lightblue; zmieni kolor tła elementu HTML na jasnoniebieski.<br>
+                 <span style="font-size: 25px;">Marginesy</span> - właściwości odpowiedzialne za formatowanie wartości marginesów wewnętrznych i zewnętrznych w danym elemencie HTML, np. margin:10px; sprawi że wszystkie marginesy zewnętrzne elementu HTML będą wynosić 10 pikseli.<br>
+                 <span style="font-size: 25px;">Obramowanie</span> - właściwości odpowiedzialne za formatowanie cech wyglądu obramowania w danym elemencie HTML, np. border-top-style:solid; doda do elementu HTML górne obramowanie, którego stylem będzie styl solid, czyli ciągła pojedyncza linia.<br>
+            </p><br><br><br>
+            <h4>Wersje CSS</h4>
+            <ul>
+                <li>CSS1 - koniec 1996r.</li>
+                <li>CSS2 - 1998r.</li>
+                <li>CSS3 - 1999r.</li>
+                <li>CSS4 - nie istnieje już jako jedna specyfiacja, każdy z modułów rozwija się niezależnie</li>
+            </ul><br><br><br>
+            <h4> Zalety i ograniczenia</h4><br><br><br>
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center;">Największą zaletą CSS jest umożliwienie rozdzielenia warstwy prezentacji od warstwy danych. Dzięki temu możliwe jest definiowanie wielu stylów dla tych samych danych, a sam dokument HTML jest bardziej przejrzysty i łatwiejszy do utrzymania i dalszego rozwinięcia. Dodatkowo, w przypadku potrzeby wprowadzenia zmian w definicji stylu wykorzystanego dla elementu występującego wielokrotnie, w dokumencie HTML w pliku CSS zmiany są wprowadzane raz, a zmiana jest adaptowana przez wszystkie elementy. Skutkuje to oszczędnością czasu i pracy. Z drugiej jednak strony, podczas gdy poziome rozmieszczenie jest relatywnie łatwe do wykonania, pionowe rozmieszczenie jest często mało intuicyjne. Proste czynności, takie jak centrowanie elementu pionowo, często wymagają skomplikowanych operacji. </p>
+        </div><br><br><br>
+        <h4>Składnia arkuszy</h4><br><br><br>
+        <p style="padding-left: 30px;padding-right: 30px; text-align: center;">Arkusz stylów składa się z reguł określających styl dla wybranych elementów dokumentu (HTML, SVG i innych). Reguła składa się z selektora oraz deklaracji. Selektor określa grupę elementów (rzadziej pojedynczy element), którego ma dotyczyć deklaracja. Deklaracja określa formatowanie i składa się z nazwy jednej z właściwości i jej wartości napisanej po dwukropku. Deklaracja musi być otoczona nawiasami klamrowymi.</p>
+        <div class="half" >
+            <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;"><span ><span style="color:green">selektor</span>{ właściwość: wartość }</div>
         </div>
+        <div class="two">    
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center;">Można również grupować selektroy jak i deklaracje, selektory rozdzielamy wtedy przecinkiem, a deklaracje średnikami</p><br>
+            
+            <div class="half" >
+                <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><span ><span style="color:green">selektor1, selektor2</span>{ właściwość1: wartość1; właściowość2:wartość2; }</div>
+            </div><br>
+        </div>
+        <div class="three">    
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center;">Dozwolone jest stosowanie średnika po wszystkich deklaracjach, nie jest jednak dozwolone stosowanie przecinka po ostatnim selektorze. Ponadto niektóre wartości mogą być zgrupowane i podane w ramach jednej deklaracji. W takim wypadku składnia zależy od definicji składni zbiorczej właściwości
+                Poniżej podana jest przykładowa reguła dla języka HTML, w której przypisujemy wszystkim akapitom niebieski kolor tekstu: </p><br>
+            
+            <div class="half" >
+                <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><span ><span style="color:green">p</span>{ <span style="color:green">color</span>:<span style="color:green">blue</span> }</div><br>
+                
+            </div><br>
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center;">Selektorem jest tutaj p, właściwością color, a wartością blue.<br><Br><br>Selektory zawarte w pierwszej specyfikacji CSS zapewniają możliwość opisania docelowej grupy elementów przez:  <br><br><br></p><br>
+                <ul>
+                    <li>nazwę elementu (np. „h1”)</li>
+                    <li>klasę elementu (np. „.elementy_menu”), </li>
+                    <li>id elementu (np. „#menu_lewe”)</li>
+                    <li>przodków danego elementu (np. „div#menu_lewe a” zostanie zastosowane do linków zawartych w elemencie div o id „menu_lewe”)</li>
+                    <li>stan linków określany przez pseudoklasy (:visited, :link, :active)</li>
+                    <li>inne pseudoklasy typograficzne (:first-line: first-letter)</li>
+                </ul>
+        </div><br>
+        <div class="four">    
+            <h4>1.Dołaczenie osobnego arkusza stylów do pliku</h4>
+            <div class="half" >
+                <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><span ><span style="color:green">&ltlink <span style="color:white">rel="stylesheet" href="style.css"</span>/&gt</span></div><br>
+                
+            </div><br>
+            <h4>2.Dodanie reguły CSS w sekcji head</h4>
+            <div class="half" >
+                <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><span ><span style="color:green">&ltstyle <span style="color:white">type="text/css"<span style="color:green">&gt</span> selektor { właściwość: wartość } </span></span><span style="color:green">&lt/style&gt</span></div><br>
+                
+            </div><br>
+            <h4>3.Dodanie deklaracji bezpośrednio do danego elementu dokumentu za pomocą atrybutu style</h4>
+            <div class="half" >
+                <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><span ><span style="color:green">&lt p <span style="color:white">style="color:red"<span style="color:green">&gt</span> 
+                tekst </span></span><span style="color:green">&lt/p&gt</span></div><br>
+                
+            </div><br>
+        </div><br>
     </div> 
+    <font id="wikipedia1" style="font-size:30px; margin-left: 650px;">Żródło:<a  href="https://pl.wikipedia.org/wiki/Kaskadowe_arkusze_styl%C3%B3w" target="_blank">WIKIPEDIA</a></font>
+
 </body>
 </html> 

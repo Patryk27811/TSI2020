@@ -16,25 +16,32 @@
     }
     
     .half {
-        width: 40%;
+        width: 1460px;
         background-color: rgb(46, 46, 46);
         border-radius: 30px;
         margin-left: 7%;
         float: left;
         border: 2px solid black;
         margin-bottom: 30px;
+        text-align: center;
+        display: flex; 
+        justify-content: center;
     }
     
-    .halfin {
-        border-radius: 30px;
-        font-family: 'Open Sans', sans-serif;
-        text-align: center;
-        font-size: 25px;
-        padding-left: 10%;
-        padding-right: 10%;
-        
-        
-    }
+    .halfin
+{
+	background-color: rgb(46, 46, 46);;
+	border-radius: 30px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	
+	font-size: 25px;
+	padding-left: 20%;
+	padding-right: 20%;
+	
+	
+	
+}
     
     .nav {
         width: 100%;
@@ -249,4 +256,12 @@
         padding-top: 20px;
         padding-bottom: 35px;
         border-radius: 20px;
+    }
+    #wikipedia1 a{
+        color: #ffffff;
+        text-decoration: none;
+        display: block;
+    }
+    #wikipedia1 a:hover{
+        color:aqua;
     }
