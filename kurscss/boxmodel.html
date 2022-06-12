@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mini kurs HTML</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="../img/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        #wikipedia1 a{
+        color: #ffffff;
+        text-decoration: none;
+       display: inline-block;
+    }
+    #wikipedia1 a:hover{
+        color:aqua;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    #box1{
+        margin-left: 600px;
+    }
+    #iframeyt1{
+        margin-left: 600px;
+    }
+    </style>
+</head>
+
+
+<body>
+    
+
+     <div class="nav">
+        <ol>
+            <li>
+                <a href="index.html">Wstęp</a>
+            </li>
+            <li><a href="selektory.html">Selektory</a></li>
+            <li><a href="czcionki.html">Czcionki</a></li>
+            <li><a href="tekst.html">Tekst</a></li>
+            <li><a href="marginesy.html">Marginesy</a></li>
+            <li><a href="obramowanie.html">Obramowanie</a></li>
+            <li><a href="kursory.html">Kursory</a></li>
+            <li><div style="background-color: rgb(46, 46, 46); height: 35px"><a href="boxmodel.html">Box model</a></div></li>
+        </ol>
+    </div>
+
+    <div class="one">
+        <h1>Box model CSS</h1><br>
+        <br>
+        <h4>Czym jest box mode?</h4><br><Br>
+        <p style="padding-left: 30px;padding-right: 30px; text-align: center; font-size: 30px;">Wszystkie elementy HTML można traktować jak pola. W CSS termin „model pudełkowy” jest używany, gdy mówi się o projekcie i układzie. <br><br>Model pudełkowy CSS jest zasadniczo pudełkiem, które otacza każdy element HTML. Składa się z: marginesów, ramek, wypełnienia i rzeczywistej zawartości. Poniższy obraz ilustruje model pudełka: </p>
+            <img src="../boxmodel.png" id="box1"><br><br><br>
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center; ">Objaśnienia elementów</p>
+            <ul>
+                <li><b>Content</b> - Zawartość pola, w którym pojawia się tekst i obrazy;</li>
+                <li><b>Padding</b> - Czyści obszar wokół zawartości. Wypełnienie jest przezroczyste;</li>
+                <li><b>Border </b>- Obramowanie wokół wypełnienia i zawartości;</li>
+                <li><b>Margin </b>- Czyści obszar poza granicą. Margines jest przezroczysty</li>
+            </ul><br><br><br>
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center; ">Model pudełkowy pozwala nam dodać obramowanie wokół elementów i zdefiniować przestrzeń między elementami. </p>
+    <br><br><br><br>
+            <h4>Czym jest div?</h4><br><br><br>
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center; ">Do budowy sekcji możemy użyć elementu blokowego
+                (ang. division – oddział, wydział, sekcja). Element ten nazywany jest również box’em (pudełkiem), albo kontenerem (ang. container, contain – zawierać w sobie), z tego względu, że zawiera on w sobie inne elementy. <br><br><br>
+                Poniżej znajdziesz materiał, który pomoże ci zrozumieć strukturę strony www opartej na divach, oraz poznasz jej wady i zalety. </p><br><br><br>
+                <iframe id="iframeyt1"width="560" height="315" src="https://www.youtube.com/embed/2nWSCxIpHfc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </body>
+</html> 

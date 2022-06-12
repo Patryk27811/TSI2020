@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mini kurs HTML</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="../img/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        #wikipedia1 a{
+        color: #ffffff;
+        text-decoration: none;
+       display: inline-block;
+    }
+    #wikipedia1 a:hover{
+        color:aqua;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    </style>
+</head>
+
+
+<body>
+    
+
+     <div class="nav">
+        <ol>
+            <li>
+                <a href="index.html">Wstęp</a>
+            </li>
+            <li><a href="selektory.html">Selektory</a></li>
+            <li><a href="czcionki.html">Czcionki</a></li>
+            <li><a href="tekst.html">Tekst</a></li>
+            <li><a href="marginesy.html">Marginesy</a></li>
+            <li><a href="obramowanie.html">Obramowanie</a></li>
+            <li><div style="background-color: rgb(46, 46, 46); height: 35px"><a href="kursory.html">Kursory</a></div></li>
+            <li><a href="boxmodel.html">Box model</a></li>
+        </ol>
+    </div>
+
+    <div class="one">
+        <h1>Kursory</h1><br>
+        <div class="two">
+            <h4>Kursor</h4><br><br>
+            <div class="half" >
+                <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><span ><span style="color:green">selektor </span>{ selektor { cursor: rodzaj; }  }</div><br>
+            </div><br>
+            <p class="nie12"style="padding-left: 30px;padding-right: 30px; text-align: center;">Rodzaj odpowiada za kształt, jaki przybierze wskaźnik myszki, po naprowadzeniu go na dany element.   <br> </p>
+            
+        </div><br><br><br>
+        <p style="padding-left: 30px;padding-right: 30px; text-align: center;">auto - automatyczny wybór kształtu kursora (zależy od typu elementu, na który wskazujemy - tryb domyślny) </p>
+            <div class="half" >
+                <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><font style="cursor:auto">Najedź myszką na tekst </font></div><br>
+                
+            </div><br>
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center;">default - kursor domyślny  </p>
+
+            <div class="half" >
+                <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><font style="cursor:default">Najedź myszką na tekst </font></div><br>
+                
+            </div><br>
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center;">none - brak kursora  </p>
+            <div class="half" >
+                <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;height: auto;"><font style="cursor:none">Najedź myszką na tekst </font></div><br>
+                
+            </div><br>
+        </div><br><br><br>
+        <h4>Kursory statusu / odsyłacze</h4>
+        <p style="padding-left: 30px;padding-right: 30px; text-align: center;">context-menu - menu kontekstowe, zwykle dostępne po kliknięciu prawym przyciskiem myszki  </p>
+            <div class="half" >
+                <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><font style="cursor:context-menu">Najedź myszką na tekst </font></div><br>
+                
+            </div><br>
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center;">help - kursor pomocy   </p>
+
+            <div class="half" >
+                <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><font style="cursor:help">Najedź myszką na tekst </font></div><br>
+                
+            </div><br>
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center;">pointer - wskaźnik (wskazuje odsyłacz)  </p>
+            <div class="half" >
+                <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;height: auto;"><font style="cursor:pointer">Najedź myszką na tekst </font></div><br>
+                
+            </div><br>
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center;">progress - kursor postępu    </p>
+
+            <div class="half" >
+                <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><font style="cursor:progress">Najedź myszką na tekst </font></div><br>
+                
+            </div><br>
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center;">wait - "poczekaj"   </p>
+            <div class="half" >
+                <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;height: auto;"><font style="cursor:wait">Najedź myszką na tekst </font></div><br>
+                
+            </div><br>
+        </div><br><br><br>
+        <h4>Kursory wyboru</h4>
+        <p style="padding-left: 30px;padding-right: 30px; text-align: center;">cell - wskazuje, że komórka może być zaznaczona  </p>
+            <div class="half" >
+                <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><font style="cursor:cell">Najedź myszką na tekst </font></div><br>
+                
+            </div><br>
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center;">crosshair - krzyżyk    </p>
+
+            <div class="half" >
+                <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><font style="cursor:crosshair">Najedź myszką na tekst </font></div><br>
+                
+            </div><br>
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center;">text - kursor tekstowy  </p>
+            <div class="half" >
+                <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;height: auto;"><font style="cursor:text">Najedź myszką na tekst </font></div><br>
+                
+            </div><br>
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center;">vertical-text - pionowy kursor tekstowy     </p>
+
+            <div class="half" >
+                <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><font style="cursor:vertical-text">Najedź myszką na tekst </font></div><br>
+                
+            </div><br>
+            
+        </div><br><br><br>
+        <h4>Kursory "przeciągnij i upuść" </h4>
+        <p style="padding-left: 30px;padding-right: 30px; text-align: center;">alias - skrót   </p>
+            <div class="half" >
+                <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><font style="cursor:alias">Najedź myszką na tekst </font></div><br>
+                
+            </div><br>
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center;">copy - kopiuj     </p>
+
+            <div class="half" >
+                <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><font style="cursor:copy">Najedź myszką na tekst </font></div><br>
+                
+            </div><br>
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center;">move - przesuń   </p>
+            <div class="half" >
+                <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;height: auto;"><font style="cursor:move">Najedź myszką na tekst </font></div><br>
+                
+            </div><br>
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center;">no-drop - element nie może zostać upuszczony w aktualnej pozycji      </p>
+
+            <div class="half" >
+                <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><font style="cursor:no-drop">Najedź myszką na tekst </font></div><br>
+                
+            </div><br>
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center;">not-allowed - akcja nie jest dozwolona       </p>
+
+            <div class="half" >
+                <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><font style="cursor:not-allowed">Najedź myszką na tekst </font></div><br>
+                
+            </div><br>
+        </div><br><br><br>
+        <h4>Kursory zmiany rozmiaru / przewijania </h4>
+        <p style="padding-left: 30px;padding-right: 30px; text-align: center;">n-resize - "północ" - strzałka w górę    </p>
+            <div class="half" >
+                <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><font style="cursor:n-resize">Najedź myszką na tekst </font></div><br>
+                
+            </div><br>
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center;">ne-resize - "północny wschód"      </p>
+
+            <div class="half" >
+                <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><font style="cursor:ne-resize">Najedź myszką na tekst </font></div><br>
+                
+            </div><br>
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center;">se-resize - "południowy wschód"    </p>
+            <div class="half" >
+                <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;height: auto;"><font style="cursor:se-resize">Najedź myszką na tekst </font></div><br>
+                
+            </div><br>
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center;">sw-resize - "południowy zachód"       </p>
+
+            <div class="half" >
+                <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><font style="cursor:sw-resize">Najedź myszką na tekst </font></div><br>
+                
+            </div><br>
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center;">w-resize - "zachód"      </p>
+
+            <div class="half" >
+                <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><font style="cursor:w-resize">Najedź myszką na tekst </font></div><br>
+                
+            </div><br>
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center;">nw-resize - "północny zachód"      </p>
+
+            <div class="half" >
+                <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><font style="cursor:nw-resize">Najedź myszką na tekst </font></div><br>
+                
+            </div><br>
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center;">ns-resize - północ-południe       </p>
+
+            <div class="half" >
+                <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><font style="cursor:ns-resize">Najedź myszką na tekst </font></div><br>
+                
+            </div><br>
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center;">ew-resize - wschód-zachód       </p>
+
+            <div class="half" >
+                <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><font style="cursor:ew-resize">Najedź myszką na tekst </font></div><br>
+                
+            </div><br>
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center;">nesw-resize - północny wschód-południowy zachód       </p>
+
+            <div class="half" >
+                <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><font style="cursor:nesw-resize">Najedź myszką na tekst </font></div><br>
+                
+            </div><br>
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center;">nwse-resize - północny zachód-południowy wschód        </p>
+
+            <div class="half" >
+                <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><font style="cursor:nwse-resize">Najedź myszką na tekst </font></div><br>
+                
+            </div><br>
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center;">col-resize - pozioma zmiana szerokości kolumny       </p>
+
+            <div class="half" >
+                <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><font style="cursor:col-resize">Najedź myszką na tekst </font></div><br>
+                
+            </div><br>
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center;">row-resize - pionowa zmiana wysokości wiersza        </p>
+
+            <div class="half" >
+                <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><font style="cursor:row-resize">Najedź myszką na tekst </font></div><br>
+                
+            </div><br>
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center;">all-scroll - przewijanie w dowolnym kierunku        </p>
+
+            <div class="half" >
+                <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><font style="cursor:all-scroll">Najedź myszką na tekst </font></div><br>
+                
+            </div><br>
+        </div><br><br><br>
+</body>
+</html> 

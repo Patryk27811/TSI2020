@@ -265,3 +265,11 @@
     #wikipedia1 a:hover{
         color:aqua;
     }
+    .nie12 a{
+        color: #ffffff;
+        text-decoration: none;
+        display: block;
+    }
+    .nie12 a:hover{
+       cursor: pointer;
+    }

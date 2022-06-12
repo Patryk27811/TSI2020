@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mini kurs HTML</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="../img/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        #wikipedia1 a{
+        color: #ffffff;
+        text-decoration: none;
+       display: inline-block;
+    }
+    #wikipedia1 a:hover{
+        color:aqua;
+    }
+    </style>
+</head>
+
+
+<body>
+    
+
+     <div class="nav">
+        <ol>
+            <li>
+                <a href="index.html">Wstęp</a>
+            </li>
+            <li><div style="background-color: rgb(46, 46, 46); height: 35px"><a href="selektory.html">Selektory</a></div></li>
+            <li><a href="czcionkii.html">Czcionki</a></li>
+            <li><a href="tekst.html">Tekst</a></li>
+            <li><a href="marginesy.html">Marginesy</a></li>
+            <li><a href="obramowanie.html">Obramowanie</a></li>
+            <li><a href="kursory.html">Kursory</a></li>
+            <li><a href="boxmodel.html">Box model</a></li>
+        </ol>
+    </div>
+
+    <div class="one">
+        <h1>Selektory</h1><br>
+        <div class="two">
+            <h4>Czym są selektory?</h4><br><br>
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center;">W CSS selektor to cześć stylu która poprzedza otwierający nawias klamrowy. Określa on do jakiego elementu odnosi się dana reguła. Selektorami mogą być praktycznie wszystkie tagi HTML takie jak: h1, h2, ol, ul, li, p, span itd. </p>
+        </div><br><br><br>
+        <div class="three">
+            <h4>Najważniejsze selektory</h4><br><br><br>
+            <br>
+            <h5>*</h5><br>
+            <p style="padding-left: 30px;padding-right: 30px; text-align: center;"> Symbol gwiazdki obierze za cel każdy element znajdujący się na stronie. Wielu deweloperów używa tego triku by wyzerować margin i padding dla całej strony.</p> <br><br>
+
+                <div class="half" >
+                    <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><span ><span style="color:green">* </span>{ margin: 0; padding: 0; }</div><br>
+                    
+                </div>
+                
+                </div>
+            <br><br><br><br><br><br>
+                <h5>#X</h5><br>
+                <p style="padding-left: 30px;padding-right: 30px; text-align: center;"> Symbol '#' pozwala nam wybrać cel na podstawie id.Jest to najpopularniejszy sposób wykorzystania, jednak bądź ostrożny używając go. </p> <br><br>
+    
+                    <div class="half" >
+                        <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><span ><span style="color:green">#x </span>{ width: 960px; margin: auto; }</div><br>
+                        </div>
+                        <br><br><br><br><br><br>
+                <h5>.X</h5><br>
+                <p style="padding-left: 30px;padding-right: 30px; text-align: center;"> Jest to selektor klasy. Różnica między nim a id jest taka, że klasą możesz wybrać wiele elementów. Użyj klasy jeśli chcesz nadać styl grupie elementów. Ewentualnie, użyj id by znaleźć i wystylizować tylko konkretny element.  </p> <br><br>
+    
+                    <div class="half" >
+                        <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><span ><span style="color:green">.x </span>{  color: red; }</div><br>
+                    </div><br><br><br><br><br><br>
+                    <h5>X Y</h5><br>
+                <p style="padding-left: 30px;padding-right: 30px; text-align: center;"> Jednym z najpopularniejszych selektorów jest selektor potomka. Jeśli musisz lepiej sprecyzować cel, używasz właśnie tego. Na przykład, jeśli zamiast zaznaczać wszystkie linki, chcesz wybrać tylko te, które znajdują się w nieuporządkowane liście? Jest to sprecyzowane, gdy używasz selektora potomka.  </p> <br><br>
+    
+                    <div class="half" >
+                        <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><span ><span style="color:green">li a </span>{  text-decoration: none; }</div><br>
+                    </div><br><br><br><br><br><br>
+                    <h5>X</h5><br>
+                <p style="padding-left: 30px;padding-right: 30px; text-align: center;"> 
+                    Jeśli chcesz zaznaczyć wszystkie elementy tego samego typu bez używania id lub klasy użyj selektora typu. Jeśli chcesz zaznaczyć wszystkie nieuporządkowane listy, użyj ul {}.   </p> <br><br>
+    
+                    <div class="half" >
+                        <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><span ><span style="color:green">ul </span>{  margin-left: 0; }</div><br>
+                    </div><br><br><br><br><br><br>
+                    <h5>X:VISITED / X:LINK</h5><br>
+                <p style="padding-left: 30px;padding-right: 30px; text-align: center;"> 
+                    Pseudo-klasy :link używamy by zaznaczyć wszystkie linki które jeszcze nie były kliknięte. Ewentualnie, używamy pseudo-klasy :visited, która, pozwala na dodanie stylu do linka na stronie który był kliknięty, lub odwiedzony.    </p> <br><br>
+    
+                    <div class="half" >
+                        <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px; height: auto;"><span ><span style="color:green">a:link </span>{  color: red; } <span ><br><span style="color:green">a:visited </span>{   color: purple; }</div><br>
+                    </div><br><br><br><br><br><br>
+                    <h5>X + Y</h5><br>
+                <p style="padding-left: 30px;padding-right: 30px; text-align: center;"> 
+                    Ten selektor odwołuje się do sąsiedniego selektora. Wybierze tylko ten element, który występuje bezpośrednio po wcześniej wymienionym elemencie. W tym przypadku, tylko pierwszy paragraf, po każdym ul będzie miał czerwony tekst.  </p> <br><br>
+    
+                    <div class="half" >
+                        <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><span ><span style="color:green">ul + p </span>{  color: red; }</div><br>
+                    </div><br><br><br><br><br><br>
+                    <h5>X ~ Y </h5><br>
+                <p style="padding-left: 30px;padding-right: 30px; text-align: center;"> 
+                    Ogólny selektor następnika jest podobny do X + Y, ale jest mniej ścisły. Kiedy selektor następnika (ul + p) wybierze tylko pierwszy element występujący natychmiast po poprzednim selektorze, ten jest bardziej ogólny.Wybierze, odwołując się do przykładu wyżej, każdy element p jeśli tylko następuje po ul.   </p> <br><br>
+    
+                    <div class="half" >
+                        <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><span ><span style="color:green">ul ~ p </span>{  color: red; }</div><br>
+                    </div><br><br><br><br><br><br>
+                    <h5>X[TITLE]  </h5><br>
+                <p style="padding-left: 30px;padding-right: 30px; text-align: center;"> 
+                    Odwołując się do tak zwanego selektora atrybutu,w przykładzie powyżej, wybierze on tylko element z atrybutem title  </p> <br><br>
+    
+                    <div class="half" >
+                        <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><span ><span style="color:green">a[title]  </span>{  color: yellow; }</div><br>
+                    </div><br><br><br><br><br><br>
+                    <h5>X:CHECKED  </h5><br>
+                <p style="padding-left: 30px;padding-right: 30px; text-align: center;"> 
+                    Ta pseudo-klasa obierze za cel tylko zaznaczone elementy - jak przycisk radio lub checkbox.  </p> <br><br>
+    
+                    <div class="half" >
+                        <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><span ><span style="color:green">input[type=radio]:checked]  </span>{   border: 1px solid black; }</div><br>
+                    </div><br><br><br><br><br><br>
+                    <h5>X:HOVER  </h5><br>
+                <p style="padding-left: 30px;padding-right: 30px; text-align: center;"> 
+                    Jest to pseudo-klasa akcji użytkownika, która działa na zasadzie najechania kursorem na dany element. W poniższym przykładzie po najechaniu kursorem na element div jego tło zmieni się na czerwony.   </p> <br><br>
+    
+                    <div class="half" >
+                        <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><span ><span style="color:green">div:hover  </span>{  background-color: red; }</div><br>
+                    </div><br><br><br><br><br><br>
+                    <h5>X::PSEUDOELEMENT   </h5><br>
+                <p style="padding-left: 30px;padding-right: 30px; text-align: center;"> 
+                    Możemy użyć pseudo-elementu (poprzedzonego ::) by wystylizować elementy takie jak pierwsza linia czy pierwsza litera. Zapamiętaj, że muszą one być dodane do elementów blokowych, by zadziałały.  </p> <br><br>
+    
+                    <div class="half" >
+                        <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><span ><span style="color:green">p::first-line  </span>{   font-size: 20px; }</div><br>
+                    </div><br><br><br><br><br><br>
+                    <h5>X::NTH-CHILD(N)   </h5><br>
+                <p style="padding-left: 30px;padding-right: 30px; text-align: center;"> 
+                    nth-child akceptuje tylko naturalne liczby i zaczyna się od 1. Jeśli chcesz wybrać drugi element z listy użyj li:nth-child(2). Możemy tego użyć by wybrać grupę elementów. Na przykład użyjemy li:nth-child(4) by wybrać co czwarty element listy.   </p> <br><br>
+    
+                    <div class="half" >
+                        <div class="halfin" style="padding-top: 25px; height: 50px; display: flex; justify-content: center;width: 10000px;"><span ><span style="color:green">li:nth-child(3) </span>{   color: red; }</div><br>
+                    </div><br><br><br><br><br><br>
+</body>
+</html> 
