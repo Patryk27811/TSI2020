@@ -1,0 +1,46 @@
+Strona główna:
+-dodać multimedia, bo nie ma
+-czcionka się wyjebała, trzeba naprawić,bo jest Times New Roman
+-szerokość i wysokość zdjeć powinna być identyczna jak tych iframe od youtube
+-Pozmieniać grafiki, żeby były pełne strony i dociac
+
+
+Kontakt:
+-Zobacz u młodego, bo on ma dobrze
+-usunąć "imie i nazwisko:"
+-dodać szkołę i klasę
+-dodać mapę z adresem zamieszkania
+-pod opisem w multimediach dodaj przycisk "jeśli chcesz dokładny adres mojego zamieszkania wcisnij TUTAJ"
+-dodać mapę z mapą kasprzaka
+-dodać mapę kasprzaka do multimediów, bo chyba się zajebałeś w akcji
+
+KURS HTML:
+-font color: możemy wpisać hexa, rgb lub angielska lub rgba i trzeba to pokazać i też pokazać, żę jest to przestarzałe i pokazać css ze spanem i pokazać ten kolor przy właśnie tych 4 wartościach, żeby można było zobaczyc ze zawsze wyjdzie nam to samo
+-font size: trzeba napisać, że to stare w chuj i że używa się innych sposobów i że wartości są tylko od 1-7 jak w h1 i 200px chuja daje. Można np. też zrobić odnośnik do css i pokazać jak się to teraz robi
+-pokazać jeszcze jakiś inny przykład z list z typem i startem
+-Pokazać, że jak zaczynamy liste od ostatniej litery alfabetu, że później już pokazuje nam z,aa,ab,ac
+-Pokazać w tabelach co oznacza th,tbody,thead i dać przykłady
+-dodać podrozdział wyrównanie tekstu (text-align)
+-dodać do list uporządkowanych, że można użyc małych liter rzymskich poprzez "i"
+-Do list zagnieżdzonych użyć innych znaczników, np. ptaszek
+-Można dodać edytory tekstu
+-Można dodać stukture html
+-Zrobić quiz ze sprawdzaniem odpowiedzi i przechodzeniem do następnych zakładek po kliknieciu dalej
+-Zrobić pasek postępu przy przeglądaniu strony
+-zrobić przetestuj i no wiadomo co
+
+KURS CSS:
+-Darowano nam, ale i tak możemy coś tam poprawić
+-Obramowanie LUB każda wlasciowść oddzielnie a nie w jednej linijce
+-Zrobić pasek postępu przy przeglądaniu strony
+
+
+
+Ciekawostki:
+-3 grafika - jpeg, gif z widoczna animacja, png ale z koniecznie widoczna przezroczystością
+-Użyć titile po najechaniu na zdjęcia,  co znajduje się na tym zdjęciu
+-2 pliki multimedialne
+-2 linki wewnetrzne do naszych prac
+-3 zewnetrzene linki
+-chociaż 1 lista
+-chociaż 1 tabela z max. 5 wierwszy i max 3/4 kolumny. Ma być liczba porządkowa, miniaturki.
