@@ -28,6 +28,21 @@
             <li><a href="formularz.html">Formularze</a></li>
         </ol>
     </div>
+    <div class="header">
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>
+      </div>
+      <script>
+        window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+} 
+      </script>
     <div class="container">
         <div class="one">
       <h3>Listy</h3>
@@ -63,11 +78,12 @@
         <p style="padding-left: 30px;padding-right: 30px; text-align: center; font-size: 30px;">Możemy również zmienić wygląd numeracji oraz kiedy nasza lista nam się zacznie:<br><br> Gdy jako wartość ustawimy "A" podpunkty listy będą numerowane wielkimi literami alfabetu (A, B, C, D, E, F...) <br>
             Gdy jako wartość ustawimy "a" podpunkty listy będą numerowane małymi literami alfabetu (a, b, c, d, e, f...) <br>
             Gdy jako wartość ustawimy "I" podpunkty listy będą numerowane cyframi rzymskimi (I, II, III, IV, V, VI...) <br>
-            Możemy rozpocząć numerowanie od dowolnej litery lub liczby. By to zrobić musimy dodać atrybut <span style="color:yellow">start</span>, a jako wartość ustawić numer pierwszego podpunku.</p><br><br><br>
+            Gdy jako wartość ustawimy "i" podpunkty listy będą numerowane cyframi rzymskimi (i, ii, iii, iv, v, vi...) <br>
+            Możemy rozpocząć numerowanie od dowolnej litery lub liczby. By to zrobić musimy dodać atrybut <span style="color:yellow">start</span>, a jako wartość ustawić numer pierwszego podpunku. Gdy np. mamy alfabet angielski, który ma 27 liter to gdy nasza lista przewyższy wartość 27 to lista zacznie się numerować aa,ab,ac,ad itd.</p><br><br><br>
             <div class="half">
                 <h4>Kod HTML</h4>
                 <hr width="100%" color="yellow">
-                <div class="halfin" style="padding-top: 25px; height: 200px; ">     <span > &lt;ol type="I" start="3"&gt; </span><br>
+                <div class="halfin" style="padding-top: 25px; height: 200px; ">     <span > &lt;ol type="i" start="3"&gt; </span><br>
                     &nbsp;&nbsp;&nbsp; <span class="atrybut">&lt;li&gt;</span>Wódka<span class="atrybut">&lt;/li&gt;</span>  <br>
                     &nbsp;&nbsp;&nbsp; <span class="atrybut">&lt;li&gt;</span>Piwo<span class="atrybut">&lt;/li&gt;</span>  <br>
                     &nbsp;&nbsp;&nbsp; <span class="atrybut">&lt;li&gt;</span>Sok malinowy<span class="atrybut">&lt;/li&gt; </span> <br>
@@ -83,7 +99,28 @@
                    <li>Sok malinowy</li>
                </ol>
                 </div>
+                
         </div>
+        <div class="half">
+            <h4>Kod HTML</h4>
+            <hr width="100%" color="yellow">
+            <div class="halfin" style="padding-top: 25px; height: 200px; ">     <span > &lt;ol type="a" start="26"&gt; </span><br>
+                &nbsp;&nbsp;&nbsp; <span class="atrybut">&lt;li&gt;</span>Wódka<span class="atrybut">&lt;/li&gt;</span>  <br>
+                &nbsp;&nbsp;&nbsp; <span class="atrybut">&lt;li&gt;</span>Piwo<span class="atrybut">&lt;/li&gt;</span>  <br>
+                &nbsp;&nbsp;&nbsp; <span class="atrybut">&lt;li&gt;</span>Sok malinowy<span class="atrybut">&lt;/li&gt; </span> <br>
+                <span >&lt;/ol&gt; </span> <br></div>
+        </div>
+        <div class="half">
+            <h4>Rezultat</h4>
+            <hr width="100%" color="yellow">
+            <div class="halfin" style=" padding-top: 25px;height: 200px">
+           <ol type="a" start="26">
+               <li>Wódka</li>
+               <li>Piwo</li>
+               <li>Sok malinowy</li>
+           </ol>
+            </div>
+            </div>
         <div class="one">
             <h4>Listy nieuporządkowane</h4>
             <div class="two" ><br>
@@ -180,6 +217,25 @@
                       
                        <br><br><br>
                      </div>
+                     <div class="one">
+                        <h3>Własne ikony jako punktory listy</h3>
+                        <div class="two"><br>
+                        <p style="padding-left: 30px;padding-right: 30px; text-align: center; font-size: 30px;">Aby dać punktor np. emotikony należy dać list-style-type: <span style="color:yellow">X</span>;</span> X należy podać kod emotikony, który możesz znaleźć <a href="znaki.html#emotikony">TUTAJ</a></p>
+                        <div class="three">
+                            <div class="half">
+                                <h4>Kod HTML</h4>
+                                <hr width="100%" color="yellow">
+                                <div class="halfin" style="padding-top: 25px; height: 300px"><span >&lt;ol style="<span style="color:green;">list-style-type</span>:'<span style="color:yellow">#129397</span>'"&gt<br>&ltli&gt1&lt/li&gt<br>&ltli&gt2&lt/li&gt<br>&ltli&gt3&lt/li&gt<br></span> &lt;ol&gt;</span></div>
+                            </div>
+                            <div class="half">
+                                <h4>Rezultat</h4>
+                                <hr width="100%" color="yellow">
+                                <div class="halfin" style=" padding-top: 25px;height: 300px;display: flex;
+                                justify-content: center;">
+                                    <ol style="list-style-type:'&#129397';" ><li>1</li><li>2</li><li>3</li></ol>
+                                </div>
+                            </div>
+                        </div>
                 </div>
 
 

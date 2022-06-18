@@ -47,6 +47,21 @@
 			<li><a href="formularz.html">Formularze</a></li>
 		</ol>
 	</div>
+    <div class="header">
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>
+      </div>
+      <script>
+        window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+} 
+      </script>
 <div class="container">
 
 <div class="one"><h3>Znaki specjalne </h3><br><br><br>
@@ -652,7 +667,7 @@ Poniżej znajdziesz tabelę takich znaków (tj. znaków specjalnych), by wstawi�
  <div class="one" ><h3>Emotikony (emoji)</h3>
       <div class="two" style="height: 1450px"><br>
         
-<div  class="tabelaznakow" align="center">
+<div  class="tabelaznakow" align="center" id="emotikony">
 		 <table >
 		  <tr><td></td><td></td></tr>
 			 <tr><td >😀</td><td="kolumna2" >&amp;#128512;</td></tr>

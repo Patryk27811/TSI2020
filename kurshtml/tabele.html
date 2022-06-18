@@ -28,11 +28,41 @@
             <li><a href="formularz.html">Formularze</a></li>
         </ol>
     </div>
+    <div class="header">
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>
+      </div>
+      <script>
+        window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+} 
+      </script>
     <div class="container">
+        
     <div class="one">
         <h3>Tabele</h3>
+        <div class="one">
+            <h3>Znaczniki używane do tworzenia tabel</h3>
+            <div class="two"><br>
+            <ul>
+                <li>&lttable> - tworzy i otwiera tabelę</li>
+                <li>&lttr> - tworzy wiersz w tabeli</li>
+                <li>&lttd> - tworzy komórkę w tabeli</li>
+                <li>&ltth> - tworzy wiersz nagłówkowy w tabeli</li>
+                <li>&ltthead> - używany do grupowania elementów nagłówka tabeli</li>
+                <li>&lttbody> - używany do grupowania elementów zawartości tabeli</li>
+                <li>&lttfoot> - używany do grupowania elementów stopki tabeli</li>
+            </ul>
+            
+            </div><br><br><br><br>
         <div class="two"><br>
-        <p style="padding-left: 30px;padding-right: 30px; text-align: center; font-size: 30px;">Tabele twprzymy poprzez użycie tagu <span style="color:red;">&lt;table&gt; &lt;/table&gt;</span></p>
+        <p style="padding-left: 30px;padding-right: 30px; text-align: center; font-size: 30px;">Tabele tworzymy poprzez użycie tagu <span style="color:red;">&lt;table&gt; &lt;/table&gt;</span></p>
         <div class="three">
             <p style="padding-left: 30px;padding-right: 30px; text-align: center; font-size: 30px;">Ponieważ samo wpisanie tych tagów nie ukaże nam tablicy, dlatego też musimy dodać sobie parametry <span style="color:green;">border</span>,<span style="color:yellowgreen;">width</span>,<span style="color:pink">height</span></p><br><br>
             <div class="half">

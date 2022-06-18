@@ -27,6 +27,21 @@
 			<li><a href="formularz.html">Formularze</a></li>
 		</ol>
 	</div>
+    <div class="header">
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>
+      </div>
+      <script>
+        window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+} 
+      </script>
     <div class="container">
         <div class="one">
             <h3>Tekst</h3>
@@ -37,18 +52,19 @@
         <div class="one">
             <h3>Wielkość tekstu</h3>
             <div class="two" style="height: 450px"><br><br><br>
-                <p style="text-align:center"><b>Według mnie jedna z najbardziej podstawowych rzeczy, a żeby powiększyć tekst używamy polecenia <span style="color:red">&ltfont size</span>=<span style="color:yellow">"X"</span><span style="color:red">&gt&lt/font&gt</span>. W miejscu <span style="color:yellow">X</span> wstawiamy wartość oraz w jednostkę w px,em itd.</b></p>
+                <p style="text-align:center"><b>Według mnie jedna z najbardziej podstawowych rzeczy, a możemy zrobić to na dwa sposoby, albo przestarzałym sposobobem <span style="color:red">&ltfont size</span>=<span style="color:yellow">"X"</span><span style="color:red">&gt&lt/font&gt</span>. W miejscu <span style="color:yellow">X</span> wstawiamy wartość oraz w jednostkę w px,em itd. Albo poprzez style CSS, tylko spójrz sobie na rezultat jeden i drugi ma taką samą wartość, a jednak są zupełnie innej wielkości, a to dlatego, że font ogranicza nas do 7 wielkości, a style css nie, tyle ile ustawimy tyle będzie się wyświetlać, dlatego też font jest już przestarzały</b></p>
                 <br><br>
                 <div class="half">
                     <h4>Kod HTML</h4>
                     <hr width="100%" color="yellow">
-                    <div class="halfin" style="padding-top: 25px; height: 100px"><span >&lt;font</span> <span class="atrybut">size=</span><span class="green">"150em"</span><span >&gt;</span>Tekst<span >&lt;font&gt;</span></div>
+                    <div class="halfin" style="padding-top: 25px; height: 150px"><span >&lt;font</span> <span class="atrybut">size=</span><span class="green">"7pt"</span><span >&gt;</span>Tekst<span >&lt;font&gt;</span><br><xmp style="font-size:22.5px"><span style="font-size: 7pt;">Tekst</span></xmp></div>
                 </div>
                 <div class="half">
                     <h4>Rezultat</h4>
                     <hr width="100%" color="yellow">
-                    <div class="halfin" style=" padding-top: 25px;height: 100px">
-                        <font size="150em">Tekst</font>
+                    <div class="halfin" style=" padding-top: 25px;height: 150px">
+                        <font size="7pt">Tekst</font><br>
+                        <span style="font-size: 7pt;">Tekst</span>
                     </div>
                 </div>
             </div><br>
@@ -58,18 +74,19 @@
         <div class="one">
             <h3>Kolor tekstu</h3>
             <div class="two" style="height: 450px"><br><br><br>
-                <p style="text-align:center"><b>By zmienić kolor i np. tym samym wyróżnić jakiś tekst nalezy użyć polecenia <span style="color:red">&ltfont color</span>=<span style="color:yellow">"X"</span><span style="color:red">&gt&lt/font&gt</span>. W miejscu <span style="color:yellow">X</span> wstawiamy interesujący nas kolor w języku angielski, bądz w hexie, bądz też w rgb </b></p>
+                <p style="text-align:center"><b>By zmienić kolor i np. tym samym wyróżnić jakiś tekst możemy użyć polecenia <span style="color:red">&ltfont color</span>=<span style="color:yellow">"X"</span><span style="color:red">&gt&lt/font&gt</span>. W miejscu <span style="color:yellow">X</span> wstawiamy interesujący nas kolor w języku angielski, bądz w hexie, bądz też w rgb, lecz używanie tego sposobu jest już przestarzałe, dlatego lepszym sposobem jest nadanie koloru za pomocą CSS</b></p>
                 <br><br>
                 <div class="half">
                     <h4>Kod HTML</h4>
                     <hr width="100%" color="yellow">
-                    <div class="halfin" style="padding-top: 25px; height: 100px"><span >&lt;font</span> <span class="atrybut">color=</span><span class="green">"green"</span><span >&gt;</span>Tekst<span >&lt;font&gt;</span></div>
+                    <div class="halfin" style="padding-top: 25px; height: 100px"><span >&lt;font</span> <span class="atrybut">color=</span><span class="green">"green"</span><span >&gt;</span>Tekst<span >&lt;font&gt;</span><br><xmp><span style="color:blue">tekst</span></xmp></div>
                 </div>
                 <div class="half">
                     <h4>Rezultat</h4>
                     <hr width="100%" color="yellow">
                     <div class="halfin" style=" padding-top: 25px;height: 100px">
-                        <font color="green">Tekst</font>
+                        <font color="green">Tekst</font><br>
+                        <span style="color:blue">Tekst</span>
                     </div>
                 </div>
             </div><br>
@@ -203,6 +220,82 @@
                             </div>
                         </div>
                     </div><br>
+                    <div class="one">
+                        <h3>Pozycjonowanie tekstu</h3>
+                        <div class="two" style="height: 450px"><br><br><br>
+                            <p style="text-align:center"><b>
+                                HTML pozwala na wyrównanie tekstu do lewej, do prawej, wysrodkowanie oraz wyjustowanie.
+                                Aby określić pozycjonowanie należy do znacznika określającego sekcję (div, span, p itp.) dodać style="text-align: <span style="color:green">X</span>"<br><ul><li>left-wyrównany do lewej</li><li>right - wyrównany do prawej</li><li>center - wyśrodkowany </li><li>justify - wyjustowany </li></ul></b></p>
+                            <br><br>
+                            <div class="half">
+                                <h4>Kod HTML</h4>
+                                <hr width="100%" color="yellow">
+                                <div class="halfin" style="padding-top: 25px; height: 900px"><span >&ltp style="text-align:right"&gtPornhub został założony przez programistę Matta Keezera jako strona internetowa firmy Interhub. Został uruchomiony 25 maja 2007[1]. W przypadku wielu treści dostęp jest bezpłatny, wiąże się to z ograniczeniami oglądanej rozdzielczości wideo, a zyski czerpane są wyłącznie z niewielkiej liczby reklam oraz kont premium.
+
+                                    Serwis jest obecny w przestrzeni publicznej za sprawą publikacji danych o najchętniej wyszukiwanych frazach czy preferencjach seksualnych jego użytkowników. W celu publikacji tych danych opracowano pozbawiony pornografii podserwis Pornhub Insights. Serwis bywa także znany z kampanii reklamowych i aktywności w mediach społecznościowych, które jako niezawierające treści erotycznych, są często obecne w środkach masowego przekazu i stają się obiektem publicznej dyskusji&lt/p&gt</span></div>
+                            </div>
+                            <div class="half">
+                                <h4>Rezultat</h4>
+                                <hr width="100%" color="yellow">
+                                <div class="halfin" style=" padding-top: 25px;height: 900px">
+                                    <p style="text-align:right">Pornhub został założony przez programistę Matta Keezera jako strona internetowa firmy Interhub. Został uruchomiony 25 maja 2007[1]. W przypadku wielu treści dostęp jest bezpłatny, wiąże się to z ograniczeniami oglądanej rozdzielczości wideo, a zyski czerpane są wyłącznie z niewielkiej liczby reklam oraz kont premium.
+
+                                        Serwis jest obecny w przestrzeni publicznej za sprawą publikacji danych o najchętniej wyszukiwanych frazach czy preferencjach seksualnych jego użytkowników. W celu publikacji tych danych opracowano pozbawiony pornografii podserwis Pornhub Insights. Serwis bywa także znany z kampanii reklamowych i aktywności w mediach społecznościowych, które jako niezawierające treści erotycznych, są często obecne w środkach masowego przekazu i stają się obiektem publicznej dyskusji</p>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <h4>Kod HTML</h4>
+                                <hr width="100%" color="yellow">
+                                <div class="halfin" style="padding-top: 25px; height: 900px"><span ><span >&ltp style="text-align:left"&gtPornhub został założony przez programistę Matta Keezera jako strona internetowa firmy Interhub. Został uruchomiony 25 maja 2007[1]. W przypadku wielu treści dostęp jest bezpłatny, wiąże się to z ograniczeniami oglądanej rozdzielczości wideo, a zyski czerpane są wyłącznie z niewielkiej liczby reklam oraz kont premium.
+
+                                    Serwis jest obecny w przestrzeni publicznej za sprawą publikacji danych o najchętniej wyszukiwanych frazach czy preferencjach seksualnych jego użytkowników. W celu publikacji tych danych opracowano pozbawiony pornografii podserwis Pornhub Insights. Serwis bywa także znany z kampanii reklamowych i aktywności w mediach społecznościowych, które jako niezawierające treści erotycznych, są często obecne w środkach masowego przekazu i stają się obiektem publicznej dyskusji&lt/p&gt</div>
+                            </div>
+                            <div class="half">
+                                <h4>Rezultat</h4>
+                                <hr width="100%" color="yellow">
+                                <div class="halfin" style=" padding-top: 25px;height: 900px">
+                                    <p style="text-align:left">Pornhub został założony przez programistę Matta Keezera jako strona internetowa firmy Interhub. Został uruchomiony 25 maja 2007[1]. W przypadku wielu treści dostęp jest bezpłatny, wiąże się to z ograniczeniami oglądanej rozdzielczości wideo, a zyski czerpane są wyłącznie z niewielkiej liczby reklam oraz kont premium.
+
+                                        Serwis jest obecny w przestrzeni publicznej za sprawą publikacji danych o najchętniej wyszukiwanych frazach czy preferencjach seksualnych jego użytkowników. W celu publikacji tych danych opracowano pozbawiony pornografii podserwis Pornhub Insights. Serwis bywa także znany z kampanii reklamowych i aktywności w mediach społecznościowych, które jako niezawierające treści erotycznych, są często obecne w środkach masowego przekazu i stają się obiektem publicznej dyskusji</p>
+                                </div>
+                            </div>
+                            
+                            <div class="half">
+                                <h4>Kod HTML</h4>
+                                <hr width="100%" color="yellow">
+                                <div class="halfin" style="padding-top: 25px; height: 900px"><span >&ltp style="text-align:center"&gtPornhub został założony przez programistę Matta Keezera jako strona internetowa firmy Interhub. Został uruchomiony 25 maja 2007[1]. W przypadku wielu treści dostęp jest bezpłatny, wiąże się to z ograniczeniami oglądanej rozdzielczości wideo, a zyski czerpane są wyłącznie z niewielkiej liczby reklam oraz kont premium.
+
+                                    Serwis jest obecny w przestrzeni publicznej za sprawą publikacji danych o najchętniej wyszukiwanych frazach czy preferencjach seksualnych jego użytkowników. W celu publikacji tych danych opracowano pozbawiony pornografii podserwis Pornhub Insights. Serwis bywa także znany z kampanii reklamowych i aktywności w mediach społecznościowych, które jako niezawierające treści erotycznych, są często obecne w środkach masowego przekazu i stają się obiektem publicznej dyskusji&lt/p&gt</div>
+                            </div>
+                            <div class="half">
+                                <h4>Rezultat</h4>
+                                <hr width="100%" color="yellow">
+                                <div class="halfin" style=" padding-top: 25px;height: 900px">
+                                    <p style="text-align:center">Pornhub został założony przez programistę Matta Keezera jako strona internetowa firmy Interhub. Został uruchomiony 25 maja 2007[1]. W przypadku wielu treści dostęp jest bezpłatny, wiąże się to z ograniczeniami oglądanej rozdzielczości wideo, a zyski czerpane są wyłącznie z niewielkiej liczby reklam oraz kont premium.
+
+                                        Serwis jest obecny w przestrzeni publicznej za sprawą publikacji danych o najchętniej wyszukiwanych frazach czy preferencjach seksualnych jego użytkowników. W celu publikacji tych danych opracowano pozbawiony pornografii podserwis Pornhub Insights. Serwis bywa także znany z kampanii reklamowych i aktywności w mediach społecznościowych, które jako niezawierające treści erotycznych, są często obecne w środkach masowego przekazu i stają się obiektem publicznej dyskusji</p>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <h4>Kod HTML</h4>
+                                <hr width="100%" color="yellow">
+                                <div class="halfin" style="padding-top: 25px; height: 900px"><span >&ltp style="text-align:justify"&gtPornhub został założony przez programistę Matta Keezera jako strona internetowa firmy Interhub. Został uruchomiony 25 maja 2007[1]. W przypadku wielu treści dostęp jest bezpłatny, wiąże się to z ograniczeniami oglądanej rozdzielczości wideo, a zyski czerpane są wyłącznie z niewielkiej liczby reklam oraz kont premium.
+
+                                    Serwis jest obecny w przestrzeni publicznej za sprawą publikacji danych o najchętniej wyszukiwanych frazach czy preferencjach seksualnych jego użytkowników. W celu publikacji tych danych opracowano pozbawiony pornografii podserwis Pornhub Insights. Serwis bywa także znany z kampanii reklamowych i aktywności w mediach społecznościowych, które jako niezawierające treści erotycznych, są często obecne w środkach masowego przekazu i stają się obiektem publicznej dyskusji&lt/p&gt</div>
+                            </div>
+                            <div class="half">
+                                <h4>Rezultat</h4>
+                                <hr width="100%" color="yellow">
+                                <div class="halfin" style=" padding-top: 25px;height: 900px">
+                                    <p style="text-align:justify">Pornhub został założony przez programistę Matta Keezera jako strona internetowa firmy Interhub. Został uruchomiony 25 maja 2007[1]. W przypadku wielu treści dostęp jest bezpłatny, wiąże się to z ograniczeniami oglądanej rozdzielczości wideo, a zyski czerpane są wyłącznie z niewielkiej liczby reklam oraz kont premium.
+
+                                        Serwis jest obecny w przestrzeni publicznej za sprawą publikacji danych o najchętniej wyszukiwanych frazach czy preferencjach seksualnych jego użytkowników. W celu publikacji tych danych opracowano pozbawiony pornografii podserwis Pornhub Insights. Serwis bywa także znany z kampanii reklamowych i aktywności w mediach społecznościowych, które jako niezawierające treści erotycznych, są często obecne w środkach masowego przekazu i stają się obiektem publicznej dyskusji</p>
+                                </div>
+                            </div>
+                        </div><br>
+            
+            
+                    </div>
     </div>
     <script src="../jquery-1.11.3.min.js"></script>
 	

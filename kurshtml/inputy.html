@@ -74,6 +74,21 @@
             <li><a href="formularz.html">Formularze</a></li>
         </ol>
     </div>
+    <div class="header">
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>
+      </div>
+      <script>
+        window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+} 
+      </script>
     <div class="container">
        <h3>Inputy</h3>
        <p style="padding-left: 30px;padding-right: 30px; text-align: center; font-size: 30px;"><b>Jeśli chcemy by nasza strona była bardzeij interaktywna i umożliwiała jakąś ingerencje użytkownika musimy użyć pola, w których użytkownik będzie mógł te dane przekazać i do tego służy znacznik <span style="color:red;">&lt;input&gt</span>. Mamy różne rodzaje takich inputów:
